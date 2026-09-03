@@ -1,0 +1,25 @@
+---
+title: Genetic population structure of the long-tailed pygmy rice rat (Rodentia, Cricetidae) at different
+  geographic scales in the Argentinean Patagonia
+date: '2017-01-01'
+author:
+- name: N. Ortiz
+- name: F. J. Polop
+- name: V. C. Andreo
+- name: M. C. Provensal
+- name: J. J. Polop
+- name: C. N. Gardenal
+- name: R. E. Gonzalez-Ittig
+pub-type: Journal article
+doi: 10.1111/jzo.12410
+---
+
+[PDF](https://doi.org/10.1111/jzo.12410)
+
+## Abstract
+
+The population genetic structure of _Oligoryzomys longicaudatus_ colilargo was examined at two geographical scales: (a) regional, including five populations of the Argentinean Patagonia separated by 60–315 km and (b) landscape scale, using five populations from different valleys of the locality of Cholila in the subantarctic forest separated by 6–27 km, and a nearby locality of the Patagonian steppe, with an average distance from Cholila of 33 km. Eight microsatellite loci specific for O. longicaudatus were used as genetic markers. At the regional scale, four genetic clusters were detected by the Geneland software. The genetic structure was found to follow a latitudinal pattern. This result was supported by the FST statistic, indicating low levels of current gene flow within the region. At the landscape level, genetic differentiation among the five populations was also found. Estimated migration rates were, in general, low and asymmetrical between nearby populations. Using a causal modeling approach, we detected that the combination of landscape features such as lakes, rivers, urban settlements and roads appear to constrain the dispersal of O. longicaudatus at this scale. This result would explain why nearby populations were so different in their genetic composition. The information about geographic features limiting rodent dispersal provided here could help to design more accurate prevention measures against the expansion of hantavirus pulmonary syndrome.
+
+## Citation
+
+N. Ortiz, F. J. Polop, V. C. Andreo, M. C. Provensal, J. J. Polop, C. N. Gardenal, et al. (2017). Genetic population structure of the long-tailed pygmy rice rat (Rodentia, Cricetidae) at different geographic scales in the Argentinean Patagonia. *Journal of Zoology, (301), 3, pp. 215--226*. <https://doi.org/10.1111/jzo.12410>

@@ -1,0 +1,30 @@
+---
+title: Regional scale environmental variables complementing a Risk Model of Chagas Disease vectorial transmission
+date: '2018-06-06'
+author:
+- name: X. Porcasi
+- name: V. Andreo
+- name: A. Ferral
+- name: P. Guimarey
+- name: M. S. Santini
+- name: C. Spillmann
+- name: R. Hernandez
+- name: A. Geuna Serra
+- name: E. Aguirre
+pub-type: Conference paper
+doi: 10.1109/ARGENCON.2018.8646185
+categories:
+- Chagas
+- Risk mapping
+- Remote sensing
+---
+
+[PDF](https://doi.org/10.1109/ARGENCON.2018.8646185)
+
+## Abstract
+
+In thIS study we present advances in the analysis of environmental variables obtained from moderate resolution satellite images and their association with infestation indexes by *Triatoma infestans* (vector of Chagas disease). The environmental variables considered are the result of climatology and anomalY summaries derived from MODIS sensor time series (products MOD11A2 and MOD13A2) for the period 2000 to 2015), land use from Serena and precipitation from TRMM. The infestation, which was measured at the locality / rural LOCATION level, is expressed as a percentage of households with presence of T. infestans. Data was collected from the National Chagas service. Generalized linear models are proposed to associate the infestation with the environmental variables OBTAINED FROM SATELLITE IMAGES and other local conditions (characteristics of the dwellings and the presence of domestic animals). In general, the environmental variables considered in the models have more influence on Infestation indexes than the locals variables. The variables with the best adjustment were: annual average of LST of the years 2013 and 2015, the NDVI of 2014 and the anomalies of NDVI of the same year. These variables showed higher weights than the variables representing local conditions. From an eco-epidemiological perspective, the usage of products derived from sensors with Medium resolution with national coverage are tools which allow decision makers to generate more accurate responses in less time.
+
+## Citation
+
+X. Porcasi, V. Andreo, A. Ferral, P. Guimarey, M. S. Santini, C. Spillmann, et al. (2018). Regional scale environmental variables complementing a Risk Model of Chagas Disease vectorial transmission. *2018 IEEE Biennial Congress of Argentina (ARGENCON), pp. 1--5*. <https://doi.org/10.1109/ARGENCON.2018.8646185>

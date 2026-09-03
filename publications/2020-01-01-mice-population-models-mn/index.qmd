@@ -1,0 +1,25 @@
+---
+title: 'Challenging population dynamics models with new data: How accurate were our inferences?'
+date: '2020-07-20'
+author:
+- name: V. Andreo
+- name: M. Lima
+- name: J. Polop
+- name: M. C. Provensal
+pub-type: Journal article
+doi: 10.31687/saremMN.20.27.1.0.17
+categories:
+- Population dynamics
+- Modeling
+- Rodents
+---
+
+[PDF](https://doi.org/10.31687/saremMN.20.27.1.0.17)
+
+## Abstract
+
+Given the lack of further data, many studies in population dynamics and in ecology in general fail to demonstrate the forecasting or predictive power of the models they propose. Meanwhile, this is basic to scientific research growth in that it allows to verify/refute our working hypotheses. In this work, weused 7 years of new data to test population dynamics models’ predictions for two sympatric rodent speciesin agro-ecosystems of central Argentina. This has allowed us to give further support to the hypothesis ofintra-specific competition as the only regulatory mechanism of *Akodon azarae*’s abundances and challenge ourprevious inferences regarding *Calomys venustus*’ dynamics. Our forecasting exercise highlights the relevance of confronting former results with new data to increase or decrease support for previous inferences and improve our understanding of population dynamics.
+
+## Citation
+
+V. Andreo, M. Lima, J. Polop, M. C. Provensal (2020). Challenging population dynamics models with new data: How accurate were our inferences?. *Mastozoologia Neotropical, (27), pp. 8--16*. <https://doi.org/10.31687/saremMN.20.27.1.0.17>

@@ -1,0 +1,18 @@
+---
+title: 'La formación científica y el campo profesional en las Ciencias Biológicas: una propuesta educativa
+  en la universidad.'
+date: '2013-01-01'
+author:
+- name: A. S. Rivarosa
+- name: A. L. Correa
+- name: V. Andreo
+pub-type: Journal article
+---
+
+## Abstract
+
+In this paper we share a didactic proposal that we carried out in an introductory subject of the Biological Sciences course of studies. With this proposal we attempt to assess the understanding of Biology study field from the perspective of scientific knowledge praxis and the dilemmas faced by the professional profile of biologists in their work environment. We describe some arguments which validate the importance of including the analysis of the nature of scientific knowledge for the formation of science students. Moreover, we justify the thematic axes and didactic activities developed during the course, offering some reflections, explanations and responses from the main actors (both teachers and students) and analyzing the cognitive and conceptual value of the proposed didactic path. In this paper we share a didactic proposal that we carried out in an introductory subject of the Biological Sciences course of studies. With this proposal we attempt to assess the understanding of Biology study field from the perspective of scientific knowledge praxis and the dilemmas faced by the professional profile of biologists in their work environment. We describe some arguments which validate the importance of including the analysis of the nature of scientific knowledge for the formation of science students. Moreover, we justify the thematic axes and didactic activities developed during the course, offering some reflections, explanations and responses from the main actors (both teachers and students) and analyzing the cognitive and conceptual value of the proposed didactic path.
+
+## Citation
+
+A. S. Rivarosa, A. L. Correa, V. Andreo (2013). La formación científica y el campo profesional en las Ciencias Biológicas: una propuesta educativa en la universidad.. *Revista de Educación en Biología, (15), 2, pp. 69--81*.

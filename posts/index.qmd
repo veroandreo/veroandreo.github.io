@@ -1,0 +1,12 @@
+---
+title: "Posts"
+toc: false
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: [date, title]
+  filter-ui: true
+  fields: [title, date, categories, image, reading-time]
+---

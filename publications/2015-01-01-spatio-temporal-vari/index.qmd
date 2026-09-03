@@ -1,0 +1,28 @@
+---
+title: 'Spatio-temporal variations in chlorophyll-a concentration in the patagonic continental shelf:
+  An example of satellite time series processing with GRASS GIS temporal modules'
+date: '2015-01-01'
+author:
+- name: V. Andreo
+- name: A. I. Dogliotti
+- name: C. B. Tauro
+- name: M. Neteler
+pub-type: Conference paper
+doi: 10.1109/IGARSS.2015.7326254
+categories:
+- MODIS
+- Ocean color
+- GRASS
+- Remote sensing
+- Time series
+---
+
+[PDF](https://doi.org/10.1109/IGARSS.2015.7326254)
+
+## Abstract
+
+We studied the spatio-temporal variations of chlorophyll-a concentration and phytoplankton blooms in the continental shelf and shelf break of the Argentinean patagonic region by means of a time series of 11-years of MODIS/Aqua level 3 (L3) chlorophyll product. We aggregated data according to different granularities and estimated annual and monthly anomalies. We also studied the phenology of phytoplankton blooms determining bloom starting date and date of maximum concentration. Finally, we estimated and described statistical indexes such as minimum and maximum bloom areas, their occurrence date and bloom occurrence frequency. All the temporal processing of this raster dataset was done with the recently implemented temporal modules of GRASS GIS 7. This Free and Open Source Software provides the advantage of automating all (or most of) the processing, allowing the application of the same methodology to analyze satellite time series of different variables, like sea surface temperature.
+
+## Citation
+
+V. Andreo, A. I. Dogliotti, C. B. Tauro, M. Neteler (2015). Spatio-temporal variations in chlorophyll-a concentration in the patagonic continental shelf: An example of satellite time series processing with GRASS GIS temporal modules. *Proceedings of the 2015 IEEE International Geoscience and Remote Sensing Symposium (IGARSS), pp. 2249--2252*. <https://doi.org/10.1109/IGARSS.2015.7326254>

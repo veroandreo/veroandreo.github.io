@@ -1,0 +1,39 @@
+---
+title: Analyzing space-time satellite data with GRASS GIS for environmental monitoring
+date: '2019-09-04'
+author:
+- name: Veronica Andreo
+event: OpenGeoHub Summer School 2019
+event_url: https://opengeohub.org/summer_school_2019
+location: Muenster, Germany
+when: 2019-09-04 14:00–16:30
+categories:
+- GRASS
+- Time series
+- Remote sensing
+- MODIS
+- Land surface temperature
+image: featured.jpg
+---
+
+[Slides](https://gitpitch.com/veroandreo/grass_opengeohub2019/master?p=slides/tgrass_lst) · [Video](https://www.youtube.com/watch?v=tA7j-RofIi0&list=PLXUoTpMa_9s1npXD6S9M0_2pUgnTd6cqV&index=16)
+
+## Abstract
+
+GRASS GIS is a general purpose Free and Open Source geographic information system (GIS) that offers raster, 3D raster and vector data processing support. Since 2015, GRASS GIS has also oficially incorporated a powerful support for time series (TGRASS). Through this, GRASS GIS became the first open source temporal GIS with comprehensive spatio-temporal analysis, processing and visualization capabilities. This functionality makes it easy to manage, analyse and visualize for example climatic data, vegetation index time series, harvest data or landuse changes over time. Time series are handled through new data types called space time data sets (stds) which are used as input in TGRASS modules. In this way, TGRASS simplifies the processing and analysis of large time series of hundreds of thousands of maps. For example, users can aggregate a daily time series into a monthly time series in just one line; get the date per year in which a certain value is reached; select maps from a time series in time periods in which a different time series reaches a maximum value, perform different temporal as well as spatial operations among time series, and so much more.
+In this tutorial we will use a time series of monthly MODIS LST data to go through the creation of time series (stds) and registration of maps, perform different temporal algebra operations, aggregation, estimate anomalies and obtain zonal statistics for time series while exploring how to characterize Surface Urban Heat Islands (SUHI). All along the session, we will see different visualization options available in GRASS GIS.
+All the material is available at [https://github.com/veroandreo/grass_opengeohub2019](https://github.com/veroandreo/grass_opengeohub2019).
+
+<!---
+::: {.callout-note}
+Click on the **Slides** button above to view the built-in slides feature.
+:::
+
+Slides can be added in a few ways:
+
+- **Create** slides using Academic's [*Slides*](https://sourcethemes.com/academic/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the event file
+- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the event file
+- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+
+Further event details can easily be added to this page using *Markdown* and $\rm \LaTeX$ math code.
+--->

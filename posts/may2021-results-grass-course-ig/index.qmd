@@ -1,0 +1,48 @@
+---
+title: Outcomes of an online GRASS GIS course
+date: '2021-05-24'
+categories:
+- GRASS
+- Remote sensing
+- Time series
+- Image analysis
+image: featured.png
+---
+
+In March 2021, I taught a [GRASS GIS online workshop](https://ig.conae.unc.edu.ar/taller-grass/) as part of the
+distance learning offer of [Gulich Institute](https://ig.conae.unc.edu.ar/) (CONAE - UNC) in Argentina.
+We had a total of 65 students from different countries in South America.
+
+During the workshop, we studied different topics within GRASS ecosystem, but we mostly covered remote sensing,
+Object Based Image Analysis (OBIA) and time series analysis, making use of GRASS GIS extensions to obtain
+and process Landsat, Sentinel and MODIS data. All the workshop materials, including presentations, code, and
+data, are available [here](https://gitlab.com/veroandreo/maie-procesamiento/-/tree/taller-grass-online) (in Spanish).
+
+As final assignment to pass the course and get their certificate, students were given two options:
+
+- write a report in Spanish for which they should pick a topic of interest, find relevant data and use GRASS modules to obtain results or,
+- write a tutorial in English of a topic relevant for them or even something new they wanted to learn, always with GRASS as main tool/focus.
+
+As an incentive, the best reports and tutorials would be given the chance to be presented live through
+[Gulich Institute Youtube channel](https://www.youtube.com/channel/UCI-yqSH5XPVwnBM5mOyOCHg).
+Tutorials, because of the extra difficulty of language, would also be highlighted in GRASS GIS website
+and social media (See the news [here](https://grass.osgeo.org/news/2021_04_23_new_tutorials_made_by_students/)).
+
+The topics chosen by the students were diverse and really interesting: from changes in snow cover in southern Argentina,
+to productivity of high altitude grasslands, wildfire simulations, segmentation to aid digitizing of implanted
+forests, network analysis, comparison of classification approaches to map urban areas, landscape characterization,
+urban heat islands, spatial and temporal gap-filling and species identification through OBIA and machine learning.
+
+On May 14, those reports and tutorials that resulted selected were presented live with an audience of almost 90
+people. It was really satisfying to witness the student's learning process and outcome. Many of them overcame
+installation difficulties, learnt and studied new modules, searched for data, explored different solutions. Some,
+even moved to Linux and learnt to use Git/GitHub. Have a look :nerd_face:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fPu-lvN1iNY?start=270" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+With this post I would like to encourage others to follow such an approach that resulted rewarding in many aspects.
+For students to get their work showcased, for their families to see aunt/uncle, mum or dad on the screen
+(we had some very sweet messages in the online chat :smiley:), and also for us as teachers/trainers.
+Furthermore, I believe these events bring science, higher education and technology closer to the general
+public and... we never know who might be inspired by our work! :heart_eyes:

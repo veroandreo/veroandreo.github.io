@@ -1,0 +1,55 @@
+---
+title: Effect of Climate and Land Use on the Spatio-Temporal Variability of Tick-Borne Bacteria in Europe
+date: '2018-01-01'
+author:
+- name: R. Rosa
+- name: V. Andreo
+- name: V. Tagliapietra
+- name: I. Barakova
+- name: D. Arnoldi
+- name: H. Hauffe
+- name: M. Manica
+- name: F. Rosso
+- name: L. Blanarova
+- name: M. Bona
+- name: M. Derdakova
+- name: Z. Hamsikova
+- name: M. Kazimirova
+- name: J. Kraljik
+- name: E. Kocianova
+- name: L. Mahrikova
+- name: L. Minichova
+- name: L. Mosansky
+- name: M. Slovak
+- name: M. Stanko
+- name: E. Spitalska
+- name: E. Ducheyne
+- name: M. Neteler
+- name: Z. Hubalek
+- name: I. Rudolf
+- name: K. Venclikova
+- name: C. Silaghi
+- name: E. Overzier
+- name: R. Farkas
+- name: G. Foldvari
+- name: S. Hornok
+- name: N. Takacs
+- name: A. Rizzoli
+pub-type: Journal article
+doi: 10.3390/ijerph15040732
+categories:
+- MODIS
+- Ticks
+- Remote sensing
+- GRASS
+---
+
+[PDF](https://doi.org/10.3390/ijerph15040732)
+
+## Abstract
+
+The incidence of tick-borne diseases caused by _Borrelia burgdorferi_ sensu lato, _Anaplasma phagocytophilum_ and _Rickettsia_ spp. has been rising in Europe in recent decades. Early pre-assessment of acarological hazard still represents a complex challenge. The aim of this study was to model *Ixodes ricinus* questing nymph density and its infection rate with B. burgdorferi s.l., A. phagocytophilum and *Rickettsia* spp. in five European countries (Italy, Germany, Czech Republic, Slovakia, Hungary) in various land cover types differing in use and anthropisation (agricultural, urban and natural) with climatic and environmental factors (Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI), Land Surface Temperature (LST) and precipitation). We show that the relative abundance of questing nymphs was significantly associated with climatic conditions, such as higher values of NDVI recorded in the sampling period, while no differences were observed among land use categories. However, the density of infected nymphs (DIN) also depended on the pathogen considered and land use. These results contribute to a better understanding of the variation in acarological hazard for *Ixodes ricinus* transmitted pathogens in Central Europe and provide the basis for more focused ecological studies aimed at assessing the effect of land use in different sites on tick–host pathogens interaction.
+
+## Citation
+
+R. Rosa, V. Andreo, V. Tagliapietra, I. Barakova, D. Arnoldi, H. Hauffe, et al. (2018). Effect of Climate and Land Use on the Spatio-Temporal Variability of Tick-Borne Bacteria in Europe. *International Journal of Environmental Research and Public Health, (15), 4, pp. 732*. <https://doi.org/10.3390/ijerph15040732>

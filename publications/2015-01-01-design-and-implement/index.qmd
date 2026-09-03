@@ -1,0 +1,27 @@
+---
+title: Design and implementation of an operational meteo fire risk forecast based on open source geospatial
+  technology
+date: '2015-01-01'
+author:
+- name: L. M. Bellis
+- name: V. Andreo
+- name: A. Lighezzolo
+- name: J. P. Argañaraz
+- name: S. Lanfri
+- name: K. Clemoveki
+- name: C. M. Scavuzzo
+pub-type: Conference paper
+doi: 10.1109/IGARSS.2015.7326230
+categories:
+- Risk mapping
+---
+
+[PDF](https://doi.org/10.1109/IGARSS.2015.7326230)
+
+## Abstract
+
+We designed an integrated platform for early prediction of meteorological fire risk. The system is operative since the end of 2014 and estimates the fire danger index automatically, based on the 72 hours forecast of the Weather Research and Forecast (WRF) model. Though the system is in experimental phase, the first results showed a quite acceptable performance. Moreover, this index is capable of continuously improving the algorithms to produce enhanced risk estimation. Thus, in the short term, the system would also include geospatial information and satellite based products to help firefighting activities during all phases: early warning, pre-disaster planning, preparing and forecasting, response and assistance, recovering and reconstruction throughout a web map service.
+
+## Citation
+
+L. M. Bellis, V. Andreo, A. Lighezzolo, J. P. Argañaraz, S. Lanfri, K. Clemoveki, et al. (2015). Design and implementation of an operational meteo fire risk forecast based on open source geospatial technology. *Proceedings of the 2015 IEEE International Geoscience and Remote Sensing Symposium (IGARSS), pp. 2155--2158*. <https://doi.org/10.1109/IGARSS.2015.7326230>

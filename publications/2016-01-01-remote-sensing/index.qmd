@@ -1,0 +1,28 @@
+---
+title: 'Remote Sensing of Phytoplankton Blooms in the Continental Shelf and Shelf-Break of Argentina:
+  Spatio-Temporal Changes and Phenology'
+date: '2016-01-01'
+author:
+- name: V. Andreo
+- name: A. I. Dogliotti
+- name: C. B. Tauro
+pub-type: Journal article
+doi: 10.1109/JSTARS.2016.2585142
+categories:
+- Time series
+- Remote sensing
+- GRASS
+- Ocean color
+- Population dynamics
+- MODIS
+---
+
+[PDF](https://doi.org/10.1109/JSTARS.2016.2585142)
+
+## Abstract
+
+We studied the spatio-temporal variations of satellite chlorophyll-a (chl-a) and phytoplankton blooms in the continental shelf and shelf-break of the Argentinean patagonic region by means of an 11-years time series of level 3 (L3) MODIS/Aqua chlorophyll products. We aggregated data according to different granularities and estimated climatologies and anomalies. We also studied the phenology of phytoplankton blooms determining bloom starting date and date of maximum concentration. Finally, we estimated and described statistical indexes such as bloom occurrence frequency. The results obtained provide an overview of the evolution and the spatio-temporal variability of chl-a that, in general, and despite its limitations, was complementary and consistent with previous studies based on both satellite and in situ data. This study intended to set the baseline to study algal blooms and their variability in the Argentinian sea, which is valuable information to be included in predictive models related to the occurrence of harmful algal blooms, dynamics of marine system and the effects of global changes over climatic and biogeochemical cycles. In addition, this study also contributes with more up-to-date science data for the future Argentinian and Brazilian SABIA-Mar ocean color mission, which will provide high resolution data (200 m) over the Argentinian coastal zones and continental shelf. Besides the results per se, the relevance of this study is also related to the use of an novel free and open source tool.
+
+## Citation
+
+V. Andreo, A. I. Dogliotti, C. B. Tauro (2016). Remote Sensing of Phytoplankton Blooms in the Continental Shelf and Shelf-Break of Argentina: Spatio-Temporal Changes and Phenology. *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, (9), 12, pp. 5315--5324*. <https://doi.org/10.1109/JSTARS.2016.2585142>

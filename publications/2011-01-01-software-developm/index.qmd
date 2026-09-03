@@ -1,0 +1,30 @@
+---
+title: Software development for the use of space information in spatial and temporal simulation of rodent
+  population dynamics
+date: '2011-01-01'
+author:
+- name: V. Musso
+- name: Cecilia Provensal
+- name: J. Priotto
+- name: V. Andreo
+- name: I. Simone
+- name: F. Piacenza
+- name: F. J. Polop
+- name: J. Polop
+- name: E. Romero
+- name: C. M. Scavuzzo
+- name: M. Oglietti
+pub-type: Journal article
+categories:
+- Rodents
+- Population dynamics
+- Remote sensing
+---
+
+## Abstract
+
+The space technology and the use of space science products offer a vast range of research topics and applications for computer scientists. These research applications are of mandatory interest at the Gulich Institute, a CONAE (Argentine National Space Agency) and UNC (University of Córdoba) dependency. One of these applications is the use of satellite data in early warning and response to health risks and emergencies. In this study, it has been developed a software tool that allows the user to process information coming from satellite images to determine the incidence of rodent transmitted diseases. The behaviour and infection rate of rodent populations in a given area determine the incidence of the rodent-transmitted diseases such as the Argentine Hemorrhagic Fever (AHF). In this study, two complementary models have been used to integrate satellite data into the analysis and prevention of vector-borne diseases. The first is a spatial probabilistic model which estimates the distribution of rodents over a given region. The second is a temporal model which calculates the dynamic of rodent population and the incidence of AHF infection.
+
+## Citation
+
+V. Musso, Cecilia Provensal, J. Priotto, V. Andreo, I. Simone, F. Piacenza, et al. (2011). Software development for the use of space information in spatial and temporal simulation of rodent population dynamics. *Acta Biologica Venezuelica, (31), 2, pp. 23--26*.

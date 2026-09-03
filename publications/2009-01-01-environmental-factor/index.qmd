@@ -1,0 +1,28 @@
+---
+title: 'Environmental factors and population fluctuations of *Akodon azarae* (Muridae: Sigmodontinae) in
+  central Argentina'
+date: '2009-01-01'
+author:
+- name: V. Andreo
+- name: M. C. Provensal
+- name: C. M. Scavuzzo
+- name: M. Lamfri
+- name: J. Polop
+pub-type: Journal article
+doi: 10.1111/j.1442-9993.2008.01889.x
+categories:
+- Time series
+- Population dynamics
+- Rodents
+- Remote sensing
+---
+
+[PDF](https://doi.org/10.1111/j.1442-9993.2008.01889.x)
+
+## Abstract
+
+The aim of this work was to explore the relationship between population density of _Akodon azarae_ (Muridae: Sigmodontinae) and climatic and environmental variables, and determine which of them are associated to within and among-year changes in rodent abundance in agro-ecosystems from south Córdoba, Argentina. The study was carried out in a rural area of central Argentina, from 1983 to 2003. Density was estimated as a relative density index (RDI). Temperature, precipitation and humidity were obtained from records of the National University of Rio Cuarto. Normalized Difference Vegetation Index (NDVI) and Land Surface Temperature were recorded from National Oceanic and Atmospheric Administration (1983–1998) and Landsat (1998–2003) imagery data sets. We performed simple correlations, multiple regressions and distributed lag analysis. Direct association of climatic and environmental variables with RDI was in general, low. The amount of variability in seasonal changes in density explained by climatic and environmental variables altogether varied from 10% to 70%. Seasonal population fluctuations were influenced by NDVI and rainfall with one and two seasons of delay. Autumn maximum density of the species was also associated with vegetation and rainfall of previous seasons. There also seemed to be an indirect influence of rainfall through vegetation given that we found a positive correlation between them. Results were consistent with basic aspects of the ecology of the species, such as its strong preference for highly covered areas, which provide food and protection from predators, likely increasing its reproductive success. Therefore, in the rural area central Argentina, A. azarae showed seasonal fluctuations with delayed influence of rainfall and vegetation and indirect effects of rainfall.
+
+## Citation
+
+V. Andreo, M. C. Provensal, C. M. Scavuzzo, M. Lamfri, J. Polop (2009). Environmental factors and population fluctuations of *Akodon azarae* (Muridae: Sigmodontinae) in central Argentina. *Austral Ecology, pp. 132--142*. <https://doi.org/10.1111/j.1442-9993.2008.01889.x>

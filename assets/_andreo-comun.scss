@@ -1,0 +1,617 @@
+/*-- scss:rules --*/
+// ============================================================
+// Reglas comunes a las tres opciones: menú en versalitas,
+// callouts, código inline, blockquote, eyebrow.
+// ============================================================
+
+.navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 8px;
+  padding: 2px 2px 4px !important;
+  border-bottom: 2px solid transparent;
+}
+
+// Etiqueta chica en mono, como los rótulos del one-pager
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: $teal;
+}
+
+// Prosa
+h1, h2, h3, h4, h5 { font-family: $headings-font-family; font-weight: 500; }
+.title { font-weight: 500; line-height: 1.15; }
+
+blockquote, .blockquote {
+  border-left: 3px solid $teal;
+  color: $muted;
+  font-style: italic;
+}
+
+p code:not(.sourceCode),
+li code:not(.sourceCode),
+td code:not(.sourceCode) {
+  background-color: $teal-tint;
+  border: 1px solid darken($teal-tint, 6%);
+  border-radius: 3px;
+  color: $navy;
+  padding: 1px 5px;
+}
+
+// Callouts, con los colores de la paleta 3 reencuadrados a esta paleta
+.callout.callout-style-default .callout-title { font-weight: 700; }
+.callout-note      { border-left-color: $navy  !important; }
+.callout-tip       { border-left-color: $teal  !important; }
+.callout-warning   { border-left-color: $ochre !important; }
+.callout-important { border-left-color: $risk-high !important; }
+.callout-note      .callout-title { background: $navy-tint  !important; }
+.callout-tip       .callout-title { background: $teal-tint  !important; }
+.callout-warning   .callout-title { background: $ochre-tint !important; }
+.callout-important .callout-title { background: #F6E9E4     !important; }
+
+// ── Iconos de los callouts ───────────────────────────────────
+// Quarto embebe el icono como SVG en un background-image con el fill
+// ya escrito adentro, así que pisar border-left-color no lo alcanza:
+// hay que reescribir el data-URI entero. Se usa rgb() y no hex porque
+// el # rompería el data-URI. Los valores deben coincidir con la paleta.
+
+// note       → $navy  #0E2A3D
+.callout-note .callout-icon::before {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' style='fill: rgb(14, 42, 61)' class='bi bi-info-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/></svg>") !important;
+}
+
+// tip        → $teal  #1F7A6C
+.callout-tip .callout-icon::before {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' style='fill: rgb(31, 122, 108)' class='bi bi-lightbulb' viewBox='0 0 16 16'><path d='M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z'/></svg>") !important;
+}
+
+// warning    → $ochre  #C97A2E
+.callout-warning .callout-icon::before {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' style='fill: rgb(201, 122, 46)' class='bi bi-exclamation-triangle' viewBox='0 0 16 16'><path d='M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z'/><path d='M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z'/></svg>") !important;
+}
+
+// important  → $risk-high  #C0392B
+.callout-important .callout-icon::before {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' style='fill: rgb(192, 57, 43)' class='bi bi-exclamation-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z'/></svg>") !important;
+}
+
+
+// ── Listings: el texto de las tarjetas no es un link decorado ────────────────
+// Quarto envuelve la descripción, la miniatura y la fecha de cada item en un
+// <a>. Sin esto, la regla de links del sitio les pone subrayado teal y hover
+// ocre, y el párrafo del post parece un enlace.
+// Refuerzo: ningún <a> generado por un listado lleva subrayado ni borde, en
+// ningún estado. (La exclusión principal está en la regla `main a:not(...)`
+// del archivo de la opción; esto cubre el hover y los anidados.)
+a.quarto-grid-link,
+a.quarto-grid-link:hover,
+a.no-external,
+a.no-external:hover,
+.quarto-listing .delink a,
+.quarto-listing .delink a:hover,
+.quarto-listing .thumbnail a,
+.quarto-listing .thumbnail a:hover,
+.quarto-listing .metadata a,
+.quarto-listing .metadata a:hover,
+.quarto-listing .listing-title a,
+.quarto-listing .listing-title a:hover {
+  color: inherit !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+// ── CV: entradas de experiencia con logo ────────────────────────────────────
+.cv-entry {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 1.1rem 0;
+  border-top: 1px solid $rule;
+
+  &:first-of-type { border-top: none; padding-top: 0.4rem; }
+
+  .cv-logo {
+    flex: none;
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+    margin: 0;
+    background: #fff;
+    border: 1px solid $rule;
+    border-radius: 8px;
+    padding: 7px;
+  }
+
+  .cv-body { flex: 1; min-width: 0; }
+
+  h3 {
+    margin: 0 0 0.15rem;
+    font-family: $headings-font-family;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .cv-org { font-size: 0.92rem; color: $teal; font-weight: 700; margin: 0 0 0.1rem; }
+
+  .cv-when {
+    font-family: $font-family-monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $muted;
+    margin: 0 0 0.5rem;
+  }
+
+  ul { margin: 0; padding-left: 1.1rem; font-size: 0.9rem; }
+  li { margin-bottom: 0.15rem; }
+}
+
+.cv-edu {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid $rule;
+  font-size: 0.93rem;
+
+  &:first-of-type { border-top: none; }
+
+  .cv-edu-year { flex: none; font-family: $font-family-monospace; font-size: 0.78rem; color: $muted; }
+}
+
+// ── Mapa de contacto ────────────────────────────────────────────────────────
+.map-embed {
+  height: 330px;
+  border: 1px solid $rule;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.9rem 0 0.5rem;
+  z-index: 0;
+}
+
+// ── Iconos de Font Awesome ──────────────────────────────────────────────────
+.nav-footer i.fa-brands,
+.nav-footer i.fa-solid { font-size: 1.05em; }
+
+h2 i.fa-solid, h2 i.fa-brands, h2 i.fa-regular {
+  color: $teal;
+  font-size: 0.78em;
+  margin-right: 0.35em;
+}
+
+p > i.fa-solid:first-child,
+p > i.fa-regular:first-child,
+p > i.fa-brands:first-child {
+  color: $teal;
+  width: 1.3em;
+  margin-right: 0.2em;
+}
+
+// ── Tarjetas: orden y estilo de los datos ───────────────────────────────────
+// Quarto arma la tarjeta como: título · categorías · (autores + fecha juntos en
+// .card-attribution). Las tags van al fondo y la atribución antes.
+.quarto-grid-item .card-body,
+.quarto-grid-item.card .card-body {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.45rem;
+
+  > .card-title,
+  > .listing-title       { order: 1; margin: 0; }
+  > .listing-description { order: 2; }
+  // Quarto pone `text-transform: uppercase` en .card-attribution; en la maqueta
+  // los autores van en caja normal.
+  > .card-attribution    {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: flex-start;
+    text-transform: none;
+    color: $muted;
+  }
+  > .listing-categories  { order: 4; margin-top: auto; padding-top: 0.6rem; }
+}
+
+// Autores: caja normal, no versalitas (Quarto los pone en uppercase).
+.quarto-grid-item .card-attribution,
+.quarto-grid-item .listing-author,
+div.quarto-post .listing-author {
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+// El año / la fecha, con el tratamiento que antes tenían las tags.
+// Se listan los dos contenedores de Quarto para igualar su especificidad.
+.quarto-grid-item .listing-date,
+div.quarto-post .listing-date,
+.quarto-listing .listing-date {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: $teal;
+  color: #fff !important;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+// La fila de chips: separación pareja y sin margins sueltos
+.quarto-listing .listing-categories,
+.quarto-grid-item .listing-categories,
+div.quarto-post .listing-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+// Tags como en la maqueta de la opción D: chip navy sólido con texto claro.
+// Van con la especificidad de Quarto (div.quarto-post / .quarto-grid-item) para
+// que tarjetas y filas queden iguales.
+div.quarto-post .listing-categories .listing-category,
+.quarto-grid-item .listing-categories .listing-category,
+.quarto-listing .listing-categories .listing-category {
+  background: $navy !important;
+  border: 1px solid $navy !important;
+  color: $navy-tint !important;
+  border-radius: 4px;
+  font-size: 0.62em;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.015em;
+  text-transform: none !important;
+  padding: 1px 8px 2px;
+  margin: 0 !important;              // el gap del contenedor maneja la separación
+  opacity: 1;
+
+  // Hover sin cambio de tono: solo aclara un poco el navy.
+  &:hover {
+    background: lighten($navy, 10%) !important;
+    border-color: lighten($navy, 10%) !important;
+    color: #fff !important;
+  }
+}
+
+// Tags del encabezado de cada página, igual que en las tarjetas
+.quarto-title .quarto-categories .quarto-category,
+.quarto-category {
+  background-color: $navy !important;
+  border: 1px solid $navy !important;
+  color: $navy-tint !important;
+  border-radius: 4px;
+  font-size: 0.68em;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 1px 9px 2px !important;
+  text-transform: none !important;
+  opacity: 1;
+
+  &:hover {
+    background-color: lighten($navy, 10%) !important;
+    border-color: lighten($navy, 10%) !important;
+    color: #fff !important;
+  }
+}
+
+// Títulos de tarjeta y de fila: sin subrayado, en tinta
+.quarto-grid-item .listing-title,
+div.quarto-post .listing-title,
+.quarto-listing .listing-title,
+.quarto-listing .listing-title a {
+  color: $ink !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+.quarto-grid-item:hover .listing-title,
+div.quarto-post:hover .listing-title { color: $teal !important; }
+
+// Filas de posts: sin la línea que Quarto pone debajo (caía justo bajo las tags)
+div.quarto-post {
+  border-bottom: none !important;
+  margin-bottom: 1.6em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.9rem;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+
+  &:hover {
+    background: #fff;
+    border-color: $rule;
+    box-shadow: 0 6px 20px rgba(14, 42, 61, 0.10);
+  }
+}
+
+// ── La figura destacada de cada publicación ─────────────────────────────────
+// El ancho se fija acá, en un solo lugar, como porcentaje del ancho del texto.
+// Para una figura puntual se puede pisar desde el .qmd:  {width=40%}
+img.featured-figure {
+  max-width: 65%;
+  height: auto;
+  border: 1px solid $rule;
+  border-radius: 8px;
+}
+
+// centrarla: el <img> vive dentro de un <a class="lightbox"> en un <p>
+p:has(> img.featured-figure),
+p:has(> a > img.featured-figure) {
+  text-align: center;
+}
+
+@media screen and (max-width: 575.98px) {
+  img.featured-figure { max-width: 100%; }
+}
+
+// ── Skills: grilla de iconos, como el widget featurette de Wowchemy ─────────
+.skills-grid {
+  display: grid;
+  // Columnas de ancho fijo en vez de 1fr: así ensanchar la sección no separa
+  // más los iconos — la distancia entre ellos la fija el column-gap y nada más.
+  grid-template-columns: repeat(3, 215px);
+  justify-content: center;
+  column-gap: 2.2rem;
+  row-gap: 1.9rem;
+  max-width: 780px;
+  margin: 1.1rem auto 0.7rem;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 200px)); column-gap: 1.6rem; }
+}
+@media screen and (max-width: 420px) {
+  .skills-grid { grid-template-columns: minmax(0, 220px); }
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.95rem;
+  color: $ink;
+
+  p { margin: 0; }
+
+  // el icono va en su propio párrafo, como <span class="fa-solid ...">
+  // o como <i class="ai ai-overleaf"> si viene de academicons
+  .fa-solid, .fa-brands, .fa-regular, .ai {
+    display: block;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: $teal;
+  }
+}
+
+// ── Interests: tres grupos en columnas ──────────────────────────────────────
+// La lista plana mezclaba preguntas, datos y métodos en un mismo nivel; los
+// grupos los separan por altura. Mismo ancho que .skills-grid y .timeline para
+// que las tres secciones del home queden alineadas entre sí.
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 2.2rem;
+  row-gap: 1.8rem;
+  max-width: 780px;
+  margin: 1.2rem auto 0.7rem;
+}
+
+.interest-group {
+  // El rótulo del grupo va en el mismo mono que los de sección, pero en teal
+  // para que no compita con el h2 de arriba.
+  .interest-label {
+    display: block;
+    font-family: $font-family-monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: $teal;
+    margin-bottom: 0.15rem;
+  }
+
+  // El rótulo viene envuelto en su propio <p>; sin esto quedaba el margen de
+  // párrafo completo entre el rótulo y su lista.
+  p { margin-bottom: 0.5rem; }
+
+  ul {
+    margin: 0;
+    padding-left: 1.05rem;
+    font-size: 0.92rem;
+  }
+
+  li { margin-bottom: 0.4rem; }
+}
+
+@media screen and (max-width: 700px) {
+  .interests-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media screen and (max-width: 420px) {
+  .interests-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+// ── Experience: línea de tiempo con tarjetas, centrada ──────────────────────
+.timeline {
+  position: relative;
+  max-width: 780px;          // centrada, no a todo el ancho del home
+  margin: 0.8rem auto 0.5rem;
+  padding-left: 2.1rem;
+
+  // el riel vertical
+  &::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 1.4rem;
+    bottom: 1.6rem;
+    width: 1px;
+    background: $rule;
+  }
+}
+
+.tl-item {
+  position: relative;
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(14, 42, 61, 0.08);
+  transition: box-shadow 0.18s ease;
+
+  &:hover { box-shadow: 0 6px 20px rgba(14, 42, 61, 0.14); }
+  &:last-child { margin-bottom: 0; }
+
+  // el punto sobre el riel
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2.1rem;
+    top: 1.5rem;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: $paper;
+    border: 2px solid $teal;
+  }
+
+  &:first-child::before { background: $teal; }
+
+  .tl-logo {
+    flex: none;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    margin: 0;
+    background: #fff;
+    border: 1px solid $rule;
+    border-radius: 8px;
+    padding: 6px;
+  }
+
+  .tl-body { flex: 1; min-width: 0; }
+
+  h3 {
+    margin: 0 0 0.1rem;
+    font-family: $headings-font-family;
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: $ink;
+  }
+
+  .tl-company {
+    display: inline-block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: $teal;
+    border-bottom: none !important;
+    &:hover { color: $ochre; }
+  }
+
+  .tl-meta {
+    display: block;
+    font-family: $font-family-monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $muted;
+    margin: 0.15rem 0 0.45rem;
+  }
+
+  // tareas: un punto más chicas que el cuerpo
+  ul { margin: 0; padding-left: 1.05rem; }
+  li {
+    font-size: 0.83rem;
+    line-height: 1.5;
+    color: $muted;
+    margin-bottom: 0.1rem;
+  }
+}
+
+// ── Contacto del home: compacto y centrado, como la grilla de skills ────────
+.contact-block {
+  max-width: 620px;
+  margin: 0.9rem auto 0.5rem;
+  text-align: left;          // el bloque va centrado, el texto alineado a la izquierda
+
+  p { margin: 0 0 0.35rem; font-size: 0.92rem; }
+
+  i.fa-solid, i.fa-regular, i.fa-brands {
+    color: $teal;
+    width: auto;
+    margin-right: 0.35em;
+  }
+
+  .map-embed { height: 260px; margin: 1rem 0 0.5rem; }
+
+  > p:last-child { font-size: 0.85rem; }
+}
+
+// ── Navbar siempre a la vista ───────────────────────────────────────────────
+// El header ya es `fixed-top`, pero Quarto lo maneja con headroom.js, que lo
+// esconde al bajar (`.headroom--unpinned { transform: translateY(-100%) }`) y
+// lo devuelve al subir. Acá se cancela ese movimiento.
+header#quarto-header.headroom,
+header#quarto-header.headroom--unpinned,
+header#quarto-header.headroom--pinned,
+header#quarto-header.headroom--top,
+header#quarto-header.headroom--not-top {
+  transform: translateY(0%) !important;
+  transition: none !important;
+}
+
+// Link "ver todo" al pie de un listado: a la derecha, y con aire abajo para que
+// no se pegue al rótulo de la sección siguiente.
+.more-link {
+  text-align: right;
+  margin: 0.2rem 0 0.6rem;
+
+  a {
+    font-family: $headings-font-family;
+    font-style: italic;
+    font-size: 1rem;
+  }
+}
+
+// El filete bajo los rótulos de sección viene de Bootstrap en gris #dee2e6;
+// se lo pasa al `rule` de la paleta para que combine con el resto.
+main h2, main .h2 { border-bottom-color: $rule; }
+
+// ── Aire entre secciones ────────────────────────────────────────────────────
+main h2 { margin-top: 2.1rem; }
+main h3 { margin-top: 1.5rem; }
+.quarto-listing { margin-bottom: 1.2rem; }
+.quarto-listing + p { margin-top: 0.4rem; }
+
+// Listings — tarjetas de publicaciones / posts
+.card-img, .card-img-top { border-radius: 6px 6px 0 0; }
+.card-title { line-height: 1.35; }
+
+.btn-primary {
+  background-color: $teal;
+  border-color: $teal;
+  &:hover { background-color: darken($teal, 7%); border-color: darken($teal, 7%); }
+}
+
+@media screen and (max-width: 991.98px) {
+  .about-entity .about-links { flex-direction: row !important; justify-content: center !important; }
+  .nav-footer { flex-direction: row; }
+  .nav-footer-center { order: 1 !important; flex-basis: 100%; margin: 0 0 -1.2em 0; }
+  .nav-footer-right  { order: 2 !important; flex-basis: 100%; text-align: center; }
+  .nav-footer-left   { order: 3 !important; flex-basis: 100%; text-align: center; }
+}

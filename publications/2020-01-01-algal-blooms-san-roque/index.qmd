@@ -1,0 +1,26 @@
+---
+title: A novel method based on time series satellite data analysis to detect algal blooms
+date: '2020-06-27'
+author:
+- name: A. German
+- name: V. Andreo
+- name: C. Tauro
+- name: C. M. Scavuzzo
+- name: A. Ferral
+pub-type: Journal article
+doi: 10.1016/j.ecoinf.2020.101131
+categories:
+- Ocean color
+- MODIS
+- Time series
+---
+
+[PDF](https://doi.org/10.1016/j.ecoinf.2020.101131)
+
+## Abstract
+
+Water bodies eutrophication is a worldwide environmental problem characterized by excessive phytoplankton growth which often includes occurrence of harmful algal blooms events. Chlorophyll-a concentration is widely used as an indicator of biomass and can be quantified by optic sensors. In this work, we use a satellite derived Chlorophyll-a concentration time series for the period 2001–2014 obtained from MODIS/TERRA data to detect and characterize algal bloom events in an eutrophic reservoir. Our results demonstrate that fixed threshold methods identify too many bloom dates but a dynamic method based on frequencies analysis and statistical approach, performed better because it represents the normal phytoplankton mass and a bloom is identified like a deviation from it. This approach was tested in San Roque reservoir which supplies fresh water to Córdoba city, one of the most populated of Argentina. According to Carlson index values, this is an eutrophic to hypereutrophic water body. Validation of log10 (Chlorophyll-a concentration) derived from satellite model concentration with ground-based measurements data of Chlorophyll-a concentration demonstrates an acceptable error (RMSE = 0.59) considering data distribution. The implementation of the proposed method to identify blooms over a control data set and validated with LANDSAT 8 - OLI images, demonstrates that the approach described is robust and stable over time.
+
+## Citation
+
+A. German, V. Andreo, C. Tauro, C. M. Scavuzzo, A. Ferral (2020). A novel method based on time series satellite data analysis to detect algal blooms. *Ecological Informatics, (59), 101131*. <https://doi.org/10.1016/j.ecoinf.2020.101131>

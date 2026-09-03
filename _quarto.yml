@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!migrate/"
+  # Quarto solo copia lo que alguna página referencia; el placeholder de las
+  # tarjetas de publicaciones no cuenta como referencia, de ahí este bloque.
+  resources:
+    - assets/img/**
+    - assets/academicons/**
+    - assets/cv.pdf
+    - assets/cv.html
+
+website:
+  title: "Verónica Andreo"
+  site-url: https://veroandreo.github.io
+  favicon: assets/img/favicon.png
+  description: "Researcher and lecturer. Remote sensing, vector-borne disease ecology, GRASS GIS."
+  page-navigation: true
+  back-to-top-navigation: true
+
+  navbar:
+    title: "Verónica Andreo"
+    pinned: true          # queda fija arriba al hacer scroll
+    right:
+      - text: Publications
+        href: publications/index.qmd
+      - text: Courses
+        href: courses/index.qmd
+      - text: Talks
+        href: talks/index.qmd
+      - text: Posts
+        href: posts/index.qmd
+      - text: CV
+        href: assets/cv.pdf
+
+  page-footer:
+    left: >-
+      &#169; 2026 Verónica Andreo &nbsp;&#8729;&nbsp; Made with [Quarto](https://quarto.org)
+      &nbsp;&#8729;&nbsp; [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0)
+    right: |
+      <a class="footer-icon" href="https://scholar.google.com/citations?user=zoN4MO4AAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+      <a class="footer-icon" href="https://orcid.org/0000-0002-4633-2161" title="ORCID" aria-label="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>
+      <a class="footer-icon" href="https://www.researchgate.net/profile/Veronica_Andreo2" title="ResearchGate" aria-label="ResearchGate" target="_blank" rel="noopener"><i class="ai ai-researchgate"></i></a>
+      <a class="footer-icon" href="https://github.com/veroandreo" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+      <a class="footer-icon" href="https://gitlab.com/veroandreo" title="GitLab" aria-label="GitLab" target="_blank" rel="noopener"><i class="fa-brands fa-gitlab"></i></a>
+      <a class="footer-icon" href="mailto:veronica.andreo@ig.edu.ar" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+
+format:
+  html:
+    # ── Tema ──────────────────────────────────────────────────────────
+    # Opción D (la A con el hero partido). Para pasar a otra opción,
+    # cambiá solo la línea del medio por:
+    #   assets/andreo-a-navbar-navy.scss       (y en index.qmd, template: jolla)
+    #   assets/andreo-b-editorial-clara.scss
+    #   assets/andreo-c-banda-navy.scss        (y title-block-banner en index.qmd)
+    theme:
+      - cosmo
+      - assets/_andreo-base.scss
+      - assets/andreo-d-navy-hero-split.scss
+      - assets/_andreo-comun.scss
+    toc: true
+    toc-depth: 3
+    # Font Awesome para los iconos de GitHub, GitLab, ORCID, Scholar, etc.
+    # (Bootstrap Icons, que trae Quarto, no tiene los académicos.)
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+          <link rel="stylesheet" href="/assets/academicons/css/all.css">
+    code-link: true
+    lightbox: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto

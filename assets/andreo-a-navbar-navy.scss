@@ -1,0 +1,75 @@
+/*-- scss:defaults --*/
+// ============================================================
+// OPCIÓN A — Navbar navy
+// Continuidad con el sitio Hugo actual: navbar y footer navy
+// sólidos, fondo paper, tarjetas blancas con sombra.
+// Uso: theme: [cosmo, _andreo-base.scss, andreo-a-navbar-navy.scss, _andreo-comun.scss]
+// ============================================================
+
+$navbar-bg: #0E2A3D;
+$navbar-fg: rgba(251, 250, 246, 0.78);
+$footer-bg: #0E2A3D;
+$footer-fg: #EDEBE0;
+
+$headings-color:   #16211A;
+$code-block-bg:    #F2F0E8;
+$link-decoration:  none;
+
+/*-- scss:rules --*/
+
+.navbar-title { color: $paper !important; }
+
+.navbar-nav .nav-link {
+  color: $navbar-fg !important;
+  &:hover, &.active {
+    color: $gold !important;
+    border-bottom-color: $gold !important;
+  }
+}
+
+// Links de cuerpo: subrayado sutil en vez de underline completo
+// Subrayado sutil de los links de prosa. Se excluyen los <a> que Quarto genera
+// en los listados (la tarjeta entera es un <a>, y su border-bottom cae debajo de
+// las tags y parece un subrayado) y los botones sociales.
+main a:not(.btn):not(.nav-link):not(.quarto-grid-link):not(.no-external):not(.about-link):not(.quarto-title-meta-contents a) {
+  border-bottom: 1px solid rgba(31, 122, 108, 0.35);
+  &:hover { color: $ochre; border-bottom-color: $ochre; }
+}
+
+// Tarjetas: blancas, sombra, sin borde
+.card {
+  background: #fff;
+  border: none !important;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(14, 42, 61, 0.08);
+  transition: box-shadow 0.18s ease;
+  &:hover { box-shadow: 0 6px 20px rgba(14, 42, 61, 0.16); }
+}
+
+// Títulos de sección en versalitas grises (como el mockup)
+// Rótulo de sección del home ("RECENT PUBLICATIONS"). Ojo: NO usar
+// `.quarto-listing .listing-title`, que es el título de cada tarjeta.
+h2.section-label {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: $muted;
+}
+
+// Categorías: chip teal lleno
+.quarto-category, .listing-category {
+  background-color: $teal !important;
+  color: #fff !important;
+  border-color: $teal !important;
+  border-radius: 999px;
+  font-size: 0.72em;
+  &:hover { background-color: $navy !important; border-color: $navy !important; }
+}
+
+.nav-footer {
+  font-size: 0.85em;
+  a { color: #EDEBE0; &:hover { color: $gold; } }
+}
+.nav-footer-center i { color: $gold !important; }

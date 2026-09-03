@@ -1,0 +1,17 @@
+---
+title: Variables ambientales en la dinámica espacial de *Oligoryzomys longicaudatus* (huésped del virus
+  andes) en la región noroeste de Chubut, Argentina
+date: '2012-01-01'
+author:
+- name: V. Andreo
+pub-type: Journal article
+categories:
+- Hantavirus
+- Species distribution models
+- Remote sensing
+- Habitat use
+---
+
+## Citation
+
+V. Andreo (2012). Variables ambientales en la dinámica espacial de *Oligoryzomys longicaudatus* (huésped del virus andes) en la región noroeste de Chubut, Argentina. *Mastozoología Neotropical, (19), 1, pp. 179--181*.

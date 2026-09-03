@@ -1,0 +1,29 @@
+---
+title: 'Remote sensing biodiversity monitoring in Latin America: Emerging need for sustained local research
+  and regional collaboration to achieve global goals'
+date: '2024-01-27'
+author:
+- name: C. X. Garzon-Lopez
+- name: A. Miranda
+- name: D. Moya
+- name: V. Andreo
+pub-type: Journal article
+doi: 10.1111/geb.13804
+categories:
+- Biodiversity monitoring
+- Remote sensing
+image: ../../assets/img/headers/landsatlooks.jpg
+---
+
+
+[PDF](https://doi.org/10.1111/geb.13804)
+
+## Abstract
+
+**Aim** Biodiversity monitoring at global scales has been identified as one of the priorities to halt biodiversity loss. In this context, Latin America and the Caribbean (LAC), home to 60% of the global biodiversity, play an important role in the development of an integrative biodiversity monitoring platform. In this review, we explore to what extent LAC has advanced in the adoption of remote sensing for biodiversity monitoring and what are the gaps and opportunities to integrate local monitoring into global efforts to halt biodiversity loss. **Location** Latin America and the Caribbean. **Time period** 1995 to 2022. **Taxa studied** Terrestrial organisms. **Methods** We reviewed the application of remote sensing for biodiversity monitoring in LAC aiming to identify gaps and opportunities across countries, ecosystem types and research networks. **Results** Our analysis illustrates how the use of remote sensing in LAC is disproportionately low in relation to the biodiversity it supports. **Main conclusions** Build upon this analysis, we present, discuss and offer perspectives regarding four gaps identified in the application of remote sensing for biodiversity monitoring in Latin America and the Caribbean, namely (1) alignment between remote sensing data resolution and ecosystem structure; (2) investment in research, institutions and capacity building within researchers and stakeholders; (3) decolonized practices that promote access to publishing outlets and pluralistic participation among countries that facilitate exchange of experiences and capacity building; and (4) development of networks within and across regions to advance in ground surveys, ensure access and to foster the use of remote sensing data.
+
+![](../../assets/img/headers/landsatlooks.jpg){fig-alt="Remote sensing biodiversity monitoring in Latin America: Emerging need for sustained local research and regional collaboration to achieve global goals" .featured-figure}
+
+## Citation
+
+C. X. Garzon-Lopez, A. Miranda, D. Moya, V. Andreo (2024). Remote sensing biodiversity monitoring in Latin America: Emerging need for sustained local research and regional collaboration to achieve global goals. *Global Ecology and Biogeography, (33), e13804.*. <https://doi.org/10.1111/geb.13804>

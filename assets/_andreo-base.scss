@@ -1,0 +1,42 @@
+/*-- scss:defaults --*/
+// ============================================================
+// Verónica Andreo — paleta base (de andreo-theme.scss, ago 2026)
+// Compartida por las tres opciones. No mapea nada de Bootstrap:
+// eso lo hace cada opción.
+// ============================================================
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=PT+Sans:wght@400;700&display=swap');
+
+// Primarios
+$navy:   #0E2A3D !default;  // superficies oscuras, headers, footer
+$teal:   #1F7A6C !default;  // acento primario, links (5.0:1 sobre paper, AA)
+$ochre:  #C97A2E !default;  // acento secundario (3.2:1 sobre paper → no usar en texto de párrafo)
+$gold:   #F6C453 !default;  // acentos chicos sobre navy (9:1)
+
+// Neutrales
+$ink:    #16211A !default;
+$muted:  #5C6670 !default;
+$paper:  #FBFAF6 !default;
+$rule:   #DCD8CA !default;
+
+// Estados / datos
+$risk-high:   #C0392B !default;
+$risk-medium: #E1A73B !default;
+$risk-low:    #4C8C5B !default;
+$ochre-tint:  #FBF3E9 !default;
+$teal-tint:   #E9F1EF !default;
+$navy-tint:   #E9EEF1 !default;
+
+// Tipografías
+$font-family-sans-serif: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace:  "IBM Plex Mono", SFMono-Regular, Menlo, monospace !default;
+$headings-font-family:   "IBM Plex Serif", Georgia, serif !default;
+
+// Comunes a las tres
+$body-bg:     $paper !default;
+$body-color:  $ink !default;
+$border-color: $rule !default;
+$link-color:       $teal !default;
+$link-hover-color: $ochre !default;
+$primary:     $teal !default;
+$secondary:   $navy !default;

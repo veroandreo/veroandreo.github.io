@@ -1,0 +1,240 @@
+/*-- scss:defaults --*/
+
+// ── Google Fonts ──────────────────────────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;0,400;0,500;1,400&family=Red+Hat+Text:ital,wght@0,400;0,500;1,400&display=swap');
+
+// ── Palette C: Deep Teal + Terracotta + Eucalyptus ───────────────────────────
+$teal-900:    #1A2E2B;   // darkest (dark mode bg)
+$teal-800:    #213B37;
+$teal-700:    #2F4F4F;   // body text + headings (main dark)
+$teal-600:    #3D6560;
+$teal-500:    #557A74;
+$teal-400:    #7FA095;   // nav links, secondary
+$teal-300:    #A7BEAE;   // eucalyptus (light sage)
+$teal-200:    #B3D2CD;   // dusty teal (surfaces)
+$teal-100:    #D4E8E4;   // very light teal
+$teal-50:     #EBF4F2;   // barely-there
+$bg:          #FAFAF5;   // off-white body background
+
+$terra-dark:  #A34A26;   // hover/darker terracotta
+$terra:       #D36B3D;   // terracotta accent (links, active, CTA)
+$terra-light: #EBA882;   // light terracotta
+$terra-pale:  #F5DDD2;   // very light terracotta (hover bg)
+
+// ── Quarto bootstrap overrides ────────────────────────────────────────────────
+$primary:                   $terra;
+$secondary:                 $teal-400;
+
+$body-color:                $teal-700;
+$body-bg:                   $bg;
+
+$link-color:                $terra;
+$link-decoration:           underline;
+$link-hover-color:          $terra-dark;
+$link-hover-decoration:     none;
+
+// ── Typography ────────────────────────────────────────────────────────────────
+$font-family-sans-serif:    "Red Hat Text", system-ui, -apple-system, sans-serif;
+$headings-font-family:      "Petrona", Georgia, serif;
+$headings-font-weight:      400;
+$headings-color:            $teal-700;
+
+$font-family-monospace:     SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+$navbar-bg:                 transparent;
+$navbar-fg:                 $teal-400;
+
+// ── Code ─────────────────────────────────────────────────────────────────────
+$code-bg:                   $teal-50;
+$code-color:                $teal-700;
+$code-block-bg:             #ffffff;
+$code-block-border:         $teal-100;
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+$footer-fg:                 $teal-500;
+$footer-bg:                 $bg;
+
+
+/*-- scss:rules --*/
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+.navbar {
+  background: transparent;
+  border-bottom: 1px solid $teal-100;
+}
+
+.navbar-title {
+  font-family: $headings-font-family;
+  font-size: 1em;
+  font-weight: 400;
+  color: $teal-700;
+  letter-spacing: 0.04em;
+
+  &:hover {
+    border-bottom: 1px solid $teal-400 !important;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: $teal-400 !important;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 8px;
+  padding: 2px 2px 4px !important;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $terra !important;
+    border-bottom: 2px solid $terra !important;
+    padding: 2px 2px 2px !important;
+  }
+
+  &.active {
+    color: $terra !important;
+    border-bottom: 2px solid $terra !important;
+  }
+}
+
+// ── About / home page links ───────────────────────────────────────────────────
+.about-links .about-link i,
+.about-links .about-link span {
+  color: $terra !important;
+  &:hover { color: $terra !important; }
+}
+
+// "Learn more →" italic serif link
+a.about-links.subtitle {
+  font-family: $headings-font-family;
+  font-size: 1.1em;
+  font-style: italic;
+  color: $terra;
+  text-decoration: none;
+  border-bottom: 1px dotted $terra;
+
+  &:hover {
+    color: $terra-dark;
+    text-decoration: none;
+  }
+}
+
+// ── Page titles ───────────────────────────────────────────────────────────────
+.title {
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 1.15;
+  color: $teal-700;
+}
+
+.subtitle {
+  font-family: $font-family-sans-serif;
+  font-size: 1.1em;
+  color: $teal-400;
+}
+
+// ── Listing cards (blog, projects, talks, publications) ───────────────────────
+.card {
+  background: #ffffff;
+  border: none !important;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(47, 79, 79, 0.10);
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(47, 79, 79, 0.18);
+  }
+}
+
+.card-img, .card-img-top {
+  border-radius: 6px 6px 0 0;
+}
+
+// ── Categories ────────────────────────────────────────────────────────────────
+.quarto-category {
+  background-color: $teal-700;
+  color: $teal-50;
+  border-color: $teal-700;
+  font-size: 0.75em;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $terra;
+    color: white;
+    border-color: $terra;
+  }
+}
+
+.listing-category {
+  color: $teal-500 !important;
+  border-color: $teal-200 !important;
+  font-size: 0.75em;
+
+  &:hover {
+    background-color: $teal-500;
+    color: white !important;
+    border-color: $teal-500 !important;
+  }
+}
+
+// ── Inline code ───────────────────────────────────────────────────────────────
+p code:not(.sourceCode),
+li code:not(.sourceCode),
+td code:not(.sourceCode) {
+  background-color: $teal-50;
+  border: 1px solid $teal-100;
+  border-radius: 3px;
+  color: $teal-700;
+  padding: 1px 5px;
+}
+
+// ── Blockquote ────────────────────────────────────────────────────────────────
+.blockquote {
+  color: $teal-500;
+  border-left: 3px solid $teal-200;
+  font-style: italic;
+}
+
+// ── Callouts ─────────────────────────────────────────────────────────────────
+.callout-tip {
+  border-left-color: $terra !important;
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+.btn-primary {
+  background-color: $terra;
+  border-color: $terra;
+  &:hover {
+    background-color: $terra-dark;
+    border-color: $terra-dark;
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+.nav-footer {
+  border-top: 1px solid $teal-100;
+  font-size: 0.85em;
+  color: $teal-500;
+
+  a {
+    color: $teal-500;
+    &:hover { color: $terra; text-decoration: underline; }
+  }
+}
+
+.nav-footer-center i {
+  color: $terra !important;
+  &:hover { color: $terra !important; }
+}
+
+// ── Mobile ────────────────────────────────────────────────────────────────────
+@media screen and (max-width: 991.98px) {
+  .about-entity .about-links {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+  .nav-footer { flex-direction: row; }
+  .nav-footer-center { order: 1 !important; flex-basis: 100%; margin: 0 0 -1.2em 0; }
+  .nav-footer-right  { order: 2 !important; flex-basis: 100%; text-align: center; }
+  .nav-footer-left   { order: 3 !important; flex-basis: 100%; text-align: center; }
+}

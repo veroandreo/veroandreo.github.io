@@ -1,0 +1,29 @@
+---
+title: 'Multiple refugia and glacial expansions in the Tucumane-Bolivian Yungas: the phylogeography and
+  potential distribution modelling of *Calomys fecundus* (Rodentia: Cricetidae)'
+date: '2020-01-01'
+author:
+- name: J. D. Pinotti
+- name: A. M. Ferreiro
+- name: M. L. Martin
+- name: S. Levis
+- name: M. Chiappero
+- name: V. Andreo
+- name: R. E. Gonzalez-Ittig
+pub-type: Journal article
+doi: 10.1111/jzs.12375
+categories:
+- Genetics
+- Species distribution models
+- Rodents
+---
+
+[PDF](http://dx.doi.org/10.1111/jzs.12375)
+
+## Abstract
+
+The Yungas, a subtropical mountain rainforest of South America, has been little studied in relation to the evolutionary history of the large-bodied species of the genus *Calomys*. Particularly, two species have been synonymized: C. boliviae and C. fecundus; the first is only known from its type locality in the northern Bolivian Yungas, whereas the second is known along the Tucumane–Bolivian Yungas shared by Bolivia and Argentina. In this study, we combined a phylogeographic approach with ecological niche modeling, with samples covering most of the geographic range of C. fecundus. One mitochondrial and two nuclear genes were used for population genetic analyses. Current and paleoclimatic models were obtained. Nuclear genes resulted uninformative by retention of ancestral polymorphism with other species of *Calomys*. The mitochondrial marker revealed a complex network showing signals of several population expansions. Three genetic clusters in a latitudinal sense were detected, which are coincident with the three stable climatic zones estimated by current and paleoclimatic models. We determined a pattern of expansion during glacial cycles and ancestral refugia during interglacial cycles. None of the potential distribution models predicted the presence of C. fecundus in the type locality of C. boliviae. Therefore, we recommend making integrative taxonomic studies in the Bolivian Yungas, to determine whether or not C. fecundus and C. boliviae correspond to the same species.
+
+## Citation
+
+J. D. Pinotti, A. M. Ferreiro, M. L. Martin, S. Levis, M. Chiappero, V. Andreo, et al. (2020). Multiple refugia and glacial expansions in the Tucumane-Bolivian Yungas: the phylogeography and potential distribution modelling of *Calomys fecundus* (Rodentia: Cricetidae). *Journal of Zoological Systematics and Evolutionary Research, (58), pp. 1359--1373*. <https://doi.org/10.1111/jzs.12375>

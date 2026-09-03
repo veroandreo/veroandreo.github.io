@@ -1,0 +1,29 @@
+---
+title: Spatial analysis of *Aedes aegypti* activity for public health surveillance
+date: '2019-09-01'
+author:
+- name: X. Porcasi
+- name: V. Andreo
+- name: E. Aguirre
+- name: N. Rojas
+- name: J. Rubio
+- name: N. Frutos
+- name: C. Guzman
+- name: L. Lopez
+pub-type: Conference paper
+doi: 10.1109/RPIC.2019.8882135
+categories:
+- Aedes aegypti
+- Dengue
+- Clustering
+---
+
+[PDF](https://doi.org/10.1109/RPIC.2019.8882135)
+
+## Abstract
+
+In Córdoba city the surveillance of *Aedes aegypti*, the vector of Dengue, Zika and Chikungunya in Argentina, has been done regularly since 2011. Even there are general recommendations at international level about mosquito monitoring, its implementation in a operative way, arises with several questions about how to do, and how to interpret the output of *Aedes aegypti* sampling/monitoring. The last strategy introduced for Zoonosis Direction of Córdoba is the ovitrap sampling. This work aims to analyze spatially 300 traps distributed over the city, in the past 5 months of monitoring. Global and local indexes of spatial correlation are used over the 5 months. The high activity clusters detected converge in the same area and they are also analyzed in terms of urban cover types derived by Sentinel 2 images. This results provides useful information to control activities and to contribute in the optimization of surveillance strategy.
+
+## Citation
+
+X. Porcasi, V. Andreo, E. Aguirre, N. Rojas, J. Rubio, N. Frutos, et al. (2019). Spatial analysis of *Aedes aegypti* activity for public health surveillance. *2019 XVIII Workshop on Information Processing and Control (RPIC), pp. 214--217*. <https://doi.org/10.1109/RPIC.2019.8882135>

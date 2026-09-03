@@ -1,0 +1,27 @@
+---
+title: Summer–autumn distribution and abundance of the hantavirus host, *Oligoryzomys longicaudatus*, in
+  northwestern Chubut, Argentina
+date: '2012-01-01'
+author:
+- name: V. Andreo
+- name: C. Provensal
+- name: S. Levis
+- name: N. Pini
+- name: D. Enria
+- name: J. Polop
+pub-type: Journal article
+doi: 10.1644/11-MAMM-A-201.1
+categories:
+- Hantavirus
+- Rodents
+---
+
+[PDF](https://doi.org/10.1644/11-MAMM-A-201.1)
+
+## Abstract
+
+We examined population density of _Oligoryzomys longicaudatus_ (colilargo) and prevalence of Andes virus (ANDV) antibody at regional and landscape spatial scales in northwestern Chubut Province (Argentina) and contrasted it with climatic variables recorded by meteorologic stations near the study area. Mice were trapped in late summer–early fall (March–April) for 3 years (2007–2009). The composition of the rodent assemblage and species representation in the community varied among years, regions (forest, ecotone, and steppe), and landscape units (*Nothofagus* and *Austrocedrus* forests, sweet briar shrublands, and without sweet briar shrublands). Colilargos occurred in all regions and landscape units within the study area, from dense forest to open habitats such as steppe. The species dominated the rodent assemblages of ecotone and forest at a regional scale and the assemblages in sweet briar shrublands and *Austrocedrus* forests at a landscape scale. Abundance of colilargos also varied among periods, regions, and landscape units. Antibodies to ANDV were found in all regions but not in every landscape unit. Thus there is a potential for human hantavirus pulmonary syndrome (HPS) cases to occur not only in forests and shrublands, but also in steppe. At a landscape scale, *Nothofagus* forests appeared to pose a higher risk than *Austrocedrus* in wet years, because colilargo abundance and ANDV antibody prevalence were significantly greater. Within ecotone, sweet briar shrublands posed greater risk than habitats without sweet briar. Sweet briar shrublands were the landscape unit with the highest colilargo abundances during the driest periods. Sweet briar shrublands may play an important role in HPS dynamics, and should be considered when designing prevention policies.
+
+## Citation
+
+V. Andreo, C. Provensal, S. Levis, N. Pini, D. Enria, J. Polop (2012). Summer–autumn distribution and abundance of the hantavirus host, *Oligoryzomys longicaudatus*, in northwestern Chubut, Argentina. *Journal of Mammalogy, (93), 6, pp. 1559--1568*. <https://doi.org/10.1644/11-MAMM-A-201.1>

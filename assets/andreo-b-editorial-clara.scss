@@ -1,0 +1,95 @@
+/*-- scss:defaults --*/
+// ============================================================
+// OPCIÓN B — Editorial clara
+// La navbar del demo Quarto pero con esta paleta: fondo paper,
+// filete rule, subrayado teal en hover/activo. Títulos serif navy,
+// tarjetas con borde, ocre reservado para año y PDF.
+// Uso: theme: [cosmo, _andreo-base.scss, andreo-b-editorial-clara.scss, _andreo-comun.scss]
+// ============================================================
+
+$navbar-bg: #FBFAF6;
+$navbar-fg: #5C6670;
+$footer-bg: #FBFAF6;
+$footer-fg: #5C6670;
+
+$headings-color:   #0E2A3D;
+$code-block-bg:    #F2F0E8;
+$link-decoration:  none;
+
+/*-- scss:rules --*/
+
+.navbar {
+  border-bottom: 1px solid $rule;
+}
+
+.navbar-title {
+  color: $navy !important;
+  font-size: 1em;
+}
+
+.navbar-nav .nav-link {
+  color: $muted !important;
+  &:hover, &.active {
+    color: $teal !important;
+    border-bottom-color: $teal !important;
+  }
+}
+
+// Subrayado sutil de los links de prosa. Se excluyen los <a> que Quarto genera
+// en los listados (la tarjeta entera es un <a>, y su border-bottom cae debajo de
+// las tags y parece un subrayado) y los botones sociales.
+main a:not(.btn):not(.nav-link):not(.quarto-grid-link):not(.no-external):not(.about-link):not(.quarto-title-meta-contents a) {
+  border-bottom: 1px solid rgba(31, 122, 108, 0.35);
+  &:hover { color: $ochre; border-bottom-color: $ochre; }
+}
+
+// Títulos de página y de sección en serif, con filete al costado
+.title { font-size: 2.3em; color: $navy; }
+
+// Rótulo de sección del home ("RECENT PUBLICATIONS"). Ojo: NO usar
+// `.quarto-listing .listing-title`, que es el título de cada tarjeta.
+h2.section-label {
+  font-size: 1.32rem;
+  color: $navy;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  &::after { content: ""; flex: 1; height: 1px; background: $rule; }
+}
+
+// Tarjetas: borde en vez de sombra
+.card {
+  background: #fff;
+  border: 1px solid $rule !important;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+  &:hover { border-color: $teal !important; transform: translateY(-2px); }
+}
+
+.card-title { font-family: $headings-font-family; font-weight: 600; }
+
+// Fecha / año en mono ocre, sin chip
+.listing-date, .quarto-title-meta-contents .date {
+  font-family: $font-family-monospace;
+  font-size: 0.78em;
+  letter-spacing: 0.08em;
+  color: $ochre;
+}
+
+// Categorías: píldoras al aire
+.quarto-category, .listing-category {
+  background-color: transparent !important;
+  border: 1px solid $rule !important;
+  color: $muted !important;
+  border-radius: 999px;
+  font-size: 0.72em;
+  &:hover { border-color: $teal !important; color: $teal !important; }
+}
+
+.nav-footer {
+  border-top: 1px solid $rule;
+  font-size: 0.85em;
+  a { color: $muted; &:hover { color: $teal; } }
+}
+.nav-footer-center i { color: $teal !important; }

@@ -1,0 +1,29 @@
+---
+title: Spatial distribution of *Aedes aegypti* oviposition temporal patterns and their relationship with
+  environment and Dengue incidence
+date: '2021-10-09'
+author:
+- name: V. Andreo
+- name: X. Porcasi
+- name: C. Guzman
+- name: L. Lopez
+- name: C. M. Scavuzzo
+pub-type: Journal article
+doi: 10.3390/insects12100919
+categories:
+- Mosquitoes
+- Clustering
+- Time series
+- Remote sensing
+- Machine learning
+---
+
+[PDF](https://doi.org/10.3390/insects12100919) · [Code](https://github.com/veroandreo/mosquito-ts-clust)
+
+## Abstract
+
+_Aedes aegypti_, the mosquito species transmitting dengue, zika, chikungunya and yellow fever viruses, is fully adapted to thrive in urban areas. The temporal activity of this mosquito, however, varies within urban areas which might imply different transmission risk. In this work, we hypothesize that temporal differences in mosquito activity patterns are determined by local environmental conditions. Hence, we explore the existence of groups of temporal patterns in weekly time series of Ae. aegypti ovitraps records (2017–2019) by means of time series clustering. Next, with the aim of predicting risk in places with no mosquito field data, we use machine learning classification tools to assess the association of temporal patterns with environmental variables derived from satellite imagery and predict temporal patterns over the city area to finally test the relationship with dengue incidence. We found three groups of temporal patterns that showed association with land cover diversity, variability in vegetation and humidity and, heterogeneity measured by texture indices estimated over buffer areas surrounding ovitraps. Dengue incidence on a neighborhood basis showed a weak but positive association with the percentage of pixels belonging to only one of the temporal patterns detected. The understanding of the spatial distribution of temporal patterns and their environmental determinants might then become highly relevant to guide the allocation of prevention and potential interventions. Further investigation is still needed though to incorporate other determinants not considered here.
+
+## Citation
+
+V. Andreo, X. Porcasi, C. Guzman, L. Lopez, C. M. Scavuzzo (2021). Spatial distribution of *Aedes aegypti* oviposition temporal patterns and their relationship with environment and Dengue incidence. *Insects, (12), 919*. <https://doi.org/10.3390/insects12100919>

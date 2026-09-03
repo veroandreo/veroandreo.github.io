@@ -1,0 +1,29 @@
+---
+title: 'Rodents and satellites: Predicting mice abundance and distribution with Sentinel-2 data'
+date: '2019-01-01'
+author:
+- name: V. Andreo
+- name: M. Belgiu
+- name: D. Brito Hoyos
+- name: F. Osei
+- name: C. Provensal
+- name: A. Stein
+pub-type: Journal article
+doi: 10.1016/j.ecoinf.2019.03.001
+categories:
+- Sentinel-2
+- Landsat
+- GRASS
+- Remote sensing
+- Rodents
+---
+
+[PDF](https://doi.org/10.1016/j.ecoinf.2019.03.001)
+
+## Abstract
+
+Remote sensing data is widely used in numerous ecological applications. The Sentinel-2 satellites (S2 A and B), recently launched by the European Spatial Agency's (ESA), provides  at present the best revisit time, spatial and spectral resolution among the freely available remote sensing optical data. In this study, we explored the potential of S2 enhanced spectral and spatial resolution to explain and predict mice abundances and distribution in border habitats of agroecosystems. We compared the predictive ability of different vegetation and water indices derived from S2 and Landsat 8 (L8) imagery. Our analyses revealed that the best predictor of mice abundance was L8-derived Enhanced Vegetation Index (EVI). S2-based indices, however, outperformed those computed from L8 bands for indices estimated simultaneously to mice trappings and for mice distribution models. Furthermore, indices including S2 red-edge bands were the best predictors of the distribution of the two most common rodent species in the ensemble. The findings of this study can be used as guidelines when selecting the sensors and vegetation variables to be included in more complex models aimed at predicting the distribution and risk of various vector-borne diseases, and especially rodents in other agricultural landscapes.
+
+## Citation
+
+V. Andreo, M. Belgiu, D. Brito Hoyos, F. Osei, C. Provensal, A. Stein (2019). Rodents and satellites: Predicting mice abundance and distribution with Sentinel-2 data. *Ecological Informatics, (51), pp. 157--167*. <https://doi.org/10.1016/j.ecoinf.2019.03.001>

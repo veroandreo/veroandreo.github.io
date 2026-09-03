@@ -1,0 +1,16 @@
+---
+title: "Talks and workshops"
+toc: false
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  categories: true
+  fields: [title, date, categories, image]
+  image-height: "150px"
+  image-placeholder: ../assets/img/headers/bubbles-wide.jpg
+format:
+  html:
+    page-layout: full
+---

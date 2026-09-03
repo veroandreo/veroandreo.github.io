@@ -1,0 +1,26 @@
+---
+title: A geospatial analysis of cardiometabolic diseases and their risk factors considering environmental
+  features in a midsized city in Argentina
+date: '2023-10-23'
+author:
+- name: M. Campero
+- name: C. M. Scavuzzo
+- name: V. Andreo
+- name: M. S. Mileo
+- name: M. B. Franzois
+- name: M. G. Oberto
+- name: C. Gonzalez Rodriguez
+- name: M. D. Defagó
+pub-type: Journal article
+doi: 10.4081/gh.2023.1212
+---
+
+[PDF](https://doi.org/10.4081/gh.2023.1212)
+
+## Abstract
+
+New approaches to the study of cardiometabolic disease (CMD) distribution include analysis of built environment (BE), with spatial tools as suitable instruments. We aimed to characterize the spatial dissemination of CMD and the associated risk factors considering the BE for people attending the Non-Invasive Cardiology Service of Hospital Nacional de Clinicas in Córdoba City, Argentina during the period 2015-2020. We carried out an observational, descriptive, cross-sectional study performing non-probabilistic convenience sampling. The final sample included 345 people of both sexes older than 35 years. The CMD data were collected from medical records and validated techniques and BE information was extracted from Landsat-8 satellite products. A geographic information system (GIS) was constructed to assess the distribution of CMD and its risk factors in the area. Out of the people sampled, 41% showed the full metabolic syndrome and 22.6% only type-2 diabetes mellitus (DM2), a cluster of which was evidenced in north-western Córdoba. The risk of DM2 showed an association with high values of the normalized difference vegetation index (NDVI) (OR= 0.81; 95% CI: - 0.30 to 1.66; p=0.05) and low normalized difference built index (NDBI) values that reduced the probability of occurrence of DM2 (OR= -1.39; 95% CI: -2.62 to -0.17; p=0.03). Considering that the results were found to be linked to the environmental indexes, the study of BE should include investigation of physical space as a fundamental part of the context in which people develop medically within society. The novel collection of satellite-generated information on BE proved efficient.
+
+## Citation
+
+M. Campero, C. M. Scavuzzo, V. Andreo, M. S. Mileo, M. B. Franzois, M. G. Oberto, et al. (2023). A geospatial analysis of cardiometabolic diseases and their risk factors considering environmental features in a midsized city in Argentina. *Geospatial Health, (18), 2.*. <https://doi.org/10.4081/gh.2023.1212>

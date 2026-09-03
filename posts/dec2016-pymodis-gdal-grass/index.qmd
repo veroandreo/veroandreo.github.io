@@ -1,0 +1,141 @@
+---
+title: 'pymodis, GDAL and GRASS GIS: A FOSS4G example to build time series of MODIS data'
+date: '2016-12-28'
+categories:
+- GRASS
+- MODIS
+- Time series
+---
+
+Recently, the National Aeronautics and Space Administration (NASA) has 
+re-processed all the MODIS archive and made available the sixth version 
+for all 
+[land products](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table). 
+In this post, I share a script that combines different FOSS4G tools to 
+download, mosaic, re-project, subset, import, apply quality assessment 
+flags and build a time series of MODIS LST daily products. First, we use
+the [pymodis](http://www.pymodis.org/) tool 
+[modis_download](http://www.pymodis.org/scripts/modis_download.html) 
+to automatically download 4 tiles of the MOD11A1 product for the period
+2010-2016. 
+Note that you need to register yourself at 
+[https://urs.earthdata.nasa.gov/users/new](https://urs.earthdata.nasa.gov/users/new) 
+and enable the applications at 
+[https://urs.earthdata.nasa.gov/home](https://urs.earthdata.nasa.gov/home) 
+to be able to download MODIS land products. 
+
+```bash
+# Download MOD11A1.006 - daily land surface temperature (1km) 
+modis_download.py -P your_password -U your_user -s MOLT -p MOD11A1.006 -t h19v04,h19v05,h20v04,h20v05 -f 2010-01-01 -e 2016-12-31 . 
+```
+
+Then, we use [modis_mosaic](http://www.pymodis.org/scripts/modis_mosaic.html) 
+to build daily mosaics for LST Day and QC Day bands by means of VRT files. 
+
+```bash
+modis_mosaic.py -v -s "1 1 0 0 0 0 0 0 0 0 0 0" list_of_files.txt 
+```
+
+After that, we re-project the mosaics to EPSG 3035 and convert them to 
+GTiff format with [modis_convert](http://www.pymodis.org/scripts/modis_convert.html). 
+
+```bash
+# cut the first part of the filename containing date (year+doy): A2015365 
+LIST_DATES=`ls *.vrt | cut -d'_' -f1` 
+
+for DAY in $LIST_DATES ; do 
+  # convert to tif and project 
+  modis_convert.py -g 1000 -e 3035 -v -s "(1)" -o ${DAY}_LST_Day_1km_mosaic ${DAY}_None_LST_Day_1km.vrt 
+done 
+```
+
+Once we have the tif files, we perform a spatial subset for our area of 
+interest. For this purpose, we combine the GRASS command 
+[g.region](https://grass.osgeo.org/grass78/manuals/g.region.html) and 
+the possibility to use eval command with 
+[gdal_translate](http://www.gdal.org/gdal_translate.html) 
+utility from GDAL/OGR library. 
+
+```bash
+# set region 
+g.region -p region=your_study_area 
+eval `g.region -g` 
+
+for DAY in $LIST_DATES ; do 
+  # spatial subseting 
+  gdal_translate -of GTiff -projwin $w $n $e $s ${DAY}_LST_Day_1km_mosaic.tif ${DAY}_LST_Day_1km_subset.tif 
+done 
+```
+
+Once the subset is done, we import the resulting maps into our GRASS 
+database with [r.in.gdal](https://grass.osgeo.org/grass78/manuals/r.in.gdal.html),
+and we remove all VRT, HDF and TIF files. 
+
+```bash
+for DAY in $LIST_DATES ; do 
+  # import into GRASS 
+  r.in.gdal input=${DAY}_LST_Day_1km_subset.tif output=${DAY}_LST_Day_1km 
+  
+  # remove vrt, tiff and hdf files 
+  rm -f ${DAY}_None_LST_Day_1km.vrt ${DAY}_None_LST_Day_1km_mosaic.tif ${DAY}_LST_Day_1km_subset.tif 
+done 
+```
+
+We then use [i.modis.qc](https://grass.osgeo.org/grass78/manuals/i.modis.qc.html) 
+to get QC flags for LST and apply them as in 
+[Metz et al. (2014)](http://www.mdpi.com/2072-4292/6/5/3822) 
+to keep the highest quality data. 
+
+```bash
+for map in `g.list type=raster pattern=*_QC_*` ; do 
+  i.modis.qc input=${map} output=${map}_mandatory_qa productname=mod11A1 qcname=mandatory_qa_11A1 
+  i.modis.qc input=${map} output=${map}_lst_error_qa productname=mod11A1 qcname=lst_error_11A1 
+done
+
+list_lst=`g.list rast pat=*LST_Day_1km` 
+
+for m in ${list_lst} ; do 
+  # cut common part of filenames 
+  i=`echo $m | cut -c 1-23` 
+  r.mapcalc --o expression="${m} = if(${i}_mandatory_qa < 2 && ${i}_lst_error_qa == 0, ${m}, null())" 
+done 
+```
+
+With all the former steps done, we can build a daily time series for LST data... 
+
+```bash
+t.create type=strds temporaltype=absolute \
+  output=LST_Day_daily \
+  title="LST Day 1km MOD11A1.006" \
+  description="Daily LST Day 1km MOD11A1.006, 2010-2016" 
+
+g.list rast pattern=*LST_Day output=filelist_lst.txt 
+
+t.register -i input=LST_${lst}_greece_daily \
+  file=filelist_lst.txt \
+  start="2010-01-01" \
+  increment="1 day" 
+```
+
+**and you are ready to play!** You may, for example, use the GRASS 
+Add-ons [r.hants](https://grass.osgeo.org/grass78/manuals/addons/r.hants.html) 
+or [r.series.lwr](https://grass.osgeo.org/grass78/manuals/addons/r.series.lwr.html) 
+to reconstruct/fill the gaps in the time series and then, you have a 
+whole set of temporal modules at your fingertips to perform different 
+tasks. You can check the 
+[Temporal Data Processing](https://grasswiki.osgeo.org/wiki/Temporal_data_processing) 
+wiki for several examples. 
+
+_Extra:_ The extra beauty of all this, is that it is possible to run all 
+these steps as a script with the new 
+[\--exec](https://grass.osgeo.org/grass78/manuals/grass7.html) 
+interface of GRASS GIS. For example, if you name your script lst_processing.sh 
+(do not forget to write the shebang in the beginning of the file: #!/bin/bash), 
+then, you can run it in a non-interactive GRASS session as: 
+
+```bash
+grass78 /path/to/grassdata/location/mapset --exec sh lst_processing.sh 
+```
+
+Enjoy! :) 
+and Happy New Year!

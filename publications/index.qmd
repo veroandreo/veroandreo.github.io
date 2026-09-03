@@ -1,0 +1,20 @@
+---
+title: "Publications"
+toc: false
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  date-format: "YYYY"
+  type: grid
+  grid-columns: 3
+  categories: true
+  sort-ui: [date, title]
+  filter-ui: true
+  fields: [title, author, date, categories, image]
+  image-height: "170px"
+  image-placeholder: ../assets/img/headers/landsatlooks.jpg
+  page-size: 24
+format:
+  html:
+    page-layout: full
+---

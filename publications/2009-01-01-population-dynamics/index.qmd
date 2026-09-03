@@ -1,0 +1,28 @@
+---
+title: 'Population dynamics of two rodent species in agro-ecosystems of central Argentina: intra-specific
+  competition, land-use, and climate effects'
+date: '2009-01-01'
+author:
+- name: V. Andreo
+- name: M. Lima
+- name: M. C. Provensal
+- name: J. Priotto
+- name: J. Polop
+pub-type: Journal article
+doi: 10.1007/s10144-008-0123-3
+categories:
+- Time series
+- Population dynamics
+- Modeling
+- Rodents
+---
+
+[PDF](https://doi.org/10.1007/s10144-008-0123-3)
+
+## Abstract
+
+Understanding the role of feedback structure (endogenous processes) and exogenous (climatic and environmental) factors in shaping the dynamics of natural populations is a central challenge within the field of population ecology. We attempted to explain the numerical fluctuations of two sympatric rodent species in agro-ecosystems of central Argentina using Royama’s theoretical framework for analyzing the dynamics of populations influenced by exogenous climatic forces. We found that both rodent species show a first-order negative feedback structure, suggesting that these populations are regulated by intra-specific competition (limited by food, space, or enemy-free space). In *Akodon azarae* endogenous structure seems to be very strongly influenced by human land-use represented by annual minimum normalized difference vegetation index (NDVI), with spring and summer rainfall having little influence upon carrying capacity. *Calomys venustus*’ population dynamics, on the other hand, seem to be more affected by local climate, also with spring and summer rainfall influencing the carrying capacity of the environment, but combined with spring mean temperature.
+
+## Citation
+
+V. Andreo, M. Lima, M. C. Provensal, J. Priotto, J. Polop (2009). Population dynamics of two rodent species in agro-ecosystems of central Argentina: intra-specific competition, land-use, and climate effects. *Population Ecology, (51), 2, pp. 297--306*. <https://doi.org/10.1007/s10144-008-0123-3>

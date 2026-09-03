@@ -1,0 +1,23 @@
+---
+title: Variabilidad espacio-temporal de florecimientos fitoplanctónicos en el talud y plataforma continental
+  de la Patagonia Argentina usando sensores remotos
+date: '2015-01-01'
+author:
+- name: V. Andreo
+pub-type: Preprint
+categories:
+- Time series
+- GRASS
+- MODIS
+- Ocean color
+---
+
+[PDF](http://www.famaf.unc.edu.ar/wp-content/uploads/2016/02/28-Gulich-Andreo-S%C3%AD.pdf)
+
+## Abstract
+
+In this work we studied different aspects of spatio-temporal variability of chlorophyll-a concentration in the Continental Shelf and shelf break of the Argentinian patagonic region by means of a 11-years MODIS/Aqua L3 time series of 4 km spatial resolution and 8 days temporal resolution. We first analyzed the availability of valid data over the study region and characterized its monthly and annual variability. Then, we studied the spatio-temporal variability of satellite chlorophyll-a concentration and mapped descriptive statistics such as mean and standard deviation for the whole time series (2003-2013) and interannualy. We also obtained seasonal and monthly climatologies for those statistics and analyzed anomalies from the mean. We then compared different methods of gap-filling and reconstructing the time series (i.e.: DINEOF and HANTS). Next, we described and analyzed the spatial variability of phenological indexes, such as bloom starting date (estimated by maximun rate of change and threshold methods) and date of maximum concentration. Finally, we estimated and described statistical indexes such as bloom occurrence frequency. The results showed that, spatially, chlorophyll-a concentration changes during the cycle of a year and among years, both in attained values and distribution and extension of high concentration areas. However, a certain constancy was observed in location and timing of bloom (and high concentration) occurrence. The spatial variability in each moment, or for the aggregation of a certain period, is likely to be dependent on environmental differences among diverse areas and the particular dynamics associated to geographic position. The temporal variability, on the one hand, can be related to seasonal regular cycles in lightning conditions, nutrient flux, vertical stratification, among others. On the other hand, the inter-annual variability observed in chlorophyll-a concentration and phenological indexes considered might be related to external or extrinsic forces associated with climate changes. This study intended to be a baseline on the spatio-temporal patterns of variation of chlorophyll-a concentration in the continental shelf and shelf break of the Argentinian patagonic region, though it is acknowledged that ocean dynamics is too complex to be addressed with a unique index. Nevertheless, it is a first approach to the problem and set the basis to continue researching more effective methods to study algal blooms (and their variability) in the Argentinian sea, with the final goal of including these kind of products in models that allow to predict the occurrence of harmfull algal blooms, the dynamics of marine system (under extractive pressure) and the effects of global changes over climatic and biogeochemical cycles. Finally, this work also intended to contribute with science data to the development and planning of CONAE’s SABIA-Mar mission, which will provide high resolution ocean color data over Argentinian coastal zones and continental shelf.
+
+## Citation
+
+V. Andreo (2015). Variabilidad espacio-temporal de florecimientos fitoplanctónicos en el talud y plataforma continental de la Patagonia Argentina usando sensores remotos. *MSc thesis. Universidad Nacional de Córdoba. Córdoba, Argentina.*.

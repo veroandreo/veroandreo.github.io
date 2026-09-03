@@ -1,0 +1,22 @@
+---
+title: Análisis de una serie temporal de clorofila-a a partir de imágenes MODIS de un embalse eutrófico
+date: '2016-01-01'
+author:
+- name: A. German
+- name: C. Tauro
+- name: V. Andreo
+- name: I. Bernasconi
+- name: A. Ferral
+pub-type: Conference paper
+doi: 10.1109/ARGENCON.2016.7585365
+---
+
+[PDF](https://doi.org/10.1109/ARGENCON.2016.7585365)
+
+## Abstract
+
+Eutrophication is a phenomenon that affects many water bodies around the world. San Roque Dam is not an exception since it has been going through a huge increase in algae concentration. In this framework, its monitoring is a key matter, as is the source of water supply most important of Cordoba city. Remote sensing is a fundamental tool to complement traditional in situ monitoring and understand processes that occur in the reservoir. This study presents a semi-empirical algorithm obtained from MODIS data and in situ chlorophyll-a measurements, provided by the Ministry of Water Resources of Cordoba Province. From this model, a daily time chlorophyll-a time series was obtained from 2001 to 2014. Statistical analysis of the series indicate that water quality of the reservoir has worsened when comparing sets of last (2014–2010) and first (2010–2014) five years.
+
+## Citation
+
+A. German, C. Tauro, V. Andreo, I. Bernasconi, A. Ferral (2016). Análisis de una serie temporal de clorofila-a a partir de imágenes MODIS de un embalse eutrófico. *2016 IEEE Biennial Congress of Argentina (ARGENCON), pp. 1--6*. <https://doi.org/10.1109/ARGENCON.2016.7585365>

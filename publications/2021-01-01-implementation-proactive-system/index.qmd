@@ -1,0 +1,30 @@
+---
+title: Implementation of a proactive system to monitor *Aedes aegypti* populations using open access historical
+  and forecasted meteorological data
+date: '2021-06-01'
+author:
+- name: E. Aguirre
+- name: V. Andreo
+- name: X. Porcasi
+- name: L. Lopez
+- name: C. Guzman
+- name: P. Gonzalez
+- name: C. M. Scavuzzo
+pub-type: Journal article
+doi: 10.1016/j.ecoinf.2021.101351
+categories:
+- Population dynamics
+- Modeling
+- Dengue
+- Mosquitoes
+---
+
+[PDF](https://doi.org/10.1016/j.ecoinf.2021.101351) · [Code](https://github.com/CONAE-GVT/aedes_aegypti/tree/master)
+
+## Abstract
+
+Due to the global increase in mosquito-borne diseases outbreaks it is recommended to increase surveillance and monitoring of vector species to respond swiftly and with early warning indicators. Usually, however, the information about vector presence and activity seems to be insufficient to implement timely and effective control strategies. Here we present an improved mathematical model of *Aedes aegypti* population dynamics with the aim of making the Dengue surveillance system more proactive. The model considers the four life stages of the mosquito: egg, larva, pupa and adult. As driving factors, it incorporates temperature which affects development and mortality rates at certain stages, and precipitation which is known to affect egg submergence and hatching, as well as larval mortality associated with desiccation. Our mechanistic model is implemented as a free and stand-alone system that automatically retrieves all needed inputs, runs a simulation and shows the results. A major improvement in our implementation is the capacity of the system to predict the population dynamics of Ae. aegypti in the near future, given that it uses gridded weather forecast data. Hence, it is independent by meteorological station proximity. The model predictions are compared with field data from Córdoba City, Argentina. Although field data have high variability, an overall accordance has been observed. The comparison of results obtained using observed weather data, with the simulations based on forecasts, suggests that the modeled dynamics are accurate up to 15 days in advance. Preliminary results of Ae. aegypti population dynamics for a consecutive three-year period, spanning different eco-regions of Argentina, are presented, and demonstrate the flexibility of the system.
+
+## Citation
+
+E. Aguirre, V. Andreo, X. Porcasi, L. Lopez, C. Guzman, P. Gonzalez, et al. (2021). Implementation of a proactive system to monitor *Aedes aegypti* populations using open access historical and forecasted meteorological data. *Ecological Informatics, (64), 101351*. <https://doi.org/10.1016/j.ecoinf.2021.101351>

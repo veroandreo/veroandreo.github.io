@@ -1,0 +1,35 @@
+---
+title: Spatiotemporal data processing and visualization in GRASS GIS
+date: '2018-08-23'
+author:
+- name: Veronica Andreo
+event: Geostat 2018
+event_url: http://geostat-course.org/2018
+location: Prague, Czech Republic
+when: 2018-08-23 11:00–12:30
+categories:
+- GRASS
+- Time series
+- Remote sensing
+image: featured.jpg
+---
+
+[Slides](https://gitpitch.com/veroandreo/grass-gis-geostat-2018/master?p=tgrass&grs=gitlab) · [Video](https://www.youtube.com/watch?v=o4DTeb-6e7I&list=PLXUoTpMa_9s3T-K7m8LO3Mf29g9E4EJLs&index=28)
+
+## Abstract
+
+GRASS GIS is a general purpose Free and Open Source geographic information system (GIS) that offers raster, 3D raster and vector data processing support. Since the initial release of the version 7, in February 2015, GRASS GIS has also oficially incorporated a powerful support for time series (TGRASS). Through this, GRASS GIS became the first open source temporal GIS with comprehensive spatio-temporal analysis, processing and visualization capabilities. This functionality makes it easy to manage, analyse and visualize for example climatic data, vegetation index time series, harvest data or landuse changes over time. Time series are handled through new data types called space time data sets (stds) which are used as input in TGRASS modules. In this way, TGRASS simplifies the processing and analysis of large time series of hundreds of thousands of maps. For example, users can aggregate a daily time series into a monthly time series in just one line; get the date per year in which a certain value is reached; select maps from a time series in time periods in which a different time series reaches a maximum value, perform different temporal as well as spatial operations among time series, and so much more. In this tutorial we will go through the creation of time series (stds) and registration of maps, temporal algebra, temporal aggregation, queries and statistics, as well as different visualizations. The tutorial is hosted at [https://gitlab.com/veroandreo/grass-gis-geostat-2018](https://gitlab.com/veroandreo/grass-gis-geostat-2018)
+
+<!---
+::: {.callout-note}
+Click on the **Slides** button above to view the built-in slides feature.
+:::
+
+Slides can be added in a few ways:
+
+- **Create** slides using Academic's [*Slides*](https://sourcethemes.com/academic/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the event file
+- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the event file
+- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+
+Further event details can easily be added to this page using *Markdown* and $\rm \LaTeX$ math code.
+--->

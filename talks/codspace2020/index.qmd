@@ -1,0 +1,22 @@
+---
+title: Geo-tecnologías y sensado remoto para aplicaciones en Salud Pública
+date: '2020-10-28'
+author:
+- name: Veronica Andreo
+event: CODSpace 2020
+event_url: https://cods.uniandes.edu.co/imagenes-satelitales-para-predecir-enfermedades-transmitidas-por-vectores/
+location: Webinar
+when: 2020-10-28 21:30–23:00
+categories:
+- Time series
+- Remote sensing
+- Public health
+- Vector-borne diseases
+image: featured.jpeg
+---
+
+[Slides](https://gitpitch.com/veroandreo/presentacion-codspace/master?&grs=gitlab) · [Video](http://www.youtube.com/watch?v=-ZMkDZ30bzw)
+
+## Abstract
+
+Una sexta parte de las enfermedades y discapacidades sufridas en todo el mundo se deben a enfermedades transmitidas por vectores, y más de la mitad de la población mundial se encuentra actualmente en situación de riesgo según la Organización Mundial de la Salud. Frente a este escenario, y los cambios producto de la crisis climática global, las geo-tecnologías y el sensado remoto, han adquirido una renovada relevancia en lo referente a aplicaciones en Salud Pública. Los datos provenientes de sensado remoto tienen claras ventajas sobre las mediciones terrestres convencionales porque pueden recoger información global, de forma repetida y automática. Esto permite contar con información sobre factores ambientales estrechamente relacionados con la ocurrencia de vectores y reservorios de enfermedades. Estos factores ambientales se utilizan como co-variables en modelos de distribución potencial de vectores y reservorios, como así también en la predicción de la probabilidad de ocurrencia de enfermedades. Los mapas basados en predicciones espaciales de dichos modelos pueden utilizarse para orientar geográficamente intervenciones como tratamiento con drogas, prevención, control vectorial o ambiental, asignación de recursos, etc. En esta charla haré un recorrido por distintas aplicaciones del sensado remoto y las geo-tecnologías a enfermedades como hantavirus, dengue, fiebre del Nilo Occidental y leishmaniasis. Se examinarán también distintas limitaciones, desafíos y direcciones futuras vinculadas al desarrollo de herramientas para la medición de los objetivos del desarrollo sustentable.

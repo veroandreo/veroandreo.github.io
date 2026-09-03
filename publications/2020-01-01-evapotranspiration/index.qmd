@@ -1,0 +1,25 @@
+---
+title: 'On parameterizing soil evaporation in a direct remote sensing model of ET: PT‐JPL'
+date: '2020-05-04'
+author:
+- name: M. Marshall
+- name: K. Tu
+- name: V. Andreo
+pub-type: Journal article
+doi: 10.1029/2019WR026290
+categories:
+- Remote sensing
+- MODIS
+- Land surface temperature
+- Climate
+---
+
+[PDF](https://doi.org/10.1029/2019WR026290)
+
+## Abstract
+
+Remote sensing models that measure evapotranspiration directly from the Penman‐Monteith or Priestley‐Taylor equations typically estimate the soil evaporation component over large areas using coarse spatial resolution relative humidity (RH) from geospatial climate datasets. As a result, the models tend to underperform in dry areas at local scales where moisture status is not well represented by surrounding areas. Earth observation sensors that monitor large‐scale global dynamics (e.g., MODIS) afford comparable spatial coverage and temporal frequency, but at a higher spatial resolution than geospatial climate datasets. In this study, we compared soil evaporation parameterized with optical and thermal indices derived from MODIS to RH‐based soil evaporation as implemented in the Priestley Taylor‐Jet Propulsion Laboratory (PT‐JPL) model. We evaluated the parameterizations by subtracting PT‐JPL transpiration from observation‐based flux tower evapotranspiration in agricultural fields across the contiguous United States. We compared the apparent thermal inertia (ATI) index, land surface water index (LSWI), normalized difference water index (NDWI), and a new index derived from red and shortwave infrared bands (soil moisture divergence index [SMDI]). Relationships were significant at the 95% confidence band. LSWI and SMDI explained 18–33% of variance in 8‐day soil evaporation. This led to a 3–11% increase in explained ET variance. LSWI and SMDI tended to perform better at the irrigated sites than RH. LSWI and SMDI led to markedly better performance over other indices at a seasonal time step. L‐band microwave backscatter can penetrate clouds and can distinguish soil from canopy moisture content. We are presently fusing red‐SWIR‐RADAR to improve soil evaporation estimation.
+
+## Citation
+
+M. Marshall, K. Tu, V. Andreo (2020). On parameterizing soil evaporation in a direct remote sensing model of ET: PT‐JPL. *Water Resources Research, (56), e2019WR026290*. <https://doi.org/10.1029/2019WR026290>

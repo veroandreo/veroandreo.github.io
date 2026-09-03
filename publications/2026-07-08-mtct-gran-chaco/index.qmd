@@ -1,0 +1,34 @@
+---
+title: Distribution of Mother-to-Child Transmitted (MTCT) Infections and Socioeconomic Vulnerability Within
+  the Gran Chaco Region
+date: '2026-07-08'
+author:
+- name: C. Rodríguez González
+- name: S. Ávila
+- name: K. Cardone
+- name: M. Fernández
+- name: F. Crudo
+- name: V. Andreo
+- name: M. V. Periago
+pub-type: Journal article
+doi: 10.3390/tropicalmed11070188
+categories:
+- Chagas
+- Time series
+image: ../../assets/img/headers/landsatlooks.jpg
+image-alt: Distribution of Chagas disease (red) and syphilis (yellow) cases by settlement in the border
+  area between Argentina and Paraguay, Gran Chaco region.
+---
+
+
+[PDF](https://doi.org/10.3390/tropicalmed11070188)
+
+## Abstract
+
+Mother-to-child transmission (MTCT) of infectious diseases remains a public health challenge in socially vulnerable regions with limited healthcare access. This study assessed the epidemiological situation, spatial distribution, and socioeconomic context of MTCT infections—Chagas disease (ChD), syphilis, HIV, and hepatitis B (HB)—in the Gran Chaco region (Argentina–Paraguay), 2018–2024. Epidemiological data from 2877 patients enrolled in an MTCT Plus programme were analysed, alongside socioeconomic variables and spatio-temporal cluster analysis using SaTScan software. Maternal seroprevalence of ChD was 4.1%, the highest among the infections evaluated. Syphilis prevalence was 0.8%, while no HIV or HBV infections were detected among screened pregnant women. Two statistically significant spatiotemporal clusters of maternal *Trypanosoma cruzi* seropositivity were identified: a household-level cluster in 2018 and a regional cluster during 2019–2021. The highest prevalence of maternal ChD seropositivity was observed in census tracts with greater socioeconomic vulnerability, although this spatial overlap was assessed descriptively. These findings highlight the effectiveness of integrated maternal–child health services in ensuring coverage, timely diagnosis, and treatment in vulnerable populations. The identified spatial patterns provide evidence to support targeted surveillance and coordinated binational public health strategies in border regions affected by persistent social inequalities.
+
+![](../../assets/img/headers/landsatlooks.jpg){fig-alt="Distribution of Chagas disease (red) and syphilis (yellow) cases by settlement in the border area between Argentina and Paraguay, Gran Chaco region." .featured-figure}
+
+## Citation
+
+C. Rodríguez González, S. Ávila, K. Cardone, M. Fernández, F. Crudo, V. Andreo, et al. (2026). Distribution of Mother-to-Child Transmitted (MTCT) Infections and Socioeconomic Vulnerability Within the Gran Chaco Region. *Tropical Medicine and Infectious Disease, 11(7), 188.*. <https://doi.org/10.3390/tropicalmed11070188>

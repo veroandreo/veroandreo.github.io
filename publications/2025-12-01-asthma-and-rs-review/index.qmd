@@ -1,0 +1,23 @@
+---
+title: A systematic review of remote sensing data in studying the association of air pollution and Asthma/Allergic
+  Rhinitis
+date: '2025-12-17'
+author:
+- name: A. Coiman
+- name: M. F. Garcia Ferreyra
+- name: V. Andreo
+pub-type: Journal article
+categories:
+- Air pollution
+- Remote sensing
+---
+
+[PDF](https://revistas.unc.edu.ar/index.php/RSD/article/view/47409/51471)
+
+## Abstract
+
+Introduction: The World Health Organization estimated in 2019 that 262 million people around the  globe  suffered  from  asthma,  while  recent  studies  in Western  societies  point  out  that  the  prevalence  of  allergic rhinitis in children is 40%. Asthma is a respiratory disease that affects the airways of the lungs, while  allergic rhinitis is also  a respiratory  disease in which  the nasal passages become inflamed due to an allergic   reaction.  The  health  of people  suffering  from  these  conditions  could  be significantly  affected  by high   levels of particulate matter, nitrogen oxides, and other air pollutants. Through satellite remote sensing it is  possible to detect and measure various of the mentioned pollutants. In this work, we performed a literature  review to understand which and to what extent remote sensing data is used in the study of the association  of air pollution and respiratory issues like asthma/allergic rhinitis. Materials and methods: We conducted  a systematic  review  following  the  Preferred  Reporting  Items  for  Systematic  Reviews  and  Meta-analyses  (PRISMA) methodology. We reviewed 41 articles from peer-reviewed journals obtained from four scientific  databases –Google Scholar, Scopus, Web of Science,  and PubMed–, published between 2013 and 2022.   Results and discussion: Our results show that the combined analysis of remotely sensed air pollution data  and asthma/allergic rhinitis is under development. Most of the studies  were published three years ago, carried  out in urban environments, and mainly used MODIS data. While remote sensing data is increasingly used  in air pollution  studies, it is potentially  possible to incorporate  transdisciplinary approaches in academic  studies. Further research and promotion of the  integration of remote  sensing products for mapping the  relationship  between  air  pollution  and  respiratory  diseases  are  necessary.  This  proposal  could  aid  in  evaluating environmental factors and their relationship with respiratory diseases.
+
+## Citation
+
+A. Coiman, M. F. Garcia Ferreyra, V. Andreo (2025). A systematic review of remote sensing data in studying the association of air pollution and Asthma/Allergic Rhinitis. *Revista de Salud Pública, 31(2), 124--165.*.

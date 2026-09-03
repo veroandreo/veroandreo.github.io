@@ -1,0 +1,28 @@
+---
+title: 'Time Series Clustering Applied to Eco-Epidemiology: the case of *Aedes aegypti* in Córdoba, Argentina'
+date: '2019-09-01'
+author:
+- name: V. Andreo
+- name: X. Porcasi
+- name: C. Rodriguez
+- name: C. Guzman
+- name: L. Lopez
+- name: C. M. Scavuzzo
+pub-type: Conference paper
+doi: 10.1109/RPIC.2019.8882184
+categories:
+- Aedes aegypti
+- Dengue
+- Time series
+- Clustering
+---
+
+[PDF](https://doi.org/10.1109/RPIC.2019.8882184)
+
+## Abstract
+
+Dengue fever is one of the most widespread vector-borne diseases in the world. The virus causing it is transmitted by _Aedes aegypti_ mosquitoes. The prevention of virus transmission is mostly based on vector control, with vector surveillance as the main source of information for prevention and control actions. Mosquitoes activity, however, varies in time and space. In this work we assessed the existence of groups of temporal patterns in time series of *Aedes aegypti* ovitraps records. Our hypothesis was that the identification of different temporal patterns might guide differential control interventions in the light of limited resources. Moreover, and with the ultimate goal of predicting risk in places with no mosquito field data, we associated the different temporal patterns with environmental variables derived from satellite imagery, assuming that differences in mosquito activity patterns in time are determined by local conditions of the environment. We tested three different types of time series clustering algorithms. All of them identified three groups as the best splitting for the ovitraps time series data. Dynamic Time Warping (DTW) and Partition Around Medoids (PAM) algorithms showed the best separation according to internal cluster validity indices (CVI). They denoted certain consistency among them and also relationship with total egg counts. The groups depicting higher Dengue risk showed higher annual abundances and a peak between mid January and mid February. Although we did not find conclusive results in terms of local environmental factors related to these groups, they might provide guidance on where and when to prioritize epidemiological surveillance actions and promotional campaigns to remove mosquito breeding sites.
+
+## Citation
+
+V. Andreo, X. Porcasi, C. Rodriguez, C. Guzman, L. Lopez, C. M. Scavuzzo (2019). Time Series Clustering Applied to Eco-Epidemiology: the case of *Aedes aegypti* in Córdoba, Argentina. *2019 XVIII Workshop on Information Processing and Control (RPIC), pp. 93--98*. <https://doi.org/10.1109/RPIC.2019.8882184>

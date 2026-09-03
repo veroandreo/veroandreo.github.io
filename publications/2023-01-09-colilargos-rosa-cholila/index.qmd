@@ -1,0 +1,27 @@
+---
+title: Colilargo’s occupancy and the role of native and exotic plants in hantavirus expansion and transmission
+  risk
+date: '2023-01-18'
+author:
+- name: F. Contreras
+- name: V. Andreo
+- name: V. Hechem
+- name: J. Polop
+- name: M. C. Provensal
+pub-type: Journal article
+doi: 10.1007/s13364-023-00671-9
+categories:
+- Hantavirus
+- Rodents
+- Invasive species
+---
+
+[PDF](https://doi.org/10.1007/s13364-023-00671-9) · [Code](https://github.com/veroandreo/colilargos-sweetbriar)
+
+## Abstract
+
+In this work, we examined the relationship of _Oligoryzomys longicaudatus_’ (the Andes virus [ANDV] host, commonly known as the colilargo) occupancy and the cover of dominant woody and herbaceous plant species recorded in censuses along traplines for mice. We found that O. longicaudatus occupancy probability increased with high percentages of *Rosa rubiginosa*, *Plantago lanceolata*, *Rumex acetosella*, and *Holcus lanatus*, while it decreased with an increased cover of *Mulinum spinosum* and *Ochetophila trinervis*. The four positively related species are exotic plants. R. rubiginosa, the most conspicuous one, is capable of invading all types of habitats and forms dense shrublands in the ecotone between forest and steppe. These results are partly consistent with diet studies indicating that sweet briar fruits are the main item consumed by colilargos. The relationship of the ANDV main host with such an invasive plant poses a likely increased ANDV transmission risk to local communities making use of sweet briar’s fruits. We discuss further implications of this problem in relation to hantavirus epidemiology in southern Argentina.
+
+## Citation
+
+F. Contreras, V. Andreo, V. Hechem, J. Polop, M. C. Provensal (2023). Colilargo’s occupancy and the role of native and exotic plants in hantavirus expansion and transmission risk. *Mammal Research*. <https://doi.org/10.1007/s13364-023-00671-9>

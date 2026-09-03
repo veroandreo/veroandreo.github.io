@@ -1,0 +1,27 @@
+---
+title: Temporal fine-scale genetic variation in the zoonosis-carrying long-tailed pygmy rice rat in Patagonia,
+  Argentina
+date: '2015-01-01'
+author:
+- name: R. E. Gonzalez-Ittig
+- name: F. J. Polop
+- name: V. C. Andreo
+- name: M. B. Chiappero
+- name: S. Levis
+- name: G. Calderon
+- name: M. C. Provensal
+- name: J. J. Polop
+- name: C. N. Gardenal
+pub-type: Journal article
+doi: 10.1111/jzo.12238
+---
+
+[PDF](https://doi.org/10.1111/jzo.12238)
+
+## Abstract
+
+Factors modeling the population genetic structure are of major importance when species involved in the transmission of zoonoses are considered. The long-tailed pygmy rice rat or ‘colilargo’ _Oligoryzomys longicaudatus_ is a highly vagile rodent species which acts as the reservoir of the Andes hantavirus in southern Argentina and Chile. To contribute to the knowledge of the processes determining the microgeographical genetic structure of populations of this species, we used 10 microsatellite loci to estimate the levels of polymorphism, individual relatedness and the population effective sizes through time and to explore if the effective size correlated with density. Individuals were sampled seasonally during a 25-month period in a population from the Argentinean Patagonia located in the endemic area of Hantavirus Pulmonary Syndrome. We detected three genetic clusters. An important temporal change in cluster prevalence was detected after a population bottleneck. Individuals of the same period presented higher mean relatedness values than between consecutive periods. Density and effective population size estimations were correlated. All analyses performed in this study are in line with the conclusion that high levels of gene flow encompassing different habitats would be a major process producing fine-scale temporal changes in the genetic composition of the studied population.
+
+## Citation
+
+R. E. Gonzalez-Ittig, F. J. Polop, V. C. Andreo, M. B. Chiappero, S. Levis, G. Calderon, et al. (2015). Temporal fine-scale genetic variation in the zoonosis-carrying long-tailed pygmy rice rat in Patagonia, Argentina. *Journal of Zoology, (296), 3, pp. 216--224*. <https://doi.org/10.1111/jzo.12238>

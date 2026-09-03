@@ -1,0 +1,285 @@
+/*-- scss:defaults --*/
+// ============================================================
+// OPCIÓN D — Navbar navy + hero partido
+// Idéntica a la A (navbar y footer navy, fondo paper, tarjetas
+// con sombra, chips teal), pero con el header de la B: foto
+// grande a la izquierda, nombre y datos alineados a la derecha.
+//
+// Uso: theme: [cosmo, _andreo-base.scss, andreo-d-navy-hero-split.scss, _andreo-comun.scss]
+// Requiere además, en el index.qmd del home:
+//   about:
+//     template: solana       ← con la fila invertida por CSS (ver abajo)
+//     image-width: 15em
+//
+// Nota: solana pone la foto a la derecha; acá se invierte la fila para dejarla
+// a la izquierda, con la bio al lado. `trestles` no sirve para este hero:
+// apila el nombre debajo de la foto. Ya no hay página About (la bio pasó al
+// home), pero las reglas de trestles quedan por si vuelve una página con esa
+// disposición.
+// ============================================================
+
+$navbar-bg: #0E2A3D;
+$navbar-fg: rgba(251, 250, 246, 0.78);
+$footer-bg: #0E2A3D;
+$footer-fg: #EDEBE0;
+
+$headings-color:   #16211A;
+$code-block-bg:    #F2F0E8;
+$link-decoration:  none;
+
+/*-- scss:rules --*/
+
+// ── Idéntico a la opción A ───────────────────────────────────
+
+.navbar-title { color: $paper !important; }
+
+.navbar-nav .nav-link {
+  color: $navbar-fg !important;
+  &:hover, &.active {
+    color: $gold !important;
+    border-bottom-color: $gold !important;
+  }
+}
+
+// Subrayado sutil de los links de prosa. Se excluyen los <a> que Quarto genera
+// en los listados (la tarjeta entera es un <a>, y su border-bottom cae debajo de
+// las tags y parece un subrayado) y los botones sociales.
+main a:not(.btn):not(.nav-link):not(.quarto-grid-link):not(.no-external):not(.about-link):not(.quarto-title-meta-contents a) {
+  border-bottom: 1px solid rgba(31, 122, 108, 0.35);
+  &:hover { color: $ochre; border-bottom-color: $ochre; }
+}
+
+.card {
+  background: #fff;
+  border: none !important;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(14, 42, 61, 0.08);
+  transition: box-shadow 0.18s ease;
+  &:hover { box-shadow: 0 6px 20px rgba(14, 42, 61, 0.16); }
+}
+
+// Rótulo de sección del home ("RECENT PUBLICATIONS"). Ojo: NO usar
+// `.quarto-listing .listing-title`, que es el título de cada tarjeta.
+h2.section-label {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: $muted;
+}
+
+// Mismo tratamiento que las tags de los listados: gris, discretas. El teal
+// queda para el chip del año, que es el dato que se busca de un vistazo.
+// La profundidad la marca Quarto con `.quarto-title .quarto-categories
+// .quarto-category`; se iguala para que el radio y el tamaño también apliquen.
+.quarto-category,
+.quarto-title .quarto-categories .quarto-category {
+  background-color: transparent !important;
+  border: 1px solid $rule !important;
+  color: $muted !important;
+  border-radius: 3px;
+  font-size: 0.72em;
+  &:hover {
+    background: rgba(14, 42, 61, 0.05) !important;
+    border-color: darken($rule, 10%) !important;
+    color: $muted !important;
+  }
+}
+
+.nav-footer {
+  font-size: 0.85em;
+  a { color: #EDEBE0; &:hover { color: $gold; } }
+
+  // Los iconos se comportan igual que los links del menú: apagados sobre el
+  // navy, y en oro con filete de 2px al pasar el mouse.
+  // Como los links del menú, pero sin el filete: solo cambian de color.
+  .footer-icon {
+    display: inline-block;
+    color: rgba(251, 250, 246, 0.78) !important;
+    font-size: 1.15rem;
+    line-height: 1;
+    margin-left: 16px;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease;
+
+    i { color: inherit !important; }
+
+    &:hover {
+      color: $gold !important;
+      border-bottom: none !important;
+    }
+  }
+}
+
+// ── Lo propio de la D: el hero partido ───────────────────────
+//
+// IMPORTANTE sobre especificidad: Quarto estiliza estos bloques con selectores
+// como `div.quarto-about-solana .about-entity .about-link` (0,3,1). Un selector
+// de clases sueltas pierde por más abajo que esté en el archivo, así que acá se
+// escribe todo con el mismo prefijo `div.` y la misma profundidad.
+
+// Home: about template solana. Por defecto es [texto | foto]; lo damos vuelta.
+div.quarto-about-solana {
+  padding-top: 2.4rem !important;
+  padding-bottom: 1.2rem !important;   // Quarto pide 1em con más especificidad
+
+  // Sin filete al pie: el h2 de la sección siguiente ya trae el suyo, y dos
+  // líneas seguidas a poca distancia se leían como un divisor suelto.
+
+  // El margen colapsa con el margin-top del h2 siguiente, así que para separar
+  // de verdad hay que pedir más que ese h2 (2.1rem).
+  margin-bottom: 2.6rem;
+
+  // El home va a page-layout: full para que las tarjetas respiren; el hero se
+  // mantiene en un ancho legible en vez de estirarse a toda la pantalla.
+  max-width: 1080px;
+
+  // Foto a la izquierda: solana la pone a la derecha, así que se invierte la
+  // fila. Con row-reverse el eje principal arranca a la derecha, por eso
+  // `flex-end` es lo que agrupa foto y texto contra el margen izquierdo
+  // (el `space-between` de Quarto los mandaba a los dos extremos).
+  .about-entity {
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+    align-items: center;
+    gap: 2.6rem;
+  }
+
+  .about-image { margin-bottom: 0 !important; }
+
+  // La bio vive en el hero, así que el texto se limita a una medida legible
+  // en vez de estirarse hasta los 1080px del bloque.
+  .entity-contents {
+    text-align: left;
+    max-width: min(62ch, 100%);
+  }
+
+  // Afiliación sobre la bio, en el mismo mono que el rótulo del nombre. Los
+  // enlaces van en el gris del resto de la línea (en teal, tres links seguidos
+  // en mayúsculas hacían demasiado ruido); sólo se encienden al pasar.
+  .hero-affiliation {
+    display: block;
+    font-family: $font-family-monospace;
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $muted;
+
+    a {
+      color: inherit;
+      text-decoration-color: rgba($muted, 0.3);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+
+      &:hover { color: $teal; text-decoration-color: $teal; }
+    }
+  }
+
+  // El rótulo en mono va ARRIBA del nombre, como en la maqueta.
+  .quarto-title { display: flex; flex-direction: column; }
+  .quarto-title .subtitle {
+    order: -1;
+    font-family: $font-family-monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: $muted;
+    margin-bottom: 0.45rem;
+  }
+
+  h1.title {
+    font-family: $headings-font-family;
+    font-size: 2.15rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: $ink;
+    margin-bottom: 0.3rem;
+  }
+
+  // Con la bio en dos párrafos hace falta algo más de aire que el 0.5rem que
+  // alcanzaba cuando el hero era sólo dos líneas sueltas.
+  p { margin-bottom: 0.8rem; }
+
+  .about-links {
+    justify-content: flex-start !important;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 0.9rem;
+  }
+}
+
+// Home a ancho completo: que las grillas no se estiren más allá de lo legible
+.quarto-listing-grid .card-body { padding: 0.85rem 1rem 1rem; }
+.quarto-listing-grid .card-title { font-size: 0.95rem; line-height: 1.35; }
+.quarto-listing-grid .listing-description { font-size: 0.85rem; }
+
+// En pantallas chicas, foto arriba y todo centrado
+@media screen and (max-width: 767.98px) {
+  div.quarto-about-solana .about-entity {
+    flex-direction: column-reverse !important;
+    justify-content: flex-start !important;
+    text-align: center;
+  }
+  div.quarto-about-solana .entity-contents { text-align: center; }
+  div.quarto-about-solana .about-links { justify-content: center !important; }
+
+  // Nombre, iconos y línea de temas centrados, pero la bio alineada a la
+  // izquierda: dos párrafos largos centrados se leen mal. El primer párrafo
+  // del bloque es la línea de temas, así que ese sí queda centrado.
+  div.quarto-about-solana .about-contents p { text-align: left; }
+  div.quarto-about-solana .about-contents p:first-child { text-align: center; }
+}
+
+// ── Botones sociales: solo el icono, en un círculo teal ──────────────────────
+// Se listan los dos templates que usa el sitio con la profundidad exacta que
+// usa Quarto, para ganarle a su `.about-link{color:...;border:solid 1px}`.
+div.quarto-about-solana .about-entity .about-link,
+div.quarto-about-trestles .about-entity .about-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid $rule;
+  border-radius: 50%;
+  color: $teal;
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+
+  &:hover {
+    border-color: $teal;
+    color: #fff;
+    background: $teal;
+  }
+
+  // Ojo: Quarto mete el icono DENTRO de .about-link-text, así que ese span no
+  // se puede ocultar — solo se le quita el espacio que dejaba junto al texto.
+  .about-link-text { display: inline-flex; margin: 0 !important; }
+  i { color: inherit !important; font-size: 1.05rem; margin: 0 !important; }
+}
+
+// ── About: template trestles (foto y nombre a la izquierda, bio al lado) ──
+div.quarto-about-trestles {
+  padding-top: 2.2rem !important;   // Quarto pide 3em con !important
+
+  h1.title {
+    font-family: $headings-font-family;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: $ink;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+    color: $muted;
+  }
+  .about-entity .about-links {
+    justify-content: flex-start !important;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}

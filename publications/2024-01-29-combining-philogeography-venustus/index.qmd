@@ -1,0 +1,27 @@
+---
+title: Combining phylogeography and ecological niche modeling to infer the evolutionary history of the
+  Cordoba vesper mouse (*Calomys venustus*)
+date: '2024-01-29'
+author:
+- name: J. D. Pinotti
+- name: M. L. Martin
+- name: M. B. Chiappero
+- name: V. Andreo
+- name: R. E. Gonzalez-Ittig
+pub-type: Journal article
+doi: 10.1111/1749-4877.12805
+categories:
+- Rodents
+- Species distribution models
+- Genetics
+---
+
+[PDF](https://doi.org/10.1111/1749-4877.12805)
+
+## Abstract
+
+The evolutionary dynamics of the ecoregions of southern South America and the species that inhabit them have been poorly studied, and few biogeographic hypotheses have been proposed and tested. Quaternary climatic oscillations are among the most important processes that have led to the current distribution of genetic variation in different regions of the world. In this work, we studied the evolutionary history and distribution of the Córdoba vesper mouse (*Calomys venustus*), a characteristic rodent of the region of which little is known about its natural history. Since the population dynamics of this species are influenced by climatic factors, this rodent is a suitable model to study the effects of Quaternary climatic oscillations in central Argentina. The mitochondrial cytochrome b gene was sequenced to analyze the phylogeography of C. venustus, and ecological niche modeling tools were used to map its potential distributions. The results of these approaches were combined to provide additional spatially explicit information about this species' past. Our results suggest that the Espinal was the area of origin of this species, which expanded demographically and spatially during the last glacial period. A close relationship was found between the Espinal and the Mountain Chaco. These results are consistent with previous studies and emphasize the role of the Espinal in the biogeographic history of southern South America as an area of origin of several species.
+
+## Citation
+
+J. D. Pinotti, M. L. Martin, M. B. Chiappero, V. Andreo, R. E. Gonzalez-Ittig (2024). Combining phylogeography and ecological niche modeling to infer the evolutionary history of the Cordoba vesper mouse (*Calomys venustus*). *Integrative Zoology - Early view.*. <https://doi.org/10.1111/1749-4877.12805>

@@ -1,0 +1,35 @@
+---
+title: Risk Stratification to Guide Prevention and Control Strategies for Arboviruses Transmitted by *Aedes*
+  aegypti
+date: '2023-07-11'
+author:
+- name: M.O. Espinosa
+- name: V. Andreo
+- name: G. Paredes
+- name: C. Leaplaza
+- name: V. Heredia
+- name: M.V. Periago
+- name: M. Abril
+pub-type: Journal article
+doi: 10.3390/tropicalmed8070362
+categories:
+- Risk mapping
+- Clustering
+- Aedes aegypti
+- Dengue
+image: ../../assets/img/headers/landsatlooks.jpg
+image-alt: Evolution of Dengue hotspots throughout the study period (2010–2020) in Tartagal, Salta (Argentina).
+---
+
+
+[PDF](https://doi.org/10.3390/tropicalmed8070362)
+
+## Abstract
+
+Strategies for the prevention of arboviral diseases transmitted by *Aedes aegypti* have traditionally focused on vector control. This remains the same to this day, despite a lack of documented evidence on its efficacy due to a lack of coverage and sustainability. The continuous growth of urban areas and generally unplanned urbanization, which favor the presence of Ae. aegypti, demand resources, both material and human, as well as logistics to effectively lower the population’s risk of infection. These considerations have motivated the development of tools to identify areas with a recurrent concentration of arboviral cases during an outbreak to be able to prioritize preventive actions and optimize available resources. This study explores the existence of spatial patterns of dengue incidence in the locality of Tartagal, in northeastern Argentina, during the outbreaks that occurred between 2010 and 2020. Approximately half (50.8%) of the cases recorded during this period were concentrated in 35.9% of the urban area. Additionally, an important overlap was found between hotspot areas of dengue and chikungunya (Kendall’s W = 0.92; p-value < 0.001) during the 2016 outbreak. Moreover, 65.9% of the cases recorded in 2022 were geolocalized within the hotspot areas detected between 2010 and 2020. These results can be used to generate a risk map to implement timely preventive control strategies that prioritize these areas to reduce their vulnerability while optimizing the available resources and increasing the scope of action.
+
+![](../../assets/img/headers/landsatlooks.jpg){fig-alt="Evolution of Dengue hotspots throughout the study period (2010–2020) in Tartagal, Salta (Argentina)." .featured-figure}
+
+## Citation
+
+M.O. Espinosa, V. Andreo, G. Paredes, C. Leaplaza, V. Heredia, M.V. Periago, et al. (2023). Risk Stratification to Guide Prevention and Control Strategies for Arboviruses Transmitted by *Aedes aegypti*. *Tropical Medicine and Infectious Disease, (8), 362*. <https://doi.org/10.3390/tropicalmed8070362>

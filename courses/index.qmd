@@ -1,0 +1,24 @@
+---
+title: Courses and workshops
+description: Courses and workshops taught.
+---
+
+- **[Procesamiento y análisis de series temporales en GRASS GIS](https://veroandreo.github.io/curso-grass-gis/)**. Postgraduate course. Instituto Gulich. CONAE-UNC. September, 2023.
+- **[Using Satellite Data for Species Distribution Modeling with GRASS GIS and R](https://veroandreo.github.io/grass_ncsu_2023/)**. Workshop. Center for Geospatial Analytics. North Carolina State University. Raleigh, NC. USA. April, 2023.
+- **[GRASS GIS for remote sensing data processing and analysis](https://github.com/veroandreo/foss4g2022_grass4rs)**. FOSS4G 2022 - Florence, Italy. August, 2022.
+- **[Procesamiento y análisis de datos espaciales en GRASS GIS](https://gitlab.com/veroandreo/maie-procesamiento/-/tree/taller-grass-online)**. Online workshop. Instituto Gulich. CONAE-UNC. March, 2021.
+- **[Procesamiento digital de imágenes satelitales y SIG](https://gitlab.com/veroandreo/maie-procesamiento)**. Maestría en Aplicaciones de la Información Espacial. Instituto Gulich. CONAE-UNC. August, 2020.
+- **[Analysis of space-time satellite data for disease ecology applications with GRASS GIS and R stats](https://gitpitch.com/veroandreo/grass_opengeohub2019/master?p=slides/tgrass_rstats_disease_ecology)**. OpenGeoHub Summer School - Muenster, Germany. September, 2019
+- **[Analyzing space-time satellite data with GRASS GIS for environmental monitoring](https://gitpitch.com/veroandreo/grass_opengeohub2019/master?p=slides/tgrass_lst)**. OpenGeoHub Summer School - Muenster, Germany. September, 2019.
+- **[Introduction to GRASS GIS](https://gitpitch.com/veroandreo/grass_opengeohub2019/master?p=slides/intro)**. OpenGeoHub Summer School - Muenster, Germany. September, 2019. Joint presentation with Markus Neteler.
+- **[Spatio-temporal data processing & visualization in GRASS GIS](https://github.com/veroandreo/tgrass-foss4g2019)**. FOSS4G 2019 - Bucharest, Romania. August, 2019.
+- **[Object-based image analysis (OBIA) with GRASS GIS](https://frama.link/FOSS4G2019_GRASS_OBIA)**. FOSS4G 2019 - Bucharest, Romania. August, 2019.
+- **[Manejo y análisis de series temporales en GRASS GIS](https://gitlab.com/veroandreo/grass-gis-conae)**. Instituto Gulich. CONAE-UNC. April, 2019.
+- **[Manejo y análisis series de tiempo en GRASS GIS](https://gitlab.com/veroandreo/grass-gis-short-course-cba)**. Universidad Nacional de Córdoba. Argentina. December, 2018.
+- **[Procesamiento de series de tiempo con GRASS GIS](https://gitlab.com/veroandreo/curso-grass-gis-rioiv)**. Aplicaciones en Ecología y Ambiente. UNRC. Córdoba, Argentina. October, 2018.
+- **[Big geodata management and analysis using GRASS GIS](https://github.com/veroandreo/grass_foss4g_2018_workshop)**. FOSS4G 2018 - Dar es Salaam, Tanzania. August, 2018.
+- **[GRASS GIS crash course](https://github.com/veroandreo/grass_workshop_itc)**. ITC - University of Twente, The Netherlands. November, 2017.
+- **[TGRASS: temporal data processing with GRASS GIS](https://github.com/veroandreo/tgrass_workshop_foss4g_eu)**. FOSS4G Europe - Paris, France. July, 2017.
+- **Biología y Ecología de huéspedes y vectores**. Maestría en Aplicaciones de la Información Espacial. Instituto Gulich. CONAE-UNC. Córdoba, Argentina. May, 2016.
+- **TGRASS: Procesamiento de series de tiempo con GRASS GIS**. FOSS4G Argentina. Buenos Aires, Argentina. April, 2016.
+- **Introducción a GRASS GIS**. ISEA - UNC. Córdoba, Argentina. November, 2015.

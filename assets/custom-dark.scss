@@ -1,0 +1,87 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300;0,400;0,500;1,400&family=Red+Hat+Text:ital,wght@0,400;0,500;1,400&display=swap');
+
+// Dark mode — deep teal base, high contrast
+$primary:             #E8886A;   // terracotta lightened enough for dark bg
+$link-color:          #E8886A;
+$link-hover-color:    #F0A88C;
+
+$body-color:          #C8E0DC;   // lighter dusty teal — easy on eyes, high contrast
+$body-bg:             #162120;   // dark teal-black (not pure black)
+$navbar-bg:           transparent;
+$navbar-fg:           #7FA095;
+$headings-color:      #E5F2EF;   // near-white with teal tint — clear and sharp
+$footer-fg:           #7FA095;
+$footer-bg:           #162120;
+
+$font-family-sans-serif:  "Red Hat Text", system-ui, sans-serif;
+$headings-font-family:    "Petrona", Georgia, serif;
+$headings-font-weight:    500;   // heavier weight on dark bg prevents blur
+$code-bg:             #1D2E2C;
+$code-color:          #A7BEAE;
+
+/*-- scss:rules --*/
+
+// Font smoothing — critical for preventing "blurry bold" on dark backgrounds
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(167, 190, 174, 0.12);
+}
+
+.navbar-nav .nav-link {
+  color: #7FA095 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid transparent;
+
+  &:hover, &.active {
+    color: #E8886A !important;
+    border-bottom: 2px solid #E8886A !important;
+  }
+}
+
+// Headings — heavier weight + explicit color for sharpness
+h1, h2, h3, h4, h5, h6,
+.title, .navbar-title {
+  font-weight: 500;
+  color: #E5F2EF;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: #1D2E2C;
+  border: 1px solid rgba(167, 190, 174, 0.10) !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  &:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.55); }
+}
+
+.quarto-category {
+  background-color: #2F4F4F;
+  color: #C8E0DC;
+  border-color: #2F4F4F;
+  &:hover { background-color: #E8886A; color: white; border-color: #E8886A; }
+}
+
+.listing-category {
+  color: #7FA095 !important;
+  border-color: #2F4F4F !important;
+  &:hover { background-color: #557A74; color: white !important; }
+}
+
+.nav-footer {
+  border-top: 1px solid rgba(167, 190, 174, 0.12);
+  a { color: #7FA095; &:hover { color: #E8886A; } }
+}
+
+.blockquote {
+  color: #7FA095;
+  border-left: 3px solid #3D6560;
+}
+
+// Links
+a { color: #E8886A; &:hover { color: #F0A88C; } }

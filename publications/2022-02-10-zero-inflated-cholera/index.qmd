@@ -1,0 +1,23 @@
+---
+title: A zero-inflated mixture spatially varying coefficient modeling of cholera incidences
+date: '2022-02-09'
+author:
+- name: F.B. Osei
+- name: A. Stein
+- name: V. Andreo
+pub-type: Journal article
+doi: 10.1016/j.spasta.2022.100635
+categories:
+- Modeling
+- Remote sensing
+---
+
+[PDF](https://doi.org/10.1016/j.spasta.2022.100635)
+
+## Abstract
+
+Spatial disease modeling remains an important public health tool. For cholera, the presence of zero counts is common. The Poisson model is inadequate to (1) capture over-dispersion, and (2) distinguish between excess zeros arising from non-susceptible and susceptible populations. In this study, we develop zero-inflated (ZI) mixture spatially varying coefficient (SVC) models to (1) distinguish between the sources of the excess zeros and (2) uncover the spatially varying effects of precipitation and temperature (LST) on cholera. We demonstrate the potential of the models using cholera data from Ghana. A striking observation is that the Poisson model outperformed the ZI mixture models in terms of fit. The ZI Negative Binomial (ZINB) outperformed the ZI Poisson (ZIP) model. Subject to our objectives, we make inferences using the ZINB model. The proportion of zeros estimated with the ZINB model is 0.41 and exceeded what would have been estimated using a Poisson model which is 0.35. We observed the spatial trends of the effects of precipitation and LST to have both increasing and decreasing gradients; an observation implying that the use of only the global coefficients would lead to wrong inferences. We conclude that (1) the use of ZI mixture models has epidemiological significance. Therefore, its choice over the Poisson model should be based on an epidemiological concept rather than model fit and, (2) the extension of ZI mixture models to accommodate spatially varying coefficients uncovered remarkable varying effects of the covariates. These findings have significant implications for public health monitoring of cholera.
+
+## Citation
+
+F.B. Osei, A. Stein, V. Andreo (2022). A zero-inflated mixture spatially varying coefficient modeling of cholera incidences. *Spatial Statistics, (48), 100635*. <https://doi.org/10.1016/j.spasta.2022.100635>

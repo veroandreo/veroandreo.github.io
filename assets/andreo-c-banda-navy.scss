@@ -1,0 +1,129 @@
+/*-- scss:defaults --*/
+// ============================================================
+// OPCIÓN C — Banda navy + ocre
+// La más cercana a la tarjeta personal y al one-pager: banda navy
+// a sangre en el hero, eyebrows ocre subrayados, año en chip oro,
+// bloques de código en navy.
+// Uso: theme: [cosmo, _andreo-base.scss, andreo-c-banda-navy.scss, _andreo-comun.scss]
+// Requiere además, en el index.qmd del home:
+//   title-block-banner: "#0E2A3D"   (o :::{.hero-band} ... ::: )
+// ============================================================
+
+$navbar-bg: #0E2A3D;
+$navbar-fg: rgba(251, 250, 246, 0.72);
+$footer-bg: #0E2A3D;
+$footer-fg: #EDEBE0;
+
+$headings-color:   #0E2A3D;
+$code-block-bg:    #0E2A3D;
+$link-decoration:  none;
+
+/*-- scss:rules --*/
+
+.navbar { padding-top: 0.35rem; padding-bottom: 0.35rem; }
+
+.navbar-title {
+  color: $paper !important;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: $gold;
+    margin-left: 7px;
+    vertical-align: 3px;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: $navbar-fg !important;
+  &:hover, &.active {
+    color: $gold !important;
+    border-bottom-color: $gold !important;
+  }
+}
+
+// Subrayado sutil de los links de prosa. Se excluyen los <a> que Quarto genera
+// en los listados (la tarjeta entera es un <a>, y su border-bottom cae debajo de
+// las tags y parece un subrayado) y los botones sociales.
+main a:not(.btn):not(.nav-link):not(.quarto-grid-link):not(.no-external):not(.about-link):not(.quarto-title-meta-contents a) {
+  border-bottom: 1px solid rgba(31, 122, 108, 0.35);
+  &:hover { color: $ochre; border-bottom-color: $ochre; }
+}
+
+// Banda navy del hero (title-block-banner o div .hero-band)
+.quarto-title-block .quarto-title-banner,
+.hero-band {
+  background: $navy !important;
+  color: $paper;
+  h1, h2, .title { color: $paper !important; }
+  .subtitle, .description { color: rgba(251, 250, 246, 0.72) !important; }
+  a { color: $gold !important; border-bottom-color: rgba(246, 196, 83, 0.4) !important; }
+  .eyebrow { color: $gold; }
+  img.about-image, .about-image { box-shadow: 0 0 0 3px $navy, 0 0 0 4px $gold; }
+}
+
+// Títulos de sección: eyebrow mono ocre con filete
+// Rótulo de sección del home ("RECENT PUBLICATIONS"). Ojo: NO usar
+// `.quarto-listing .listing-title`, que es el título de cada tarjeta.
+h2.section-label {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: $ochre;
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 2px solid $ochre;
+}
+
+// Tarjetas: borde fino, filete ocre arriba al hover
+.card {
+  background: #fff;
+  border: 1px solid $rule !important;
+  border-top: 3px solid transparent !important;
+  border-radius: 6px;
+  box-shadow: none;
+  transition: border-color 0.18s ease;
+  &:hover { border-top-color: $ochre !important; }
+}
+
+// Año en chip oro con texto navy (9:1 de contraste)
+.listing-date, .quarto-title-meta-contents .date {
+  background: $gold;
+  color: $navy;
+  font-weight: 700;
+  font-size: 0.7em;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+// Categorías: contorno teal
+.quarto-category, .listing-category {
+  background-color: transparent !important;
+  border: 1px solid $teal !important;
+  color: $teal !important;
+  border-radius: 3px;
+  font-size: 0.72em;
+  &:hover { background-color: $teal !important; color: #fff !important; }
+}
+
+// Código sobre navy
+div.sourceCode, pre.sourceCode {
+  background-color: $navy !important;
+  border: none;
+  color: #D7DEE3;
+  code span.kw { color: $gold; }
+  code span.st { color: #EBA882; }
+  code span.co { color: #7E8B94; font-style: italic; }
+  code span.fu { color: #6FC3AE; }
+  code span.dv, code span.fl { color: #C7B7E0; }
+}
+
+.nav-footer {
+  font-size: 0.85em;
+  a { color: #EDEBE0; &:hover { color: $gold; } }
+}
+.nav-footer-center i { color: $gold !important; }

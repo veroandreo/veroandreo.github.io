@@ -1,0 +1,26 @@
+---
+title: A New Fully Gap-Free Time Series of Land Surface Temperature from MODIS LST Data
+date: '2017-01-01'
+author:
+- name: M. Metz
+- name: V. Andreo
+- name: M. Neteler
+pub-type: Journal article
+doi: 10.3390/rs9121333
+categories:
+- MODIS
+- Land surface temperature
+- GRASS
+- Remote sensing
+- Time series
+---
+
+[PDF](https://doi.org/10.3390/rs9121333)
+
+## Abstract
+
+Temperature time series with high spatial and temporal resolutions are important for several applications. The new MODIS Land Surface Temperature (LST) collection 6 provides numerous improvements compared to collection 5. However, being remotely sensed data in the thermal range, LST shows gaps in cloud-covered areas. We present a novel method to fully reconstruct MODIS daily LST products for central Europe at 1 km resolution and globally, at 3 arc-min. We combined temporal and spatial interpolation, using emissivity and elevation as covariates for the spatial interpolation. The reconstructed MODIS LST for central Europe was calibrated to air temperature data through linear models that yielded R2 values around 0.8 and RMSE of 0.5 K. This new method proves to scale well for both local and global reconstruction. We show examples for the identification of extreme events to demonstrate the ability of these new LST products to capture and represent spatial and temporal details. A time series of global monthly average, minimum and maximum LST data and long-term averages is freely available for download.
+
+## Citation
+
+M. Metz, V. Andreo, M. Neteler (2017). A New Fully Gap-Free Time Series of Land Surface Temperature from MODIS LST Data. *Remote Sensing, (9), 12, pp. 1333*. <https://doi.org/10.3390/rs9121333>

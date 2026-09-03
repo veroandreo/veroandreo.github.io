@@ -1,0 +1,28 @@
+---
+title: Towards a workflow for operational mapping of *Aedes aegypti* at urban scale based on remote sensing
+date: '2021-06-01'
+author:
+- name: V. Andreo
+- name: F. P. Cuervo
+- name: X. Porcasi
+- name: L. Lopez
+- name: C. Guzman
+- name: C. M. Scavuzzo
+pub-type: Journal article
+doi: 10.1016/j.rsase.2021.100554
+categories:
+- Dengue
+- Species distribution models
+- Remote sensing
+- Mosquitoes
+---
+
+[PDF](https://doi.org/10.1016/j.rsase.2021.100554) · [Code](https://github.com/veroandreo/aedes-urban-maps)
+
+## Abstract
+
+Remote sensing (RS) applications for vector borne diseases are a field of high social impact increasingly relevant in the context of a higher frequency of Dengue, Chikungunya and Zika outbreaks at global scale and especially in Latin America. The operative use of RS technologies is however still rare. Therefore, the objective of this work is to generate and analyze multitemporal _Aedes aegypti_'s suitability maps and to share the open source tools used towards the building of an operative workflow. As a proof of concept, we implemented a process chain to obtain maps for Ae. aegypti activity within the 2017–2018 mosquito breeding season based on ovitraps records and RS data within the framework of ecological niche modeling. The workflow was carefully thought as to consider possible biases in training data, model calibration to attain the best hyper-parameter combination, model selection, variable selection and validation with independent data. The predictive maps showed high suitability for Ae. aegypti within the city, except in large vegetated areas and the commercial downtown consistently with previous studies and our own observations. Relevant variables included distance to built-up surfaces, distance to vegetated areas and correlation, a texture measure reflecting surface heterogeneity. Validation results suggested that the spatial distribution of ovitraps should be re-examined. All the steps in the proposed workflow were implemented using freely available and open source software, which warrants reproducibility and allows for re-use and modifications in terms of methods and RS or mosquito data available.
+
+## Citation
+
+V. Andreo, F. P. Cuervo, X. Porcasi, L. Lopez, C. Guzman, C. M. Scavuzzo (2021). Towards a workflow for operational mapping of *Aedes aegypti* at urban scale based on remote sensing. *Remote Sensing Applications: Society and Environment, (23), 100554*. <https://doi.org/10.1016/j.rsase.2021.100554>

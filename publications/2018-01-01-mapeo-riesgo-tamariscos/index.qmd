@@ -1,0 +1,24 @@
+---
+title: 'Mapeo del riesgo: Prioridades para prevenir el establecimiento de tamariscos invasores'
+date: '2018-01-01'
+author:
+- name: E. Natale
+- name: H Reinoso
+- name: V. Andreo
+- name: S. M. Zalba
+pub-type: Journal article
+categories:
+- GIS
+- Invasive species
+- Risk mapping
+---
+
+[PDF](http://ojs.ecologiaaustral.com.ar/index.php/Ecologia_Austral/article/download/553/287)
+
+## Abstract
+
+Early detection and rapid intervention are among the preferred actions to achieve successful results in the management plans for invasive alien species. The identification of areas where probabilities of establishment and invasion by an alien species are high can reduce logistic and economic costs. Risk assessment based on information about the alien species and the invaded environment has become a widely-accepted tool to estimate the likelihood and magnitude of the threat. The objective of this work was to develop an invasion risk index that can be modeled within a geographic information system (GIS) environment, combining information on the current and potential distribution of the alien species, the analysis of dispersion routes and the potential impact on environmental and socioeconomic values. The genus *Tamarix* was used as a case study. This genus is widely distributed in Argentina, from northern Patagonia to the northwest of the country. A risk index was obtained, with potential to be expressed cartographically in a GIS. The relevance of the developed index is that it might be extended and applied to different invasive species, regions and working scales.
+
+## Citation
+
+E. Natale, H Reinoso, V. Andreo, S. M. Zalba (2018). Mapeo del riesgo: Prioridades para prevenir el establecimiento de tamariscos invasores. *Ecologia Austral, (28), pp. 81--92*.

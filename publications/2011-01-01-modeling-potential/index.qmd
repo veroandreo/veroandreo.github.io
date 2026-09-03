@@ -1,0 +1,26 @@
+---
+title: 'Modeling Potential Distribution of *Oligoryzomys longicaudatus*, the Andes Virus (Genus: Hantavirus)
+  Reservoir, in Argentina'
+date: '2011-01-01'
+author:
+- name: V. Andreo
+- name: G. Glass
+- name: T. Shields
+- name: M. C. Provensal
+- name: J. Polop
+pub-type: Journal article
+categories:
+- Hantavirus
+- Rodents
+- Species distribution models
+---
+
+[PDF](https://link.springer.com/article/10.1007%2Fs10393-011-0719-5)
+
+## Abstract
+
+We constructed a model to predict the potential distribution of _Oligoryzomys longicaudatus_, the reservoir of Andes virus (Genus: Hantavirus), in Argentina. We developed an extensive database of occurrence records from published studies and our own surveys and compared two methods to model the probability of O. longicaudatus presence; logistic regression and MaxEnt algorithm. The environmental variables used were tree, grass and bare soil cover from MODIS imagery and, altitude and 19 bioclimatic variables from WorldClim database. The models performances were evaluated and compared both by threshold dependent and independent measures. The best models included tree and grass cover, mean diurnal temperature range, and precipitation of the warmest and coldest seasons. The potential distribution maps for O. longicaudatus predicted the highest occurrence probabilities along the Andes range, from 32°S and narrowing southwards. They also predicted high probabilities for the south-central area of Argentina, reaching the Atlantic coast. The Hantavirus Pulmonary Syndrome cases coincided with mean occurrence probabilities of 95 and 77% for logistic and MaxEnt models, respectively. HPS transmission zones in Argentine Patagonia matched the areas with the highest probability of presence. Therefore, colilargos presence probability may provide an approximate risk of transmission and act as an early tool to guide control and prevention plans.
+
+## Citation
+
+V. Andreo, G. Glass, T. Shields, M. C. Provensal, J. Polop (2011). Modeling Potential Distribution of *Oligoryzomys longicaudatus*, the Andes Virus (Genus: Hantavirus) Reservoir, in Argentina. *EcoHealth, (8), 3, pp. 332--348*.

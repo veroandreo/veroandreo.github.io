@@ -1,0 +1,28 @@
+---
+title: Ecological characterization of a cutaneous leishmaniasis outbreak through remotely sensed land
+  cover changes
+date: '2022-03-30'
+author:
+- name: V. Andreo
+- name: J. Rosa
+- name: K. Ramos
+- name: O. D. Salomon
+pub-type: Journal article
+doi: 10.4081/gh.2022.1033
+categories:
+- Leishmaniasis
+- Outbreaks
+- Land use / land cover
+- Remote sensing
+- Landsat
+---
+
+[PDF](https://doi.org/10.4081/gh.2022.1033)
+
+## Abstract
+
+In this work we assessed the environmental factors associated with the spatial distribution of a cutaneous leishmaniasis (CL) outbreak during 2015-2016 in north-eastern Argentina to understand its typical or atypical eco-epidemiological pattern. We combined locations of human CL cases with relevant predictors derived from analysis of remote sensing imagery in the framework of ecological niche modelling and trained MaxEnt models with cross-validation for predictors estimated at different buffer areas relevant to CL vectors (50 and 250 m radii). To account for the timing of biological phenomena, we considered environmental changes occurring in two periods, 2014-2015 and 2015-2016. The remote sensing analysis identified land cover changes in the surroundings of CL cases, mostly related to new urbanization and flooding. The distance to such changes was the most important variable in most models. The weighted average map denoted higher suitability for CL in the outskirts of the city of Corrientes and in areas close to environmental changes. Our results point to a scenario consistent with a typical CL outbreak, i.e. changes in land use or land cover are the main triggering factor and most affected people live or work in border habitats.
+
+## Citation
+
+V. Andreo, J. Rosa, K. Ramos, O. D. Salomon (2022). Ecological characterization of a cutaneous leishmaniasis outbreak through remotely sensed land cover changes. *Geospatial Health, (17), 1033*. <https://doi.org/10.4081/gh.2022.1033>

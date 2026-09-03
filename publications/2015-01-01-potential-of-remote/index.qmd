@@ -1,0 +1,43 @@
+---
+title: 'Potential of remote sensing to predict species invasions: A modelling perspective'
+date: '2015-01-01'
+author:
+- name: D. Rocchini
+- name: V. Andreo
+- name: M. Forster
+- name: C. X. Garzon-Lopez
+- name: A. P. Gutierrez
+- name: T. W. Gillespie
+- name: H. C. Hauffe
+- name: K. S. He
+- name: B. Kleinschmit
+- name: P. Mairota
+- name: M. Marcantonio
+- name: M. Metz
+- name: H. Nagendra
+- name: S. Pareeth
+- name: L. Ponti
+- name: C. Ricotta
+- name: A. Rizzoli
+- name: G. Schaab
+- name: M. Zebisch
+- name: R. Zorer
+- name: M. Neteler
+pub-type: Journal article
+doi: 10.1177/0309133315574659
+categories:
+- Remote sensing
+- Species distribution models
+- GIS
+- Invasive species
+---
+
+[PDF](https://doi.org/10.1177/0309133315574659)
+
+## Abstract
+
+Understanding the causes and effects of species invasions is a priority in ecology and conservation biology. One of the crucial steps in evaluating the impact of invasive species is to map changes in their actual and potential distribution and relative abundance across a wide region over an appropriate time span. While direct and indirect remote sensing approaches have long been used to assess the invasion of plant species, the distribution of invasive animals is mainly based on indirect methods that rely on environmental proxies of conditions suitable for colonization by a particular species. The aim of this article is to review recent efforts in the predictive modelling of the spread of both plant and animal invasive species using remote sensing, and to stimulate debate on the potential use of remote sensing in biological invasion monitoring and forecasting. Specifically, the challenges and drawbacks of remote sensing techniques are discussed in relation to: i) developing species distribution models, and ii) studying life cycle changes and phenological variations. Finally, the paper addresses the open challenges and pitfalls of remote sensing for biological invasion studies including sensor characteristics, upscaling and downscaling in species distribution models, and uncertainty of results.
+
+## Citation
+
+D. Rocchini, V. Andreo, M. Forster, C. X. Garzon-Lopez, A. P. Gutierrez, T. W. Gillespie, et al. (2015). Potential of remote sensing to predict species invasions: A modelling perspective. *Progress in Physical Geography, (39), pp. 283--309*. <https://doi.org/10.1177/0309133315574659>
