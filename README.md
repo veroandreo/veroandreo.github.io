@@ -301,10 +301,23 @@ correrlo dos veces.
 
 ## Publicar
 
-El workflow `.github/workflows/publish.yml` renderiza y publica en la rama
-`gh-pages` con cada push a `main`. Antes del primer deploy hay que crear el repo
-en GitHub y fijar la versión de Quarto en el workflow, que hoy dice
-`pre-release`.
+El sitio está en <https://veroandreo.github.io>. Para publicar un cambio:
+
+```bash
+git add -A && git commit -m "..." && git push
+```
+
+Y listo. El workflow `.github/workflows/publish.yml` renderiza con Quarto 1.7.31
+y empuja el HTML a la rama `gh-pages`, que es la que sirve GitHub Pages. Tarda
+alrededor de un minuto. Para seguirlo: `gh run watch`.
+
+**No hace falta renderizar antes de pushear**, ni commitear `_site/`: lo hace el
+workflow. Renderizá local sólo para mirar el resultado antes de subirlo.
+
+Si actualizás Quarto en tu máquina, subí también la versión del workflow (línea
+`version:`) para que local y CI no se separen.
+
+La rama `gh-pages` la maneja el workflow: no se toca a mano.
 
 ---
 

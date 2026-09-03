@@ -3,8 +3,9 @@
 Registro de qué se migró, cómo y qué quedó pendiente. Para usar el sitio en el
 día a día, ver el `README.md` de la raíz.
 
-Estado al 2 de septiembre de 2026. Nada del sitio Hugo fue modificado ni borrado:
-esta carpeta es una copia nueva y `content/`, `config/`, `static/` siguen intactos.
+Estado al 3 de septiembre de 2026, con el sitio ya publicado en
+<https://veroandreo.github.io>. Nada del sitio Hugo fue modificado ni borrado:
+vive todavía en el repo de GitLab, con `content/`, `config/` y `static/` intactos.
 
 ## Qué hay acá
 
@@ -197,9 +198,10 @@ About:
    Hugo decía `authors: [Veronica Andreo and Markus Neteler]`, un solo elemento.
 4. **`{{< gallery >}}`** de `content/home/gallery/` no se migró: era un widget de
    la home de Wowchemy que hoy no tiene lugar en la estructura nueva.
-5. **El workflow de deploy** (`.github/workflows/publish.yml`) apunta a la rama
-   `main` y usa Quarto `pre-release`. Antes de publicar conviene fijar la versión
-   y crear el repo `veroandreo/veroandreo.github.io`.
+5. ~~**El workflow de deploy**~~ **Resuelto el 3/9/2026.** El repo
+   `veroandreo/veroandreo.github.io` existe, la versión de Quarto quedó fijada en
+   `1.7.31` y el sitio se publica solo en cada push a `main`. Ver "Publicación"
+   más abajo.
 6. **Modo oscuro**: fuera. El `_quarto.yml` declara un solo tema claro.
 7. **`index.qmd` está escrito a mano**, y bastante reescrito respecto de lo que
    generó el script. Si volvés a correr `migrate_v2.py`, `migrate_about` vuelve a
@@ -215,9 +217,42 @@ About:
 10. **Categorías**: quedaron 38 y el objetivo era menos. Con un corte de "mínimo
     3 usos" quedarían 27; con "mínimo 4", 20.
 
+## Publicación
+
+El sitio vive en `veroandreo/veroandreo.github.io` y se publica en
+<https://veroandreo.github.io>. El flujo es: push a `main` → GitHub Actions
+renderiza con Quarto 1.7.31 → `quarto publish gh-pages` empuja el HTML a la rama
+`gh-pages` → GitHub Pages sirve esa rama. **No hay que renderizar ni commitear
+`_site/` a mano**: está en el `.gitignore` a propósito.
+
+Dos cosas que hubo que resolver en el primer deploy y que no son obvias:
+
+**`quarto publish gh-pages` en CI sabe actualizar la rama, no crearla.** El primer
+run falla con *"the remote origin does not have a branch named gh-pages"*. Hay que
+sembrarla una vez a mano, con una rama huérfana que sólo tenga un `.nojekyll`:
+
+```bash
+git checkout --orphan gh-pages
+git rm -rq --cached .
+touch .nojekyll && git add .nojekyll
+git commit -m "Seed gh-pages branch"
+git push -u origin gh-pages
+git checkout -f main      # el -f hace falta: el rm --cached dejó todo untracked
+```
+
+**En un repo `usuario.github.io`, GitHub activa Pages solo, apuntando a `main`.**
+Eso sirve el `README.md` renderizado por Jekyll en vez del sitio. Hay que mover la
+fuente a `gh-pages`:
+
+```bash
+gh api -X PUT repos/veroandreo/veroandreo.github.io/pages \
+  -f 'source[branch]=gh-pages' -f 'source[path]=/'
+gh api -X POST repos/veroandreo/veroandreo.github.io/pages/builds   # empujón
+```
+
 ## Aprendizajes de Quarto
 
-Seis cosas que costaron tiempo y conviene tener a mano.
+Cosas que costaron tiempo y conviene tener a mano.
 
 **El bloque `about:` se traga el cuerpo de la página.** Con `template: solana` o
 `trestles`, todo el contenido del documento entra dentro del bloque. En el home
