@@ -10,7 +10,7 @@ vive todavía en el repo de GitLab, con `content/`, `config/` y `static/` intact
 ## Qué hay acá
 
 ```
-quarto-site/
+veroandreo.github.io/
 ├── _quarto.yml            config del sitio, navbar, footer, tema
 ├── index.qmd              home: hero con la bio, Interests, Skills,
 │                          publicaciones, Experience y Contact
@@ -27,16 +27,28 @@ quarto-site/
     ├── aplicar_categorias.py           aplica ese vocabulario a los .qmd
     ├── italicas_especies.py            itálicas de nombres científicos
     ├── about-old.qmd                   la página About retirada (no se renderiza)
-    └── MIGRACION.md                    este archivo
+    ├── MIGRACION.md                    este archivo
+    └── diseno/                         registro de la elección de tema:
+                                        la paleta en PDF, la comparación A/B/C/D
+                                        y la propuesta de recorte de categorías
 ```
+
+Nada de `migrate/` se publica: el `_quarto.yml` lo excluye del render con
+`"!migrate/"`.
 
 Reproducir la migración desde cero:
 
 ```bash
-cd quarto-site
-python3 migrate/migrate_v2.py --hugo ../../content --quarto . --static ../../static
+# desde la raíz de este repo, con el repo Hugo clonado al lado
+python3 migrate/migrate_v2.py \
+  --hugo   ../veroandreo.gitlab.io/content \
+  --static ../veroandreo.gitlab.io/static \
+  --quarto .
 quarto render
 ```
+
+Ojo: `index.qmd` está escrito a mano y volver a correr el script lo pisa. Ver el
+punto 7 de los pendientes.
 
 ## Evaluación del script v1
 
