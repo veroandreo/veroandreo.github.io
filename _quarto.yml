@@ -33,7 +33,17 @@ website:
       - text: Posts
         href: posts/index.qmd
       - text: CV
-        href: assets/cv.pdf
+        menu:
+          # En pestaña nueva: el CV es una página suelta, sin la navbar del
+          # sitio, así que el sitio queda abierto en la pestaña de atrás.
+          - text: See in browser
+            href: assets/cv.html
+            target: _blank
+            rel: noopener
+          - text: Download PDF
+            href: assets/cv.pdf
+            target: _blank
+            rel: noopener
 
   page-footer:
     left: >-

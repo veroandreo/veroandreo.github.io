@@ -39,7 +39,8 @@ assets/
   ├── andreo-a/b/c-*.scss            las otras tres opciones
   ├── _andreo-comun.scss             estilos compartidos por las cuatro
   ├── img/                           avatar, caricatura, favicon, headers, logos
-  └── cv.pdf
+  ├── cv.pdf                         el CV para descargar
+  └── cv.html                        el mismo CV, para ver en el navegador
 migrate/              scripts de migración y mantenimiento, y `about-old.qmd`
                       - local, no versionada
 ```
@@ -333,6 +334,20 @@ python3 migrate/aplicar_categorias.py             # escribe los .qmd
 
 Para fusionar dos categorías, agregar la línea al mapa y volver a correrlo. El
 script relee los archivos cada vez, así que no importa si editaste a mano.
+
+### El CV
+
+Hay dos versiones, las dos generadas desde R con pagedown y copiadas a `assets/`:
+`cv.pdf` para descargar y `cv.html` para ver en el navegador. La entrada **CV**
+de la navbar es un menú con las dos (`_quarto.yml`, `navbar: right:`), y las dos
+están en `resources:`, así que se publican aunque ninguna página las linkee.
+
+Los dos links llevan `target: _blank`: el CV es una página suelta, sin la navbar
+del sitio, así que se abre en una pestaña aparte y el sitio queda en la de atrás.
+Va con `rel: noopener`, que es lo que corresponde con `_blank`.
+
+Para actualizarlo alcanza con pisar los dos archivos con los nuevos; no hay que
+tocar nada más.
 
 ### Itálicas de nombres científicos
 
