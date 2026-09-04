@@ -1,7 +1,8 @@
-# Sitio de Verónica Andreo — guía de uso
+# Sitio de Verónica Andreo - guía de uso
 
 Sitio en Quarto. Esta guía es para el día a día: dónde tocar cada cosa.
-El registro de la migración desde Hugo está en [`migrate/MIGRACION.md`](migrate/MIGRACION.md).
+El registro de la migración desde Hugo está en `migrate/MIGRACION.md`, una
+carpeta **local, no versionada** (ver Estructura).
 
 ---
 
@@ -13,7 +14,8 @@ quarto render       # genera _site/ completo
 quarto render index.qmd    # una sola página, más rápido
 ```
 
-Requiere Quarto 1.7+ y, para los scripts de `migrate/`, Python 3.11+ con PyYAML.
+Requiere Quarto 1.7+ y, para los scripts de `migrate/` (local, no versionada),
+Python 3.11+ con PyYAML.
 
 `_site/` y `.quarto/` son productos de compilación: están en `.gitignore` y no se
 versionan. Si algo se ve raro después de un cambio de estilos, `rm -rf _site .quarto`
@@ -39,12 +41,19 @@ assets/
   ├── img/                           avatar, caricatura, favicon, headers, logos
   └── cv.pdf
 migrate/              scripts de migración y mantenimiento, y `about-old.qmd`
+                      - local, no versionada
 ```
+
+**`migrate/` no está en el repo.** Está en el `.gitignore`, así que vive sólo en
+la copia local: los scripts de mantenimiento, el registro de la migración
+(`MIGRACION.md`), el de diseño (`diseno/`) y `about-old.qmd`. Los comandos de
+este README que la nombran funcionan en local; en un clon nuevo hay que copiarla
+a mano. También está excluida del render en `_quarto.yml`
+(`render: - "!migrate/"`), que no se queja si la carpeta no existe.
 
 **No hay página About.** La bio vive en el hero del home, como estaba en Hugo. La
 página vieja quedó guardada, sin renderizar, en `migrate/about-old.qmd`: ahí están
 también Education y la versión anterior de Interests, por si alguna vez vuelven.
-`migrate/` está excluida del render en `_quarto.yml` (`render: - "!migrate/"`).
 
 ---
 
@@ -59,9 +68,9 @@ está en `andreo-d-navy-hero-split.scss`**.
 | Colores de la paleta | `assets/_andreo-base.scss` | `// Primarios` |
 | Tipografías | `assets/_andreo-base.scss` | `// Tipografías` |
 | Navbar (colores, hover) | `andreo-d-navy-hero-split.scss` | `.navbar-nav .nav-link` |
-| Hero del home | `andreo-d-navy-hero-split.scss` | `div.quarto-about-solana` |
-| Afiliación bajo el nombre | `andreo-d-navy-hero-split.scss` | `.hero-affiliation` |
-| Botones sociales redondos | `andreo-d-navy-hero-split.scss` | `.about-entity .about-link` |
+| Hero del home (las dos columnas) | `andreo-d-navy-hero-split.scss` | `.hero-split` |
+| Cargo y afiliación del hero | `andreo-d-navy-hero-split.scss` | `.hero-role` |
+| Botones sociales redondos | `andreo-d-navy-hero-split.scss` | `.hero-links .about-link` |
 | Iconos del footer | `andreo-d-navy-hero-split.scss` | `.footer-icon` |
 | Tarjetas: orden y estilo | `_andreo-comun.scss` | `── Tarjetas` |
 | Tags / categorías | `_andreo-comun.scss` | `listing-category` |
@@ -107,9 +116,13 @@ theme:
   - assets/_andreo-comun.scss
 ```
 
-Las opciones A y C piden además un ajuste en `index.qmd` (`template:` del bloque
-`about:` y, para la C, `title-block-banner`). Está anotado en el encabezado de
-cada `.scss`.
+Las opciones A y C piden además un ajuste en `index.qmd` (para la C,
+`title-block-banner`). Está anotado en el encabezado de cada `.scss`.
+
+**Ojo**: las reglas del hero (`.hero-split` y compañía) viven **sólo** en el
+archivo D. A, B y C se escribieron cuando el hero salía del bloque `about:` de
+Quarto, así que si hoy cambiás de opción hay que llevarse esas reglas al archivo
+elegido, o el hero queda sin estilo.
 
 **Orden y precedencia**: Quarto compila los archivos en orden. En `scss:defaults`
 gana **el último** de la lista; en `scss:rules` también gana el último, pero
@@ -139,11 +152,11 @@ image: featured.jpg          # opcional; si no está, va el placeholder
 
 [PDF](https://doi.org/…) · [Code](…)
 
-![](featured.jpg){fig-alt="…" .featured-figure}
-
 ## Abstract
 
 …
+
+![](featured.jpg){fig-alt="…" .featured-figure}
 
 ## Citation
 
@@ -198,37 +211,71 @@ El link "ver todo" al pie de un listado va alineado a la derecha envolviéndolo:
 
 ### El hero del home
 
-Usa el bloque `about:` de Quarto con **`id:`**:
+Está escrito **a mano** en `index.qmd`, sin el bloque `about:` de Quarto. Son dos
+columnas:
 
-```yaml
-about:
-  id: hero          # ← imprescindible
-  template: solana
-  image: assets/img/caricatura-web.jpg
-  image-shape: rounded
+```
+[ foto   ]  RESEARCHER & LECTURER
+[ iconos ]  Verónica Andreo
+            CONICET · INSTITUTO GULICH - CONAE/UNC
+            bio…
 ```
 
-y en el cuerpo, la afiliación y los párrafos de la bio:
+````markdown
+::: {#hero .hero-split}
 
-```markdown
-::: {#hero}
-[[CONICET](…) · [Instituto Gulich](…) · Córdoba, Argentina]{.hero-affiliation}
+::: {.hero-side}
+```{=html}
+<img src="assets/img/caricatura-web.jpg" class="hero-photo" alt="…">
+```
+
+::: {.hero-links}
+[{{< ai orcid >}}](https://orcid.org/…){.about-link aria-label="ORCID"}
+…
+:::
+:::
+
+::: {.hero-main}
+::: {.hero-role}
+Researcher & Lecturer
+:::
+
+```{=html}
+<h1 class="hero-name">Verónica Andreo</h1>
+```
+
+::: {.hero-affiliation}
+[CONICET](…) · [Instituto Gulich](…) - [CONAE](…)/[UNC](…)
+:::
 
 My research asks a simple question with a difficult answer: …
 :::
-```
 
-Sin el `id:`, Quarto mete **todo el cuerpo de la página** dentro del bloque
-about, y las secciones de abajo quedan encajonadas en la columna del hero.
+:::
+````
 
-Dos detalles del hero:
+Para editar el texto de la bio, los párrafos de `.hero-main`. Para sumar o sacar
+un ícono, una línea en `.hero-links`: es un link markdown común con la clase
+`.about-link`, que es la que le da el círculo teal.
 
-- El template es **`solana`**, no `trestles`: `solana` deja el nombre al lado de
-  la foto y el tema le da vuelta la fila por CSS para que la foto quede a la
-  izquierda. `trestles` apila el nombre debajo de la foto.
-- `image-shape` es **`rounded`**, no `round`. La caricatura es vertical (2:3), y
-  `round` aplica `border-radius: 50 %`, que sobre una imagen no cuadrada da una
-  elipse en vez de un círculo.
+Cuatro cosas que conviene saber antes de tocarlo:
+
+- **Por qué no usa `about:`.** En el template `solana` los iconos y el cargo
+  salen dentro de la columna del texto y no hay CSS que los pase a la de la
+  foto: con grid no se puede porque las filas son comunes a las dos columnas, y
+  la bio terminaría arrancando debajo de la foto. `trestles` tampoco sirve:
+  llevaría también el nombre a la columna de la foto.
+- **`body-classes: home-hero`** en el front matter no es decorativo: activa la
+  regla que esconde el title block de Quarto. Si se saca, aparece un segundo
+  nombre arriba de todo. El `title:` se mantiene porque de ahí salen el
+  `<title>` y las tarjetas de redes; el `<h1>` que se ve es el del hero.
+- **La foto y el nombre van en bloques ```` ```{=html} ````** para que no queden
+  envueltos en un `<p>`. Una imagen sola en un párrafo markdown se convierte
+  además en un `<figure>` con epígrafe.
+- **En móvil** las dos columnas se aplanan con `display: contents` y cada
+  elemento se reordena por separado: foto → cargo → nombre → afiliación →
+  iconos → bio. Por eso el `order` del media query va elemento por elemento y no
+  por columna.
 
 ---
 
@@ -266,8 +313,8 @@ Hay dos juegos cargados:
   `{{< ai google-scholar >}}`. La lista completa está en
   `_extensions/schochastics/academicons/assets/css/all.css`.
 
-En el front matter (por ejemplo los links del bloque `about:`) el shortcode
-funciona igual: `- text: "{{< ai orcid >}}"`.
+El shortcode también funciona como texto de un link, que es como están puestos
+los iconos del hero: `[{{< ai orcid >}}](https://orcid.org/…){.about-link}`.
 
 ---
 
@@ -275,8 +322,9 @@ funciona igual: `- text: "{{< ai orcid >}}"`.
 
 ### Categorías
 
-El vocabulario está en `migrate/mapa_categorias.py`: un diccionario de
-`etiqueta actual → canónica` y un conjunto `BORRAR` con las que se eliminan.
+El vocabulario está en `migrate/mapa_categorias.py` (carpeta local, no
+versionada): un diccionario de `etiqueta actual → canónica` y un conjunto
+`BORRAR` con las que se eliminan.
 
 ```bash
 python3 migrate/aplicar_categorias.py --dry-run   # simula y muestra el resultado
@@ -327,7 +375,7 @@ La rama `gh-pages` la maneja el workflow: no se toca a mano.
    Un `quarto preview` viejo en otra pestaña sirve la versión anterior.
 2. **¿La regla CSS está aplicándose o solo existe?** Que aparezca en el CSS
    compilado no significa que gane. Quarto usa selectores muy específicos
-   (`div.quarto-about-solana .about-entity .about-link`); en el inspector, mirá
-   la pestaña Computed y fijate qué regla tacha a cuál.
+   (`div.quarto-about-trestles .about-entity .about-link`, por ejemplo); en el
+   inspector, mirá la pestaña Computed y fijate qué regla tacha a cuál.
 3. **¿Un CSS de CDN no hace nada?** Revisá que no tenga un `integrity` incorrecto:
    el navegador descarta la hoja entera sin decir nada.
