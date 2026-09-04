@@ -6,16 +6,12 @@
 // grande a la izquierda, nombre y datos alineados a la derecha.
 //
 // Uso: theme: [cosmo, _andreo-base.scss, andreo-d-navy-hero-split.scss, _andreo-comun.scss]
-// Requiere además, en el index.qmd del home:
-//   about:
-//     template: solana       ← con la fila invertida por CSS (ver abajo)
-//     image-width: 15em
+// Requiere además, en el index.qmd del home, el hero escrito a mano
+// (`::: {#hero .hero-split}`) y `body-classes: home-hero` en el front matter.
+// El porqué de no usar el bloque `about:` de Quarto está más abajo.
 //
-// Nota: solana pone la foto a la derecha; acá se invierte la fila para dejarla
-// a la izquierda, con la bio al lado. `trestles` no sirve para este hero:
-// apila el nombre debajo de la foto. Ya no hay página About (la bio pasó al
-// home), pero las reglas de trestles quedan por si vuelve una página con esa
-// disposición.
+// Ya no hay página About (la bio pasó al home), pero las reglas de `trestles`
+// quedan por si vuelve una página con esa disposición.
 // ============================================================
 
 $navbar-bg: #0E2A3D;
@@ -113,103 +109,131 @@ h2.section-label {
   }
 }
 
-// ── Lo propio de la D: el hero partido ───────────────────────
+// ── Lo propio de la D: el hero partido ──────────────────────────────────────
 //
-// IMPORTANTE sobre especificidad: Quarto estiliza estos bloques con selectores
-// como `div.quarto-about-solana .about-entity .about-link` (0,3,1). Un selector
-// de clases sueltas pierde por más abajo que esté en el archivo, así que acá se
-// escribe todo con el mismo prefijo `div.` y la misma profundidad.
+// El hero del home NO usa el bloque `about:` de Quarto. En `solana` los links
+// viven DENTRO de la columna del texto, y no hay forma de pasarlos a la de la
+// foto: ni con grid, porque las filas de un grid son comunes a las dos
+// columnas y la bio terminaría arrancando debajo de la foto. Hacen falta dos
+// columnas flex de verdad, cada una con su propio apilado, así que el hero se
+// escribe a mano en el index.qmd.
+//
+//   [ foto   ]  [ posición   ]
+//   [ iconos ]  [ nombre     ]
+//               [ afiliación ]
+//               [ bio        ]
 
-// Home: about template solana. Por defecto es [texto | foto]; lo damos vuelta.
-div.quarto-about-solana {
-  padding-top: 2.4rem !important;
-  padding-bottom: 1.2rem !important;   // Quarto pide 1em con más especificidad
+// El title block de Quarto se oculta: el nombre lo pone el hero, dentro de la
+// columna derecha. El `title:` del front matter se mantiene porque de él salen
+// el <title>, las tarjetas sociales y el h1 que Quarto quiere ver en la página;
+// el body-classes: home-hero del index.qmd es lo que activa esta regla.
+body.home-hero #title-block-header { display: none; }
 
-  // Sin filete al pie: el h2 de la sección siguiente ya trae el suyo, y dos
-  // líneas seguidas a poca distancia se leían como un divisor suelto.
+.hero-split {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.6rem;
+  max-width: 1080px;          // el home es page-layout: full
+  padding-top: 2.4rem;
+  margin-bottom: 2.6rem;      // le tiene que ganar al margin-top del h2 (2.1rem)
+}
 
-  // El margen colapsa con el margin-top del h2 siguiente, así que para separar
-  // de verdad hay que pedir más que ese h2 (2.1rem).
-  margin-bottom: 2.6rem;
+.hero-side {
+  flex: 0 0 15em;             // el mismo ancho que tenía image-width: 15em
+  max-width: 15em;
+}
 
-  // El home va a page-layout: full para que las tarjetas respiren; el hero se
-  // mantiene en un ancho legible en vez de estirarse a toda la pantalla.
-  max-width: 1080px;
+.hero-photo {
+  display: block;
+  width: 100%;
+  border-radius: 10px;        // la caricatura es 2:3: va rounded, no round
+}
 
-  // Foto a la izquierda: solana la pone a la derecha, así que se invierte la
-  // fila. Con row-reverse el eje principal arranca a la derecha, por eso
-  // `flex-end` es lo que agrupa foto y texto contra el margen izquierdo
-  // (el `space-between` de Quarto los mandaba a los dos extremos).
-  .about-entity {
-    flex-direction: row-reverse !important;
-    justify-content: flex-end !important;
-    align-items: center;
-    gap: 2.6rem;
+// Posición y afiliación: el mismo mono en versalitas que usaba el hero anterior.
+.hero-role,
+.hero-affiliation {
+  display: block;
+  font-family: $font-family-monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $muted;
+}
+
+// Rótulo arriba del nombre, como en el hero anterior.
+.hero-role {
+  font-size: 0.72rem;
+  letter-spacing: 0.13em;
+  margin-bottom: 0.45rem;
+}
+
+// Debajo del nombre, en la columna ancha: entra en un renglón.
+.hero-affiliation {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  margin-bottom: 1.15rem;
+
+  a {
+    color: inherit;
+    text-decoration-color: rgba($muted, 0.3);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+
+    &:hover { color: $teal; text-decoration-color: $teal; }
   }
+}
 
-  .about-image { margin-bottom: 0 !important; }
+// Los fenced divs traen un <p> adentro: se le saca el margen para que la
+// caja de afuera sea la que manda.
+.hero-role p, .hero-affiliation p, .hero-links p { margin: 0; }
 
-  // La bio vive en el hero, así que el texto se limita a una medida legible
-  // en vez de estirarse hasta los 1080px del bloque.
-  .entity-contents {
-    text-align: left;
-    max-width: min(62ch, 100%);
-  }
+.hero-links {
+  margin-top: 1.15rem;
 
-  // Afiliación sobre la bio, en el mismo mono que el rótulo del nombre. Los
-  // enlaces van en el gris del resto de la línea (en teal, tres links seguidos
-  // en mayúsculas hacían demasiado ruido); sólo se encienden al pasar.
-  .hero-affiliation {
-    display: block;
-    font-family: $font-family-monospace;
-    font-size: 0.74rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: $muted;
-
-    a {
-      color: inherit;
-      text-decoration-color: rgba($muted, 0.3);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 0.25em;
-
-      &:hover { color: $teal; text-decoration-color: $teal; }
-    }
-  }
-
-  // El rótulo en mono va ARRIBA del nombre, como en la maqueta.
-  .quarto-title { display: flex; flex-direction: column; }
-  .quarto-title .subtitle {
-    order: -1;
-    font-family: $font-family-monospace;
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: $muted;
-    margin-bottom: 0.45rem;
-  }
-
-  h1.title {
-    font-family: $headings-font-family;
-    font-size: 2.15rem;
-    font-weight: 500;
-    line-height: 1.15;
-    color: $ink;
-    margin-bottom: 0.3rem;
-  }
-
-  // Con la bio en dos párrafos hace falta algo más de aire que el 0.5rem que
-  // alcanzaba cuando el hero era sólo dos líneas sueltas.
-  p { margin-bottom: 0.8rem; }
-
-  .about-links {
-    justify-content: flex-start !important;
-    gap: 8px;
+  // Centrados bajo la foto: la columna mide 15em y los cinco círculos ocupan
+  // menos, así que alineados a la izquierda quedaban descolgados.
+  p {
+    display: flex;
     flex-wrap: wrap;
-    margin-top: 0.9rem;
+    justify-content: center;
+    gap: 8px;
   }
+}
+
+.hero-main {
+  flex: 1 1 auto;
+  max-width: min(62ch, 100%);
+
+  p { margin-bottom: 0.8rem; }
+}
+
+h1.hero-name {
+  font-family: $headings-font-family;
+  font-size: 2.15rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: $ink;
+  margin: 0 0 0.45rem;
+}
+
+// En pantallas chicas no alcanza con apilar las dos columnas: los iconos
+// quedarían entre la foto y el nombre. Con display: contents las dos columnas
+// desaparecen como cajas y sus hijos se ordenan de nuevo, uno por uno.
+@media screen and (max-width: 767.98px) {
+  .hero-split {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .hero-side, .hero-main { display: contents; }
+
+  .hero-photo      { order: 1; max-width: min(15em, 100%); margin: 0 auto 1.15rem; }
+  .hero-role       { order: 2; text-align: center; }
+  h1.hero-name     { order: 3; text-align: center; }
+  .hero-affiliation{ order: 4; text-align: center; margin-bottom: 0; }
+  .hero-links      { order: 5; margin-bottom: 1.4rem; }
+  .hero-main p     { order: 6; }
 }
 
 // Home a ancho completo: que las grillas no se estiren más allá de lo legible
@@ -217,28 +241,12 @@ div.quarto-about-solana {
 .quarto-listing-grid .card-title { font-size: 0.95rem; line-height: 1.35; }
 .quarto-listing-grid .listing-description { font-size: 0.85rem; }
 
-// En pantallas chicas, foto arriba y todo centrado
-@media screen and (max-width: 767.98px) {
-  div.quarto-about-solana .about-entity {
-    flex-direction: column-reverse !important;
-    justify-content: flex-start !important;
-    text-align: center;
-  }
-  div.quarto-about-solana .entity-contents { text-align: center; }
-  div.quarto-about-solana .about-links { justify-content: center !important; }
-
-  // Nombre, iconos y línea de temas centrados, pero la bio alineada a la
-  // izquierda: dos párrafos largos centrados se leen mal. El primer párrafo
-  // del bloque es la línea de temas, así que ese sí queda centrado.
-  div.quarto-about-solana .about-contents p { text-align: left; }
-  div.quarto-about-solana .about-contents p:first-child { text-align: center; }
-}
-
 // ── Botones sociales: solo el icono, en un círculo teal ──────────────────────
-// Se listan los dos templates que usa el sitio con la profundidad exacta que
-// usa Quarto, para ganarle a su `.about-link{color:...;border:solid 1px}`.
-div.quarto-about-solana .about-entity .about-link,
-div.quarto-about-trestles .about-entity .about-link {
+// Los del hero (.hero-links) son enlaces markdown con `.about-link` a mano. Los
+// de trestles los genera Quarto y hay que escribirlos con la profundidad exacta
+// que usa él, para ganarle a su `.about-link{color:...;border:solid 1px}`.
+div.quarto-about-trestles .about-entity .about-link,
+.hero-links .about-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -1,32 +1,11 @@
 ---
 title: "Verónica Andreo"
-subtitle: "Researcher & Lecturer"
 pagetitle: "Verónica Andreo"
+body-classes: home-hero   # ver el .scss: oculta el title block de Quarto
 image: assets/img/avatar.jpg
 image-alt: "Verónica Andreo"
 toc: false
 page-layout: full
-
-about:
-  id: hero
-  template: solana
-  image: assets/img/caricatura-web.jpg
-  image-alt: "Ilustración de Verónica Andreo trabajando con GRASS"
-  image-width: 15em
-  image-shape: rounded
-  links:
-    - text: "{{< ai google-scholar >}}"
-      href: https://scholar.google.com/citations?user=zoN4MO4AAAAJ&hl=en
-    - text: "{{< ai orcid >}}"
-      href: https://orcid.org/0000-0002-4633-2161
-    - text: "{{< ai researchgate >}}"
-      href: https://www.researchgate.net/profile/Veronica_Andreo2
-    - text: "<i class='fa-brands fa-github' role='img' aria-label='GitHub' title='GitHub'></i>"
-      href: https://github.com/veroandreo
-    - text: "<i class='fa-brands fa-gitlab' role='img' aria-label='GitLab' title='GitLab'></i>"
-      href: https://gitlab.com/veroandreo
-    - text: "<i class='fa-solid fa-envelope' role='img' aria-label='Email' title='Email'></i>"
-      href: mailto:veronica.andreo@ig.edu.ar
 
 listing:
   - id: latest-publications
@@ -41,8 +20,35 @@ listing:
     image-placeholder: assets/img/headers/landsatlooks.jpg
 ---
 
-::: {#hero}
-[[CONICET](https://www.conicet.gov.ar/) · [Instituto Gulich](http://ig.conae.unc.edu.ar/) – [CONAE](https://www.argentina.gob.ar/ciencia/conae)/[UNC](https://www.unc.edu.ar/) · Córdoba, Argentina]{.hero-affiliation}
+::: {#hero .hero-split}
+
+::: {.hero-side}
+```{=html}
+<img src="assets/img/caricatura-web.jpg" class="hero-photo"
+     alt="Ilustración de Verónica Andreo trabajando con GRASS">
+```
+
+::: {.hero-links}
+[{{< ai google-scholar >}}](https://scholar.google.com/citations?user=zoN4MO4AAAAJ&hl=en){.about-link aria-label="Google Scholar" title="Google Scholar"}
+[{{< ai orcid >}}](https://orcid.org/0000-0002-4633-2161){.about-link aria-label="ORCID" title="ORCID"}
+[{{< ai researchgate >}}](https://www.researchgate.net/profile/Veronica_Andreo2){.about-link aria-label="ResearchGate" title="ResearchGate"}
+[<i class="fa-brands fa-github"></i>](https://github.com/veroandreo){.about-link aria-label="GitHub" title="GitHub"}
+[<i class="fa-solid fa-envelope"></i>](mailto:veronica.andreo@ig.edu.ar){.about-link aria-label="Email" title="Email"}
+:::
+:::
+
+::: {.hero-main}
+::: {.hero-role}
+Researcher & Lecturer
+:::
+
+```{=html}
+<h1 class="hero-name">Verónica Andreo</h1>
+```
+
+::: {.hero-affiliation}
+[CONICET](https://www.conicet.gov.ar/) · [Instituto Gulich](http://ig.conae.unc.edu.ar/) - [CONAE](https://www.argentina.gob.ar/ciencia/conae)/[UNC](https://www.unc.edu.ar/)
+:::
 
 My research asks a simple question with a difficult answer: **where and when do
 environmental conditions converge to make a disease outbreak likely?** I look for
@@ -62,6 +68,8 @@ into them. I am part of the
 [Project Steering Committee](https://trac.osgeo.org/grass/wiki/PSC) since 2021,
 I teach GRASS and geospatial courses regularly, and I am an active member of
 [OSGeo](https://www.osgeo.org/) and the FOSS4G community.
+:::
+
 :::
 
 ## Interests {.section-label}
