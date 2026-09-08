@@ -18,6 +18,8 @@ categories:
 - MODIS
 - Land surface temperature
 - Time series
+image: featured.jpg
+image-alt: Indices of the mosquito growing season over Europe derived from reconstructed MODIS land surface temperature.
 ---
 
 [PDF](https://doi.org/10.5194/isprs-archives-XLII-4-W2-19-2017)
@@ -25,6 +27,8 @@ categories:
 ## Abstract
 
 Temperature is one of the main drivers of ecological processes. The availability of temporally and spatially continuous temperature time series is crucial in different research and application fields, such as epidemiology and control of zoonotic diseases. In 2010, several West Nile virus (WNV) outbreaks in humans were observed in Europe, with the largest number of cases recorded in Greece. Human cases continued to occur for four more years. The occurrence of the 2010’s outbreak in Greece has been related to positive anomalies in temperature. Currently available remote sensing time series might provide the temporal and spatial coverage needed to assess this kind of hypothesis. However, the main problem with remotely sensed temperature are the gaps caused by cloud cover. With the objective of testing the former hypothesis, we reconstructed daily MODIS Land Surface Temperature (LST) data and derived several indices that are known or hypothesized to be related to mosquito populations, WNV transmission or risk of disease since they might constitute proxies for favoring or limiting conditions. We present the first results of the comparisons of time series of LST-derived indices among locations with WNV human cases and municipalities with and without reported WNV infection in Greece between 2010 and 2014.
+
+![](featured.jpg){fig-alt="Indices of the mosquito growing season over Europe derived from reconstructed MODIS land surface temperature." .featured-figure}
 
 ## Citation
 

@@ -7,11 +7,15 @@ author:
 - name: A. L. Correa
 - name: V. Andreo
 pub-type: Journal article
+image: featured.jpg
+image-alt: Diagrama de los tres ejes de la propuesta educativa.
 ---
 
 ## Abstract
 
 In this paper we share a didactic proposal that we carried out in an introductory subject of the Biological Sciences course of studies. With this proposal we attempt to assess the understanding of Biology study field from the perspective of scientific knowledge praxis and the dilemmas faced by the professional profile of biologists in their work environment. We describe some arguments which validate the importance of including the analysis of the nature of scientific knowledge for the formation of science students. Moreover, we justify the thematic axes and didactic activities developed during the course, offering some reflections, explanations and responses from the main actors (both teachers and students) and analyzing the cognitive and conceptual value of the proposed didactic path. In this paper we share a didactic proposal that we carried out in an introductory subject of the Biological Sciences course of studies. With this proposal we attempt to assess the understanding of Biology study field from the perspective of scientific knowledge praxis and the dilemmas faced by the professional profile of biologists in their work environment. We describe some arguments which validate the importance of including the analysis of the nature of scientific knowledge for the formation of science students. Moreover, we justify the thematic axes and didactic activities developed during the course, offering some reflections, explanations and responses from the main actors (both teachers and students) and analyzing the cognitive and conceptual value of the proposed didactic path.
+
+![](featured.jpg){fig-alt="Diagrama de los tres ejes de la propuesta educativa." .featured-figure}
 
 ## Citation
 

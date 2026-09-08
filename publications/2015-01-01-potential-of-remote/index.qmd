@@ -30,6 +30,8 @@ categories:
 - Species distribution models
 - GIS
 - Invasive species
+image: featured.jpg
+image-alt: Predicted suitability for *Aedes albopictus* in Europe in 2013, derived from remotely sensed land surface temperature.
 ---
 
 [PDF](https://doi.org/10.1177/0309133315574659)
@@ -37,6 +39,8 @@ categories:
 ## Abstract
 
 Understanding the causes and effects of species invasions is a priority in ecology and conservation biology. One of the crucial steps in evaluating the impact of invasive species is to map changes in their actual and potential distribution and relative abundance across a wide region over an appropriate time span. While direct and indirect remote sensing approaches have long been used to assess the invasion of plant species, the distribution of invasive animals is mainly based on indirect methods that rely on environmental proxies of conditions suitable for colonization by a particular species. The aim of this article is to review recent efforts in the predictive modelling of the spread of both plant and animal invasive species using remote sensing, and to stimulate debate on the potential use of remote sensing in biological invasion monitoring and forecasting. Specifically, the challenges and drawbacks of remote sensing techniques are discussed in relation to: i) developing species distribution models, and ii) studying life cycle changes and phenological variations. Finally, the paper addresses the open challenges and pitfalls of remote sensing for biological invasion studies including sensor characteristics, upscaling and downscaling in species distribution models, and uncertainty of results.
+
+![](featured.jpg){fig-alt="Predicted suitability for *Aedes albopictus* in Europe in 2013, derived from remotely sensed land surface temperature." .featured-figure}
 
 ## Citation
 

@@ -18,6 +18,8 @@ categories:
 - Mosquitoes
 - Arboviruses
 - Climate
+image: featured.jpg
+image-alt: Global map of the *Aedes* index P and summary of the trait records included in the dataset.
 ---
 
 [PDF](https://doi.org/10.1038/s41597-025-06461-z)
@@ -25,6 +27,8 @@ categories:
 ## Abstract
 
 Invasive *Aedes* mosquitoes are major vectors of arboviral diseases such as dengue, Zika, and chikungunya, posing an increasing threat to global public health. Their recent geographic expansion calls for predictive models to simulate population dynamics and transmission risk. Temperature is a key driver in these models, influencing traits that affect vector competence. Numerous datasets on temperature-dependent traits exist for *Aedes aegypti* and *Aedes albopictus*, though they are scattered, inconsistent, and difficult to synthesise. For emerging species like *Aedes japonicus* and *Aedes koreicus*, such datasets are scarce. To address these gaps, we developed AedesTraits, an open-access, machine-readable dataset aligned with VecTraits standards. It compiles and systematises experimental data on temperature-dependent traits across these four *Aedes* species, covering life-history, morphological, physiological, and behavioural traits. Our synthesis highlights existing knowledge gaps and identifies under-studied species and traits. By promoting data systematisation and accessibility, AedesTraits supports *Aedes*–borne disease modelling and fosters international collaboration in the development of forecasting tools for arbovirus outbreaks.
+
+![](featured.jpg){fig-alt="Global map of the *Aedes* index P and summary of the trait records included in the dataset." .featured-figure}
 
 ## Citation
 

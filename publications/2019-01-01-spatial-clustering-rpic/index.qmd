@@ -16,6 +16,8 @@ categories:
 - Aedes aegypti
 - Dengue
 - Clustering
+image: featured.jpg
+image-alt: Lower and higher *Aedes aegypti* activity clusters detected in Córdoba city, Argentina.
 ---
 
 [PDF](https://doi.org/10.1109/RPIC.2019.8882135)
@@ -23,6 +25,8 @@ categories:
 ## Abstract
 
 In Córdoba city the surveillance of *Aedes aegypti*, the vector of Dengue, Zika and Chikungunya in Argentina, has been done regularly since 2011. Even there are general recommendations at international level about mosquito monitoring, its implementation in a operative way, arises with several questions about how to do, and how to interpret the output of *Aedes aegypti* sampling/monitoring. The last strategy introduced for Zoonosis Direction of Córdoba is the ovitrap sampling. This work aims to analyze spatially 300 traps distributed over the city, in the past 5 months of monitoring. Global and local indexes of spatial correlation are used over the 5 months. The high activity clusters detected converge in the same area and they are also analyzed in terms of urban cover types derived by Sentinel 2 images. This results provides useful information to control activities and to contribute in the optimization of surveillance strategy.
+
+![](featured.jpg){fig-alt="Lower and higher *Aedes aegypti* activity clusters detected in Córdoba city, Argentina." .featured-figure}
 
 ## Citation
 

@@ -12,6 +12,8 @@ author:
 - name: R. E. Gonzalez-Ittig
 pub-type: Journal article
 doi: 10.1111/jzo.12410
+image: featured.jpg
+image-alt: Migration rates between pairs of *Oligoryzomys longicaudatus* populations at the landscape scale.
 ---
 
 [PDF](https://doi.org/10.1111/jzo.12410)
@@ -19,6 +21,8 @@ doi: 10.1111/jzo.12410
 ## Abstract
 
 The population genetic structure of _Oligoryzomys longicaudatus_ colilargo was examined at two geographical scales: (a) regional, including five populations of the Argentinean Patagonia separated by 60–315 km and (b) landscape scale, using five populations from different valleys of the locality of Cholila in the subantarctic forest separated by 6–27 km, and a nearby locality of the Patagonian steppe, with an average distance from Cholila of 33 km. Eight microsatellite loci specific for O. longicaudatus were used as genetic markers. At the regional scale, four genetic clusters were detected by the Geneland software. The genetic structure was found to follow a latitudinal pattern. This result was supported by the FST statistic, indicating low levels of current gene flow within the region. At the landscape level, genetic differentiation among the five populations was also found. Estimated migration rates were, in general, low and asymmetrical between nearby populations. Using a causal modeling approach, we detected that the combination of landscape features such as lakes, rivers, urban settlements and roads appear to constrain the dispersal of O. longicaudatus at this scale. This result would explain why nearby populations were so different in their genetic composition. The information about geographic features limiting rodent dispersal provided here could help to design more accurate prevention measures against the expansion of hantavirus pulmonary syndrome.
+
+![](featured.jpg){fig-alt="Migration rates between pairs of *Oligoryzomys longicaudatus* populations at the landscape scale." .featured-figure}
 
 ## Citation
 

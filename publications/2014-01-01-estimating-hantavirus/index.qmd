@@ -22,6 +22,8 @@ categories:
 - Species distribution models
 - GIS
 - GRASS
+image: featured.jpg
+image-alt: (a) Risk map for hantavirus pulmonary syndrome and (b) potential distribution of its rodent host in Argentina.
 ---
 
 [PDF](https://doi.org/10.3390/v6010201)
@@ -29,6 +31,8 @@ categories:
 ## Abstract
 
 We use a Species Distribution Modeling (SDM) approach along with Geographic Information Systems (GIS) techniques to examine the potential distribution of hantavirus pulmonary syndrome (HPS) caused by Andes virus (ANDV) in southern Argentina and, more precisely, define and estimate the area with the highest infection probability for humans, through the combination with the distribution map for the competent rodent host (*Oligoryzomys longicaudatus*). Sites with confirmed cases of HPS in the period 1995–2009 were mostly concentrated in a narrow strip (~90 km × 900 km) along the Andes range from northern Neuquén to central Chubut province. This area is characterized by high mean annual precipitation (~1,000 mm on average), but dry summers (less than 100 mm), very low percentages of bare soil (~10% on average) and low temperatures in the coldest month (minimum average temperature −1.5 °C), as compared to the HPS-free areas, features that coincide with sub-Antarctic forests and shrublands (especially those dominated by the invasive plant *Rosa rubiginosa*), where rodent host abundances and ANDV prevalences are known to be the highest. Through the combination of predictive distribution maps of the reservoir host and disease cases, we found that the area with the highest probability for HPS to occur overlaps only 28% with the most suitable habitat for O. longicaudatus. With this approach, we made a step forward in the understanding of the risk factors that need to be considered in the forecasting and mapping of risk at the regional/national scale. We propose the implementation and use of thematic maps, such as the one built here, as a basic tool allowing public health authorities to focus surveillance efforts and normally scarce resources for prevention and control actions in vast areas like southern Argentina.
+
+![](featured.jpg){fig-alt="(a) Risk map for hantavirus pulmonary syndrome and (b) potential distribution of its rodent host in Argentina." .featured-figure}
 
 ## Citation
 

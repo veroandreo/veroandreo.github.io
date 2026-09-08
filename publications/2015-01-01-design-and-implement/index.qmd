@@ -14,6 +14,8 @@ pub-type: Conference paper
 doi: 10.1109/IGARSS.2015.7326230
 categories:
 - Risk mapping
+image: featured.jpg
+image-alt: Continuous (a) and reclassified (b) meteorological fire danger index for Argentina.
 ---
 
 [PDF](https://doi.org/10.1109/IGARSS.2015.7326230)
@@ -21,6 +23,8 @@ categories:
 ## Abstract
 
 We designed an integrated platform for early prediction of meteorological fire risk. The system is operative since the end of 2014 and estimates the fire danger index automatically, based on the 72 hours forecast of the Weather Research and Forecast (WRF) model. Though the system is in experimental phase, the first results showed a quite acceptable performance. Moreover, this index is capable of continuously improving the algorithms to produce enhanced risk estimation. Thus, in the short term, the system would also include geospatial information and satellite based products to help firefighting activities during all phases: early warning, pre-disaster planning, preparing and forecasting, response and assistance, recovering and reconstruction throughout a web map service.
+
+![](featured.jpg){fig-alt="Continuous (a) and reclassified (b) meteorological fire danger index for Argentina." .featured-figure}
 
 ## Citation
 

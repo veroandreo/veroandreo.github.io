@@ -14,6 +14,8 @@ categories:
 - Hantavirus
 - Rodents
 - Invasive species
+image: featured.jpg
+image-alt: Examples of sweet briar shrublands in the study area.
 ---
 
 [PDF](https://doi.org/10.1007/s13364-023-00671-9) · [Code](https://github.com/veroandreo/colilargos-sweetbriar)
@@ -21,6 +23,8 @@ categories:
 ## Abstract
 
 In this work, we examined the relationship of _Oligoryzomys longicaudatus_’ (the Andes virus [ANDV] host, commonly known as the colilargo) occupancy and the cover of dominant woody and herbaceous plant species recorded in censuses along traplines for mice. We found that O. longicaudatus occupancy probability increased with high percentages of *Rosa rubiginosa*, *Plantago lanceolata*, *Rumex acetosella*, and *Holcus lanatus*, while it decreased with an increased cover of *Mulinum spinosum* and *Ochetophila trinervis*. The four positively related species are exotic plants. R. rubiginosa, the most conspicuous one, is capable of invading all types of habitats and forms dense shrublands in the ecotone between forest and steppe. These results are partly consistent with diet studies indicating that sweet briar fruits are the main item consumed by colilargos. The relationship of the ANDV main host with such an invasive plant poses a likely increased ANDV transmission risk to local communities making use of sweet briar’s fruits. We discuss further implications of this problem in relation to hantavirus epidemiology in southern Argentina.
+
+![](featured.jpg){fig-alt="Examples of sweet briar shrublands in the study area." .featured-figure}
 
 ## Citation
 
