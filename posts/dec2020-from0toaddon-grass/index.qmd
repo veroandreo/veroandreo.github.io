@@ -31,7 +31,7 @@ Once back in Argentina, the MSc thesis was a great excuse to learn and
 test the freshly developed *temporal framework* and some basic bash to 
 write simple scripts. I always received a lot of support from devs and
 other users in the 
-[mailing list](https://lists.osgeo.org/mailman/listinfo/grass-user).
+[mailing list](https://discourse.osgeo.org/c/grass/user/62).
 Please take into account that my background is Biology and I had zero 
 coding/programming before this... for me, each step was a huge step! 
 

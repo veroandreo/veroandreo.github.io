@@ -9,7 +9,7 @@ listing:
   categories: true
   fields: [title, date, categories, image]
   image-height: "150px"
-  image-placeholder: ../assets/img/headers/bubbles-wide.jpg
+  image-placeholder: ../assets/img/headers/landsatlooks.jpg
 format:
   html:
     page-layout: full

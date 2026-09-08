@@ -31,7 +31,7 @@ listing:
 ::: {.hero-links}
 [{{< ai google-scholar >}}](https://scholar.google.com/citations?user=zoN4MO4AAAAJ&hl=en){.about-link aria-label="Google Scholar" title="Google Scholar"}
 [{{< ai orcid >}}](https://orcid.org/0000-0002-4633-2161){.about-link aria-label="ORCID" title="ORCID"}
-[{{< ai researchgate >}}](https://www.researchgate.net/profile/Veronica_Andreo2){.about-link aria-label="ResearchGate" title="ResearchGate"}
+[{{< ai researchgate >}}](https://www.researchgate.net/profile/Veronica-Andreo-2){.about-link aria-label="ResearchGate" title="ResearchGate"}
 [<i class="fa-brands fa-github"></i>](https://github.com/veroandreo){.about-link aria-label="GitHub" title="GitHub"}
 [<i class="fa-solid fa-envelope"></i>](mailto:veronica.andreo@ig.edu.ar){.about-link aria-label="Email" title="Email"}
 :::

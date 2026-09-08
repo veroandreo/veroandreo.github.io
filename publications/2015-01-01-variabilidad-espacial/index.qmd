@@ -14,7 +14,7 @@ image: featured.jpg
 image-alt: Área de estudio en la plataforma y el talud continental patagónico, con los sitios de muestreo.
 ---
 
-[PDF](http://www.famaf.unc.edu.ar/wp-content/uploads/2016/02/28-Gulich-Andreo-S%C3%AD.pdf)
+[PDF](https://www.famaf.unc.edu.ar/documents/1335/28-Gulich-Andreo-S%C3%AD.pdf)
 
 ## Abstract
 

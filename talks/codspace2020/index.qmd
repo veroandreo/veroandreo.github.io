@@ -4,7 +4,6 @@ date: '2020-10-28'
 author:
 - name: Veronica Andreo
 event: CODSpace 2020
-event_url: https://cods.uniandes.edu.co/imagenes-satelitales-para-predecir-enfermedades-transmitidas-por-vectores/
 location: Webinar
 when: 2020-10-28 21:30–23:00
 categories:
@@ -15,7 +14,7 @@ categories:
 image: featured.jpeg
 ---
 
-[Slides](https://gitpitch.com/veroandreo/presentacion-codspace/master?&grs=gitlab) · [Video](http://www.youtube.com/watch?v=-ZMkDZ30bzw)
+[Slides](https://gitlab.com/veroandreo/presentacion-codspace) · [Video](http://www.youtube.com/watch?v=-ZMkDZ30bzw)
 
 ## Abstract
 
