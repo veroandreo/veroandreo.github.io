@@ -74,6 +74,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -260,6 +263,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>The incidence of tick-borne diseases caused by <em>Borrelia burgdorferi</em> sensu lato, <em>Anaplasma phagocytophilum</em> and <em>Rickettsia</em> spp. has been rising in Europe in recent decades. Early pre-assessment of acarological hazard still represents a complex challenge. The aim of this study was to model <em>Ixodes ricinus</em> questing nymph density and its infection rate with B. burgdorferi s.l., A. phagocytophilum and <em>Rickettsia</em> spp. in five European countries (Italy, Germany, Czech Republic, Slovakia, Hungary) in various land cover types differing in use and anthropisation (agricultural, urban and natural) with climatic and environmental factors (Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI), Land Surface Temperature (LST) and precipitation). We show that the relative abundance of questing nymphs was significantly associated with climatic conditions, such as higher values of NDVI recorded in the sampling period, while no differences were observed among land use categories. However, the density of infected nymphs (DIN) also depended on the pathogen considered and land use. These results contribute to a better understanding of the variation in acarological hazard for <em>Ixodes ricinus</em> transmitted pathogens in Central Europe and provide the basis for more focused ecological studies aimed at assessing the effect of land use in different sites on tick–host pathogens interaction.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Map of the 19 tick sampling sites in Italy, Germany, the Czech Republic, Slovakia and Hungary."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -687,6 +691,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

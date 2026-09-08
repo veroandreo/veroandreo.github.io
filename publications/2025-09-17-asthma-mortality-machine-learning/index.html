@@ -6,10 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="A. Coiman">
+<meta name="author" content="M. F. Garcia Ferreyra">
 <meta name="author" content="V. Andreo">
-<meta name="dcterms.date" content="2012-01-01">
+<meta name="dcterms.date" content="2025-09-17">
 
-<title>Variables ambientales en la dinámica espacial de Oligoryzomys longicaudatus (huésped del virus andes) en la región noroeste de Chubut, Argentina – Verónica Andreo</title>
+<title>Predicting asthma mortality in Argentina using remote sensing data and machine learning – Verónica Andreo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -139,7 +144,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#citation" id="toc-citation" class="nav-link active" data-scroll-target="#citation">Citation</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
   </ul>
 </nav>
     </div>
@@ -148,12 +154,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Variables ambientales en la dinámica espacial de <em>Oligoryzomys longicaudatus</em> (huésped del virus andes) en la región noroeste de Chubut, Argentina</h1>
+<h1 class="title">Predicting asthma mortality in Argentina using remote sensing data and machine learning</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Hantavirus</div>
-    <div class="quarto-category">Species distribution models</div>
+    <div class="quarto-category">Machine learning</div>
+    <div class="quarto-category">Air pollution</div>
     <div class="quarto-category">Remote sensing</div>
-    <div class="quarto-category">Habitat use</div>
+    <div class="quarto-category">Public health</div>
   </div>
   </div>
 
@@ -162,8 +168,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
+             <p>A. Coiman </p>
+             <p>M. F. Garcia Ferreyra </p>
              <p>V. Andreo </p>
           </div>
   </div>
@@ -171,11 +179,19 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2012</p>
+      <p class="date">September 17, 2025</p>
     </div>
   </div>
   
     
+    <div>
+    <div class="quarto-title-meta-heading">Doi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/10.1109/RPIC67987.2025.11260709">10.1109/RPIC67987.2025.11260709</a>
+      </p>
+    </div>
+  </div>
   </div>
   
 
@@ -183,9 +199,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><a href="https://doi.org/10.1109/RPIC67987.2025.11260709">PDF</a></p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Asthma remains a major public health concern in Latin America, where underreporting and unequal access to healthcare services challenge accurate assessments of its prevalence and mortality. In this study, we explored the use of remote sensing data and machine learning techniques to predict asthma mortality in Argentina at departmental level from 2001 to 2022. We used the Random Forest (RF) algorithm to model the Normalized Asthma Mortality Rate (NAMR). A walk-forward validation approach with expanding windows was applied to train, test, and tune a RF model in a two-stage approach—classification followed by regression—using predictor variables derived from satellite-based observations such as burned areas, and Particulate Matter with 2.5 micrometers in diameter or less (PM2.5), along with Population Density (PD), and lagged and feature engineered variables. Exploratory spatial analyses revealed a weak but statistically significant spatial autocorrelation in NAMR and stronger spatial autocorrelation in PD. The walk-forward validation approach showed that RF classification model was able to correctly identify most departments with asthma mortality (mean accuracy 0.775 ± 0.012), although it tended to miss a proportion of actual cases (mean recall 0.611 ± 0.047). The RF regression model demonstrated a moderate ability to explain variations in NAMR across departments (mean R² 0.440 ± 0.138). SHAP (SHapley Additive exPlanations) analysis highlighted PD, past mortality rates, and the PD×PM2.5 interaction as the main factors contributing to the 2022 NAMR predictions. Our findings underscore the potential of integrating remotely sensed environmental data and machine learning for identifying asthma mortality risk patterns in data-sparse settings.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Normalized burned area, annual PM2.5 concentration and population density across Argentinian departments."></a></p>
+</section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
-<p>V. Andreo (2012). Variables ambientales en la dinámica espacial de <em>Oligoryzomys longicaudatus</em> (huésped del virus andes) en la región noroeste de Chubut, Argentina. <em>Mastozoología Neotropical, (19), 1, pp.&nbsp;179–181</em>.</p>
+<p>A. Coiman, M. F. Garcia Ferreyra, V. Andreo (2025). Predicting asthma mortality in Argentina using remote sensing data and machine learning. <em>2025 XXI Workshop on Information Processing and Control (RPIC), pp.&nbsp;1–6</em>. <a href="https://doi.org/10.1109/RPIC67987.2025.11260709" class="uri">https://doi.org/10.1109/RPIC67987.2025.11260709</a></p>
 
 
 </section>
@@ -609,6 +631,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

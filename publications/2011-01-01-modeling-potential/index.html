@@ -46,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -195,6 +198,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>We constructed a model to predict the potential distribution of <em>Oligoryzomys longicaudatus</em>, the reservoir of Andes virus (Genus: Hantavirus), in Argentina. We developed an extensive database of occurrence records from published studies and our own surveys and compared two methods to model the probability of O. longicaudatus presence; logistic regression and MaxEnt algorithm. The environmental variables used were tree, grass and bare soil cover from MODIS imagery and, altitude and 19 bioclimatic variables from WorldClim database. The models performances were evaluated and compared both by threshold dependent and independent measures. The best models included tree and grass cover, mean diurnal temperature range, and precipitation of the warmest and coldest seasons. The potential distribution maps for O. longicaudatus predicted the highest occurrence probabilities along the Andes range, from 32°S and narrowing southwards. They also predicted high probabilities for the south-central area of Argentina, reaching the Atlantic coast. The Hantavirus Pulmonary Syndrome cases coincided with mean occurrence probabilities of 95 and 77% for logistic and MaxEnt models, respectively. HPS transmission zones in Argentine Patagonia matched the areas with the highest probability of presence. Therefore, colilargos presence probability may provide an approximate risk of transmission and act as an early tool to guide control and prevention plans.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Potential distribution of *Oligoryzomys longicaudatus* in Argentina predicted with (a) a generalized linear model and (b) MaxEnt."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -622,6 +626,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

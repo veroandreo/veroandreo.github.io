@@ -50,6 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -206,6 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>Factors modeling the population genetic structure are of major importance when species involved in the transmission of zoonoses are considered. The long-tailed pygmy rice rat or ‘colilargo’ <em>Oligoryzomys longicaudatus</em> is a highly vagile rodent species which acts as the reservoir of the Andes hantavirus in southern Argentina and Chile. To contribute to the knowledge of the processes determining the microgeographical genetic structure of populations of this species, we used 10 microsatellite loci to estimate the levels of polymorphism, individual relatedness and the population effective sizes through time and to explore if the effective size correlated with density. Individuals were sampled seasonally during a 25-month period in a population from the Argentinean Patagonia located in the endemic area of Hantavirus Pulmonary Syndrome. We detected three genetic clusters. An important temporal change in cluster prevalence was detected after a population bottleneck. Individuals of the same period presented higher mean relatedness values than between consecutive periods. Density and effective population size estimations were correlated. All analyses performed in this study are in line with the conclusion that high levels of gene flow encompassing different habitats would be a major process producing fine-scale temporal changes in the genetic composition of the studied population.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Bayesian cluster analysis of multilocus microsatellite genotypes of *Oligoryzomys longicaudatus*."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -633,6 +637,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -46,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -205,6 +208,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p><em>Aedes aegypti</em>, the mosquito species transmitting dengue, zika, chikungunya and yellow fever viruses, is fully adapted to thrive in urban areas. The temporal activity of this mosquito, however, varies within urban areas which might imply different transmission risk. In this work, we hypothesize that temporal differences in mosquito activity patterns are determined by local environmental conditions. Hence, we explore the existence of groups of temporal patterns in weekly time series of Ae. aegypti ovitraps records (2017–2019) by means of time series clustering. Next, with the aim of predicting risk in places with no mosquito field data, we use machine learning classification tools to assess the association of temporal patterns with environmental variables derived from satellite imagery and predict temporal patterns over the city area to finally test the relationship with dengue incidence. We found three groups of temporal patterns that showed association with land cover diversity, variability in vegetation and humidity and, heterogeneity measured by texture indices estimated over buffer areas surrounding ovitraps. Dengue incidence on a neighborhood basis showed a weak but positive association with the percentage of pixels belonging to only one of the temporal patterns detected. The understanding of the spatial distribution of temporal patterns and their environmental determinants might then become highly relevant to guide the allocation of prevention and potential interventions. Further investigation is still needed though to incorporate other determinants not considered here.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Groups of *Aedes aegypti* oviposition temporal patterns mapped over Córdoba city for two seasons and two buffer sizes."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -632,6 +636,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

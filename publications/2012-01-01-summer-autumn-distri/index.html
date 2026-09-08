@@ -47,6 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>We examined population density of <em>Oligoryzomys longicaudatus</em> (colilargo) and prevalence of Andes virus (ANDV) antibody at regional and landscape spatial scales in northwestern Chubut Province (Argentina) and contrasted it with climatic variables recorded by meteorologic stations near the study area. Mice were trapped in late summer–early fall (March–April) for 3 years (2007–2009). The composition of the rodent assemblage and species representation in the community varied among years, regions (forest, ecotone, and steppe), and landscape units (<em>Nothofagus</em> and <em>Austrocedrus</em> forests, sweet briar shrublands, and without sweet briar shrublands). Colilargos occurred in all regions and landscape units within the study area, from dense forest to open habitats such as steppe. The species dominated the rodent assemblages of ecotone and forest at a regional scale and the assemblages in sweet briar shrublands and <em>Austrocedrus</em> forests at a landscape scale. Abundance of colilargos also varied among periods, regions, and landscape units. Antibodies to ANDV were found in all regions but not in every landscape unit. Thus there is a potential for human hantavirus pulmonary syndrome (HPS) cases to occur not only in forests and shrublands, but also in steppe. At a landscape scale, <em>Nothofagus</em> forests appeared to pose a higher risk than <em>Austrocedrus</em> in wet years, because colilargo abundance and ANDV antibody prevalence were significantly greater. Within ecotone, sweet briar shrublands posed greater risk than habitats without sweet briar. Sweet briar shrublands were the landscape unit with the highest colilargo abundances during the driest periods. Sweet briar shrublands may play an important role in HPS dynamics, and should be considered when designing prevention policies.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Study area in northwestern Chubut Province, Argentina."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -631,6 +635,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -53,6 +53,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -218,6 +221,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>We use a Species Distribution Modeling (SDM) approach along with Geographic Information Systems (GIS) techniques to examine the potential distribution of hantavirus pulmonary syndrome (HPS) caused by Andes virus (ANDV) in southern Argentina and, more precisely, define and estimate the area with the highest infection probability for humans, through the combination with the distribution map for the competent rodent host (<em>Oligoryzomys longicaudatus</em>). Sites with confirmed cases of HPS in the period 1995–2009 were mostly concentrated in a narrow strip (~90 km × 900 km) along the Andes range from northern Neuquén to central Chubut province. This area is characterized by high mean annual precipitation (~1,000 mm on average), but dry summers (less than 100 mm), very low percentages of bare soil (~10% on average) and low temperatures in the coldest month (minimum average temperature −1.5 °C), as compared to the HPS-free areas, features that coincide with sub-Antarctic forests and shrublands (especially those dominated by the invasive plant <em>Rosa rubiginosa</em>), where rodent host abundances and ANDV prevalences are known to be the highest. Through the combination of predictive distribution maps of the reservoir host and disease cases, we found that the area with the highest probability for HPS to occur overlaps only 28% with the most suitable habitat for O. longicaudatus. With this approach, we made a step forward in the understanding of the risk factors that need to be considered in the forecasting and mapping of risk at the regional/national scale. We propose the implementation and use of thematic maps, such as the one built here, as a basic tool allowing public health authorities to focus surveillance efforts and normally scarce resources for prevention and control actions in vast areas like southern Argentina.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="(a) Risk map for hantavirus pulmonary syndrome and (b) potential distribution of its rodent host in Argentina."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -645,6 +649,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

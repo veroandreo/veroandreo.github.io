@@ -46,6 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>The aim of this work was to explore the relationship between population density of <em>Akodon azarae</em> (Muridae: Sigmodontinae) and climatic and environmental variables, and determine which of them are associated to within and among-year changes in rodent abundance in agro-ecosystems from south Córdoba, Argentina. The study was carried out in a rural area of central Argentina, from 1983 to 2003. Density was estimated as a relative density index (RDI). Temperature, precipitation and humidity were obtained from records of the National University of Rio Cuarto. Normalized Difference Vegetation Index (NDVI) and Land Surface Temperature were recorded from National Oceanic and Atmospheric Administration (1983–1998) and Landsat (1998–2003) imagery data sets. We performed simple correlations, multiple regressions and distributed lag analysis. Direct association of climatic and environmental variables with RDI was in general, low. The amount of variability in seasonal changes in density explained by climatic and environmental variables altogether varied from 10% to 70%. Seasonal population fluctuations were influenced by NDVI and rainfall with one and two seasons of delay. Autumn maximum density of the species was also associated with vegetation and rainfall of previous seasons. There also seemed to be an indirect influence of rainfall through vegetation given that we found a positive correlation between them. Results were consistent with basic aspects of the ecology of the species, such as its strong preference for highly covered areas, which provide food and protection from predators, likely increasing its reproductive success. Therefore, in the rural area central Argentina, A. azarae showed seasonal fluctuations with delayed influence of rainfall and vegetation and indirect effects of rainfall.</p>
+<p><a href="featured.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.png" class="featured-figure img-fluid" alt="Time series of the seasonal relative density index of *Akodon azarae* in trap-lines and grid, from summer 1983 to spring 2003."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -631,6 +635,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

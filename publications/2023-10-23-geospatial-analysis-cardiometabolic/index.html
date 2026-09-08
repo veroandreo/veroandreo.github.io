@@ -49,6 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -204,6 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>New approaches to the study of cardiometabolic disease (CMD) distribution include analysis of built environment (BE), with spatial tools as suitable instruments. We aimed to characterize the spatial dissemination of CMD and the associated risk factors considering the BE for people attending the Non-Invasive Cardiology Service of Hospital Nacional de Clinicas in Córdoba City, Argentina during the period 2015-2020. We carried out an observational, descriptive, cross-sectional study performing non-probabilistic convenience sampling. The final sample included 345 people of both sexes older than 35 years. The CMD data were collected from medical records and validated techniques and BE information was extracted from Landsat-8 satellite products. A geographic information system (GIS) was constructed to assess the distribution of CMD and its risk factors in the area. Out of the people sampled, 41% showed the full metabolic syndrome and 22.6% only type-2 diabetes mellitus (DM2), a cluster of which was evidenced in north-western Córdoba. The risk of DM2 showed an association with high values of the normalized difference vegetation index (NDVI) (OR= 0.81; 95% CI: - 0.30 to 1.66; p=0.05) and low normalized difference built index (NDBI) values that reduced the probability of occurrence of DM2 (OR= -1.39; 95% CI: -2.62 to -0.17; p=0.03). Considering that the results were found to be linked to the environmental indexes, the study of BE should include investigation of physical space as a fundamental part of the context in which people develop medically within society. The novel collection of satellite-generated information on BE proved efficient.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Cluster map of diabetes-positive cases in Córdoba city and its metropolitan area."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -631,6 +635,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

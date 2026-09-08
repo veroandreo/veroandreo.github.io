@@ -47,6 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -206,6 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>Remote sensing (RS) applications for vector borne diseases are a field of high social impact increasingly relevant in the context of a higher frequency of Dengue, Chikungunya and Zika outbreaks at global scale and especially in Latin America. The operative use of RS technologies is however still rare. Therefore, the objective of this work is to generate and analyze multitemporal <em>Aedes aegypti</em>’s suitability maps and to share the open source tools used towards the building of an operative workflow. As a proof of concept, we implemented a process chain to obtain maps for Ae. aegypti activity within the 2017–2018 mosquito breeding season based on ovitraps records and RS data within the framework of ecological niche modeling. The workflow was carefully thought as to consider possible biases in training data, model calibration to attain the best hyper-parameter combination, model selection, variable selection and validation with independent data. The predictive maps showed high suitability for Ae. aegypti within the city, except in large vegetated areas and the commercial downtown consistently with previous studies and our own observations. Relevant variables included distance to built-up surfaces, distance to vegetated areas and correlation, a texture measure reflecting surface heterogeneity. Validation results suggested that the spatial distribution of ovitraps should be re-examined. All the steps in the proposed workflow were implemented using freely available and open source software, which warrants reproducibility and allows for re-use and modifications in terms of methods and RS or mosquito data available.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Average predicted *Aedes aegypti* suitability and its standard deviation for Córdoba city."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -633,6 +637,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

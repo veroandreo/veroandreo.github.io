@@ -48,6 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -207,6 +210,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>The Yungas, a subtropical mountain rainforest of South America, has been little studied in relation to the evolutionary history of the large-bodied species of the genus <em>Calomys</em>. Particularly, two species have been synonymized: C. boliviae and C. fecundus; the first is only known from its type locality in the northern Bolivian Yungas, whereas the second is known along the Tucumane–Bolivian Yungas shared by Bolivia and Argentina. In this study, we combined a phylogeographic approach with ecological niche modeling, with samples covering most of the geographic range of C. fecundus. One mitochondrial and two nuclear genes were used for population genetic analyses. Current and paleoclimatic models were obtained. Nuclear genes resulted uninformative by retention of ancestral polymorphism with other species of <em>Calomys</em>. The mitochondrial marker revealed a complex network showing signals of several population expansions. Three genetic clusters in a latitudinal sense were detected, which are coincident with the three stable climatic zones estimated by current and paleoclimatic models. We determined a pattern of expansion during glacial cycles and ancestral refugia during interglacial cycles. None of the potential distribution models predicted the presence of C. fecundus in the type locality of C. boliviae. Therefore, we recommend making integrative taxonomic studies in the Bolivian Yungas, to determine whether or not C. fecundus and C. boliviae correspond to the same species.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Collecting sites of *Calomys fecundus* and the ecoregions considered in the study."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -634,6 +638,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -44,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -198,6 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>Spatial disease modeling remains an important public health tool. For cholera, the presence of zero counts is common. The Poisson model is inadequate to (1) capture over-dispersion, and (2) distinguish between excess zeros arising from non-susceptible and susceptible populations. In this study, we develop zero-inflated (ZI) mixture spatially varying coefficient (SVC) models to (1) distinguish between the sources of the excess zeros and (2) uncover the spatially varying effects of precipitation and temperature (LST) on cholera. We demonstrate the potential of the models using cholera data from Ghana. A striking observation is that the Poisson model outperformed the ZI mixture models in terms of fit. The ZI Negative Binomial (ZINB) outperformed the ZI Poisson (ZIP) model. Subject to our objectives, we make inferences using the ZINB model. The proportion of zeros estimated with the ZINB model is 0.41 and exceeded what would have been estimated using a Poisson model which is 0.35. We observed the spatial trends of the effects of precipitation and LST to have both increasing and decreasing gradients; an observation implying that the use of only the global coefficients would lead to wrong inferences. We conclude that (1) the use of ZI mixture models has epidemiological significance. Therefore, its choice over the Poisson model should be based on an epidemiological concept rather than model fit and, (2) the extension of ZI mixture models to accommodate spatially varying coefficients uncovered remarkable varying effects of the covariates. These findings have significant implications for public health monitoring of cholera.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Relative risk and exceedance probability of cholera across the districts of Ghana."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
@@ -625,6 +629,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

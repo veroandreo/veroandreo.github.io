@@ -45,6 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-715ad804c25ee6caf715d379d946eca3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -187,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/10.25085/rsea.810409">10.25085/rsea.810409</a>
+        <a href="https://doi.org/10.25085/rsea.810408">10.25085/rsea.810408</a>
       </p>
     </div>
   </div>
@@ -198,14 +201,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://doi.org/10.25085/rsea.810409">PDF</a></p>
+<p><a href="https://doi.org/10.25085/rsea.810408">PDF</a></p>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>We updated the distribution of Phlebotominae (Diptera: Psychodidae) species and human cases of leishmaniasis in the Province of Corrientes, Argentina. <em>Evandromyia correalimai</em> (Martins, Coutinho &amp; Lutz, 1970) is a new record for the province, reported in the urban area of Santo Tomé. We include the currently known distribution map of Phlebotominae sandfly species in Corrientes, and the localities where they were recorded, as well as a map of vector species and reported human cases of leishmaniases.</p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="featured-figure img-fluid" alt="Distribution of *Lutzomyia longipalpis* and *Nyssomyia neivai* and of human cases of leishmaniasis in Corrientes Province, Argentina."></a></p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
-<p>M. L. Villarquide, V. Andreo, O. D. Salomon, M. S. Santini (2022). Distribution of Phlebotominae (Diptera: Psychodidade) species and human cases of leishmaniasis in the Province of Corrientes, Argentina. <em>Revista de la Sociedad Entomológica Argentina, 81, pp.&nbsp;55–63</em>. <a href="https://doi.org/10.25085/rsea.810409" class="uri">https://doi.org/10.25085/rsea.810409</a></p>
+<p>M. L. Villarquide, V. Andreo, O. D. Salomon, M. S. Santini (2022). Distribution of Phlebotominae (Diptera: Psychodidade) species and human cases of leishmaniasis in the Province of Corrientes, Argentina. <em>Revista de la Sociedad Entomológica Argentina, 81, pp.&nbsp;55–63</em>. <a href="https://doi.org/10.25085/rsea.810408" class="uri">https://doi.org/10.25085/rsea.810408</a></p>
 
 
 </section>
@@ -629,6 +633,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
