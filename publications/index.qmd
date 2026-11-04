@@ -12,9 +12,36 @@ listing:
   filter-ui: true
   fields: [title, author, date, categories, image]
   image-height: "170px"
-  image-placeholder: ../assets/img/headers/landsatlooks.jpg
+  image-placeholder: ../assets/img/headers/placeholder-publication.svg
   page-size: 24
 format:
   html:
     page-layout: full
 ---
+
+```{=html}
+<script>
+  // Tarjetas: con más de 10 autores, muestra los 9 primeros y "et al.". Si V. Andreo
+  // quedó afuera: "9.º autor, …, V. Andreo, et al.". Corre después de que List.js indexa las tarjetas
+  // (incluidas las de otras páginas), así el filtro sigue buscando a todos los autores.
+  window.addEventListener("DOMContentLoaded", function () {
+    var list = (window["quarto-listings"] || {})["listing-listing"];
+    if (!list) return;
+    list.items.forEach(function (item) {
+      var el = item.elm.querySelector(".listing-author");
+      if (!el) return;
+      var authors = el.textContent.trim().split(/\s*,\s*/);
+      if (authors.length <= 10) return;
+      var shown = authors.slice(0, 9);
+      var rest = authors.slice(9);
+      var me = rest.findIndex(function (name) {
+        return /^V\.( C\.)? Andreo$/.test(name);
+      });
+      if (me > 0) shown.push("…");
+      if (me >= 0) shown.push(rest[me]);
+      if (me < rest.length - 1) shown.push("et al.");
+      el.textContent = shown.join(", ");
+    });
+  });
+</script>
+```

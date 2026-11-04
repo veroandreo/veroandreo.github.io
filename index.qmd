@@ -17,7 +17,7 @@ listing:
     date-format: "YYYY"
     fields: [title, author, date, categories]
     image-height: "150px"
-    image-placeholder: assets/img/headers/landsatlooks.jpg
+    image-placeholder: assets/img/headers/placeholder-publication.svg
 ---
 
 ::: {#hero .hero-split}
@@ -138,6 +138,18 @@ Scientific writing
 
 ::: {#latest-publications}
 :::
+
+```{=html}
+<script>
+  // Tarjetas del home: con más de 10 autores, muestra los 9 primeros y "et al."
+  document.querySelectorAll("#listing-latest-publications .listing-author").forEach(function (el) {
+    var authors = el.textContent.trim().split(/\s*,\s*/);
+    if (authors.length > 10) {
+      el.textContent = authors.slice(0, 9).join(", ") + ", et al.";
+    }
+  });
+</script>
+```
 
 ::: {.more-link}
 [All publications →](publications/index.qmd)

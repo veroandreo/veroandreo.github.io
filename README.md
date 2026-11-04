@@ -182,6 +182,14 @@ Posts y charlas son igual, en `posts/` y `talks/`. Las charlas además usan
 
 `max-items` × `grid-columns` define las filas: 6 y 3 son dos filas de tres.
 
+En las tarjetas del home, los trabajos con más de 10 autores muestran los 9
+primeros y "et al.". Lo hace un `<script>` en `index.qmd`, justo debajo de
+`#latest-publications`; la página de cada publicación mantiene la lista completa.
+
+En la página Publications rige la misma regla, y si V. Andreo quedó afuera de los
+9 se muestra como "…, V. Andreo, et al.". Lo hace otro `<script>`, al final de
+`publications/index.qmd`, y el filtro sigue buscando entre todos los autores.
+
 Otras claves útiles de los listados: `sort: "date desc"`, `date-format: "YYYY"`
 (solo el año), `categories: true` (barra lateral de categorías), `filter-ui` y
 `sort-ui` (buscador y selector de orden), `image-height`, `image-placeholder`,
@@ -284,8 +292,9 @@ Cuatro cosas que conviene saber antes de tocarlo:
 
 - **De cada publicación**: `featured.jpg` o `.png` dentro de su carpeta.
   Conviene redimensionar a ~1400 px de ancho antes de subirlas.
-- **Placeholder** de las que no tienen: `assets/img/headers/landsatlooks.jpg`,
-  configurado en `image-placeholder` de cada listado.
+- **Placeholder** de las que no tienen: `assets/img/headers/placeholder-publication.svg`
+  (curvas de nivel), configurado en `image-placeholder` de `publications/index.qmd`
+  e `index.qmd`. Las charlas siguen con `landsatlooks.jpg`.
 - **Tamaño en la página**: 65 % del ancho del texto, centrada. Se cambia en un
   solo lugar, `_andreo-comun.scss` → `img.featured-figure { max-width: 65% }`.
   Para una figura puntual se puede pisar desde el `.qmd` con `{width=40%}`.

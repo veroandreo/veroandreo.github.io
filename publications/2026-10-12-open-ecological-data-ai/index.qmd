@@ -1,0 +1,60 @@
+---
+title: Opening ecological data to reduce bias and strengthen AI in ecology
+date: '2026-10-12'
+author:
+- name: M. Torresani
+- name: M. Montali
+- name: D. Da Re
+- name: L. Da Ros
+- name: C. R. Hakkenberg
+- name: D. Rocchini
+- name: M. Mina
+- name: W. Waegeman
+- name: G. Foody
+- name: M. Menaa
+- name: A. Wingler
+- name: D. Fraisl
+- name: A. Andreoli
+- name: P. Goethals
+- name: E. Pasolli
+- name: L. Borruso
+- name: M. Perrone
+- name: M. Stock
+- name: B. De Baets
+- name: G. Brunori
+- name: A. Stritih
+- name: A. Bottero
+- name: P. Cherubini
+- name: C. Ghidini
+- name: A. Orlandini
+- name: P. Poccianti
+- name: C. Rossi
+- name: A. Cotrina-Sanchez
+- name: J. D. Urquiza-Muñoz
+- name: J. Veneros
+- name: V. R. V. Nguimdo
+- name: V. Andreo
+- name: I. Altintas
+- name: G. G. A. Satta
+- name: F. Pitscheider
+- name: A. Rozzoni
+- name: K. Koyanagi
+- name: K. Stereńczak
+- name: R. Tognetti
+pub-type: Journal article
+doi: 10.1093/biosci/biag147
+categories:
+- Machine learning
+- Biodiversity monitoring
+---
+
+
+[PDF](https://doi.org/10.1093/biosci/biag147)
+
+## Excerpt
+
+By integrating diverse data sources, AI can transform ecological research. However, when data, code, or model-development processes cannot be independently inspected, existing knowledge gaps and biases may be transferred into ecological inference. Appropriately open, reliable, and interoperable ecological data, together with transparent and auditable AI infrastructures, are therefore essential for robust, equitable, and epistemically sound ecological research.
+
+## Citation
+
+M. Torresani, M. Montali, D. Da Re, L. Da Ros, C. R. Hakkenberg, D. Rocchini, et al. (2026). Opening ecological data to reduce bias and strengthen AI in ecology. *BioScience, biag147*. <https://doi.org/10.1093/biosci/biag147>
